@@ -4,6 +4,7 @@
 
 import { Palette, Home, Sun, Paintbrush, Zap, Cpu } from 'lucide-react';
 import { useMoods, useStyles, useColorThemes, useRooms } from '../hooks';
+import { Sparkles } from 'lucide-react';
 
 interface StylePresetsProps {
   mood: string;
