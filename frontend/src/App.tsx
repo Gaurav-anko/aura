@@ -1,9 +1,10 @@
 /**
- * Smart Product Styler - Main App Component
+ * AURA - Smart Product Styler
+ * AI-powered interior design visualization
  */
 
 import { useState, useMemo } from 'react';
-import { Sparkles, Package } from 'lucide-react';
+import { Sparkles, Package, Image } from 'lucide-react';
 import {
   Disclaimer,
   CategoryFilter,
@@ -12,10 +13,16 @@ import {
   StylePresets,
   GeneratedImage,
 } from './components';
+import { StyledRoomsGallery } from './components/StyledRoomsGallery';
 import { useProducts, useGenerateStyle, useRegenerate } from './hooks';
 import type { Product, StylingPlan } from './types';
 
+type TabType = 'styler' | 'gallery';
+
 function App() {
+  // Tab state
+  const [activeTab, setActiveTab] = useState<TabType>('styler');
+  
   // Filter state
   const [category, setCategory] = useState('');
   const [color, setColor] = useState('');
@@ -137,32 +144,86 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* Header */}
-      <header className="bg-gray-800 border-b border-gray-700 py-4 px-6">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Sparkles size={32} className="text-purple-500" />
-            <div>
-              <h1 className="text-2xl font-bold">Smart Product Styler</h1>
-              <p className="text-sm text-gray-400">AI-powered interior design visualization</p>
+      <header className="bg-gradient-to-r from-purple-50 via-white to-purple-50 border-b border-purple-100 shadow-md">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex items-center justify-between py-6">
+            <div className="flex items-center gap-4">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 blur-lg opacity-30 rounded-full"></div>
+                <Sparkles size={40} className="relative text-purple-600 animate-pulse" />
+              </div>
+              <div>
+                <h1 className="text-4xl font-black bg-gradient-to-r from-purple-600 via-purple-700 to-pink-600 bg-clip-text text-transparent tracking-tight">
+                  AURA
+                </h1>
+                <p className="text-sm font-medium text-gray-600 tracking-wide mt-0.5">
+                  ✨ AI-powered interior design visualization
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 bg-white px-4 py-2 rounded-full shadow-sm border border-gray-200">
+              <Package size={18} className="text-purple-600" />
+              <span className="text-sm font-medium text-gray-700">Smart Product Styler</span>
             </div>
           </div>
-          <div className="flex items-center gap-2 text-sm text-gray-400">
-            <Package size={16} />
-            <span>Powered by Google Vertex AI</span>
+          
+          {/* Tab Navigation */}
+          <div className="flex gap-3 pt-4 -mb-px">
+            <button
+              onClick={() => setActiveTab('styler')}
+              className={`group relative flex items-center gap-3 px-8 py-4 font-bold text-base transition-all duration-300 rounded-t-2xl ${
+                activeTab === 'styler'
+                  ? 'bg-white text-purple-600 shadow-lg transform translate-y-0.5'
+                  : 'bg-gradient-to-b from-white/80 to-white/40 text-gray-600 hover:text-purple-500 hover:shadow-md hover:scale-105'
+              }`}
+            >
+              {activeTab === 'styler' && (
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-t-2xl"></div>
+              )}
+              <div className={`relative ${activeTab === 'styler' ? 'animate-pulse' : 'group-hover:rotate-12 transition-transform'}`}>
+                <Sparkles size={20} className={activeTab === 'styler' ? 'text-purple-600' : 'text-gray-500 group-hover:text-purple-500'} />
+              </div>
+              <span className="relative tracking-wide">Product Styler</span>
+              {activeTab === 'styler' && (
+                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-t-full"></div>
+              )}
+            </button>
+            <button
+              onClick={() => setActiveTab('gallery')}
+              className={`group relative flex items-center gap-3 px-8 py-4 font-bold text-base transition-all duration-300 rounded-t-2xl ${
+                activeTab === 'gallery'
+                  ? 'bg-white text-purple-600 shadow-lg transform translate-y-0.5'
+                  : 'bg-gradient-to-b from-white/80 to-white/40 text-gray-600 hover:text-purple-500 hover:shadow-md hover:scale-105'
+              }`}
+            >
+              {activeTab === 'gallery' && (
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-t-2xl"></div>
+              )}
+              <div className={`relative ${activeTab === 'gallery' ? 'animate-pulse' : 'group-hover:scale-110 transition-transform'}`}>
+                <Image size={20} className={activeTab === 'gallery' ? 'text-purple-600' : 'text-gray-500 group-hover:text-purple-500'} />
+              </div>
+              <span className="relative tracking-wide">Styled Room Gallery</span>
+              {activeTab === 'gallery' && (
+                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-t-full"></div>
+              )}
+            </button>
           </div>
         </div>
       </header>
 
       {/* Main content */}
+      {activeTab === 'gallery' ? (
+        <StyledRoomsGallery />
+      ) : (
       <main className="max-w-7xl mx-auto px-6 py-8 space-y-8">
         {/* Disclaimer */}
         <Disclaimer />
 
         {/* Section 1: Filters */}
         <section>
-          <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
+          <h2 className="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-900">
             <span className="bg-purple-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm">1</span>
             Filter Products
           </h2>
@@ -180,11 +241,35 @@ function App() {
         </section>
 
         {/* Section 2: Product Selection */}
-        <section>
-          <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
-            <span className="bg-purple-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm">2</span>
-            Select Products (max 4)
-          </h2>
+        <section style={{height: '600px', overflowY: 'auto'}}>
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-xl font-semibold flex items-center gap-2 text-gray-900">
+              <span className="bg-purple-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm">2</span>
+              Select Products (max 4)
+            </h2>
+            
+            {/* Active filters display */}
+            {(category || color || minPrice > 0 || maxPrice < 500) && (
+              <div className="flex items-center gap-2 text-sm">
+                <span className="text-gray-600">Active filters:</span>
+                {category && (
+                  <span className="px-2 py-1 bg-purple-100 text-purple-700 rounded-md text-xs">
+                    {category}
+                  </span>
+                )}
+                {color && (
+                  <span className="px-2 py-1 bg-purple-100 text-purple-700 rounded-md text-xs">
+                    {color}
+                  </span>
+                )}
+                {(minPrice > 0 || maxPrice < 500) && (
+                  <span className="px-2 py-1 bg-purple-100 text-purple-700 rounded-md text-xs">
+                    ${minPrice} - ${maxPrice}
+                  </span>
+                )}
+              </div>
+            )}
+          </div>
           
           {/* Selected products panel */}
           <div className="mb-4">
@@ -207,7 +292,7 @@ function App() {
 
         {/* Section 3: Styling Options */}
         <section>
-          <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
+          <h2 className="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-900">
             <span className="bg-purple-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm">3</span>
             Choose Styling Options
           </h2>
@@ -229,20 +314,20 @@ function App() {
             <button
               onClick={handleGenerate}
               disabled={selectedIds.size === 0 || generateMutation.isPending}
-              className="w-full md:w-auto px-8 py-3 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 disabled:from-gray-600 disabled:to-gray-600 disabled:cursor-not-allowed text-white font-semibold rounded-lg transition-all flex items-center justify-center gap-2"
+              className="w-full md:w-auto px-8 py-3 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 disabled:from-gray-300 disabled:to-gray-300 disabled:cursor-not-allowed text-white font-semibold rounded-lg transition-all flex items-center justify-center gap-2 shadow-sm"
             >
               <Sparkles size={20} />
               {generateMutation.isPending ? 'Generating...' : 'Generate Styled Image'}
             </button>
             {selectedIds.size === 0 && (
-              <p className="text-sm text-gray-500 mt-2">Select at least one product to generate</p>
+              <p className="text-sm text-gray-600 mt-2">Select at least one product to generate</p>
             )}
           </div>
         </section>
 
         {/* Section 4: Generated Image */}
         <section>
-          <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
+          <h2 className="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-900">
             <span className="bg-purple-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm">4</span>
             Generated Image
           </h2>
@@ -257,10 +342,11 @@ function App() {
           />
         </section>
       </main>
+      )}
 
       {/* Footer */}
-      <footer className="bg-gray-800 border-t border-gray-700 py-4 px-6 mt-8">
-        <div className="max-w-7xl mx-auto text-center text-sm text-gray-400">
+      <footer className="bg-white border-t border-gray-200 py-4 px-6 mt-8">
+        <div className="max-w-7xl mx-auto text-center text-sm text-gray-600">
           <p>Smart Product Styler MVP • Built with Google Vertex AI, ADK, and Gemini</p>
         </div>
       </footer>

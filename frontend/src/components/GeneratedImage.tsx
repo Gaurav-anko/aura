@@ -46,28 +46,28 @@ export const GeneratedImage = ({
 
   if (isLoading) {
     return (
-      <div className="bg-gray-800 rounded-lg p-8 flex flex-col items-center justify-center min-h-[400px]">
+      <div className="bg-white rounded-lg p-8 flex flex-col items-center justify-center min-h-[400px] border border-gray-200 shadow-sm">
         <LoadingSpinner size={48} text="Generating your styled image..." />
-        <p className="text-gray-400 text-sm mt-4">This may take a moment...</p>
+        <p className="text-gray-600 text-sm mt-4">This may take a moment...</p>
       </div>
     );
   }
 
   if (error) {
     return (
-      <div className="bg-gray-800 rounded-lg p-8">
-        <div className="flex items-center gap-3 text-red-400 mb-4">
+      <div className="bg-white rounded-lg p-8 border border-red-200 shadow-sm">
+        <div className="flex items-center gap-3 text-red-600 mb-4">
           <AlertCircle size={24} />
           <span className="font-medium">Generation Failed</span>
         </div>
-        <p className="text-gray-300">{error}</p>
+        <p className="text-gray-700">{error}</p>
       </div>
     );
   }
 
   if (!imageBase64) {
     return (
-      <div className="bg-gray-800 rounded-lg p-8 text-center min-h-[400px] flex flex-col items-center justify-center">
+      <div className="bg-white rounded-lg p-8 text-center min-h-[400px] flex flex-col items-center justify-center border border-gray-200 shadow-sm">
         <div className="text-gray-500">
           <p className="text-lg mb-2">No image generated yet</p>
           <p className="text-sm">Select products and click "Generate Style" to create a styled image</p>
@@ -77,12 +77,12 @@ export const GeneratedImage = ({
   }
 
   return (
-    <div className="bg-gray-800 rounded-lg overflow-hidden">
+    <div className="bg-white rounded-lg overflow-hidden border border-gray-200 shadow-sm">
       {/* Skipped products warning */}
       {skippedProducts && skippedProducts.length > 0 && (
-        <div className="bg-yellow-900/30 border-b border-yellow-700/50 p-3 flex items-start gap-2">
-          <AlertCircle size={16} className="text-yellow-500 flex-shrink-0 mt-0.5" />
-          <p className="text-sm text-yellow-200">
+        <div className="bg-yellow-50 border-b border-yellow-200 p-3 flex items-start gap-2">
+          <AlertCircle size={16} className="text-yellow-600 flex-shrink-0 mt-0.5" />
+          <p className="text-sm text-yellow-800">
             Some products were skipped due to image loading issues: {skippedProducts.join(', ')}
           </p>
         </div>
@@ -108,23 +108,23 @@ export const GeneratedImage = ({
 
       {/* Styling info */}
       {stylingPlan && (
-        <div className="p-4 border-t border-gray-700">
-          <div className="flex items-center gap-2 text-green-400 mb-2">
+        <div className="p-4 border-t border-gray-200">
+          <div className="flex items-center gap-2 text-green-600 mb-2">
             <CheckCircle size={16} />
             <span className="text-sm font-medium">Style Applied</span>
           </div>
-          <p className="text-sm text-gray-400 mb-2">{stylingPlan.scene_description}</p>
+          <p className="text-sm text-gray-700 mb-2">{stylingPlan.scene_description}</p>
           <div className="flex flex-wrap gap-2">
-            <span className="text-xs px-2 py-1 bg-purple-900/50 text-purple-300 rounded">
+            <span className="text-xs px-2 py-1 bg-purple-100 text-purple-700 rounded">
               {stylingPlan.styling_parameters.mood}
             </span>
-            <span className="text-xs px-2 py-1 bg-purple-900/50 text-purple-300 rounded">
+            <span className="text-xs px-2 py-1 bg-purple-100 text-purple-700 rounded">
               {stylingPlan.styling_parameters.style}
             </span>
-            <span className="text-xs px-2 py-1 bg-purple-900/50 text-purple-300 rounded">
+            <span className="text-xs px-2 py-1 bg-purple-100 text-purple-700 rounded">
               {stylingPlan.styling_parameters.color_theme}
             </span>
-            <span className="text-xs px-2 py-1 bg-purple-900/50 text-purple-300 rounded">
+            <span className="text-xs px-2 py-1 bg-purple-100 text-purple-700 rounded">
               {stylingPlan.styling_parameters.room_type}
             </span>
           </div>
@@ -132,8 +132,8 @@ export const GeneratedImage = ({
       )}
 
       {/* Feedback and regenerate */}
-      <div className="p-4 border-t border-gray-700">
-        <label className="block text-sm font-medium text-gray-300 mb-2">
+      <div className="p-4 border-t border-gray-200">
+        <label className="block text-sm font-medium text-gray-700 mb-2">
           Refine with Feedback
         </label>
         <div className="flex gap-2">
@@ -142,12 +142,12 @@ export const GeneratedImage = ({
             value={feedback}
             onChange={(e) => setFeedback(e.target.value)}
             placeholder="e.g., 'make it brighter', 'add more plants', 'warmer lighting'"
-            className="flex-1 bg-gray-700 border border-gray-600 rounded-md px-3 py-2 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="flex-1 bg-white border border-gray-300 rounded-md px-3 py-2 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
           />
           <button
             onClick={handleRegenerate}
             disabled={!feedback.trim() || isRegenerating}
-            className="flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-600 disabled:cursor-not-allowed text-white rounded-md transition-colors"
+            className="flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white rounded-md transition-colors shadow-sm"
           >
             <RefreshCw size={16} className={isRegenerating ? 'animate-spin' : ''} />
             {isRegenerating ? 'Regenerating...' : 'Regenerate'}

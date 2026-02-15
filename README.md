@@ -1,10 +1,10 @@
-# Smart Product Styler
+# AURA - Smart Product Styler
 
 AI-powered interior design visualization system using Google Vertex AI, ADK, and Gemini.
 
 ## Overview
 
-A multi-agent styling system that allows planners to:
+AURA is a multi-agent styling system that allows planners to:
 1. Filter products from a catalog
 2. Select 1-4 home products
 3. Choose styling presets (mood, style, color theme, room type)

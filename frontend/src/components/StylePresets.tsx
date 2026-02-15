@@ -42,23 +42,23 @@ export const StylePresets = ({
   const rooms = roomsData?.rooms || [];
 
   return (
-    <div className="bg-gray-800 rounded-lg p-4 space-y-4">
-      <h3 className="text-lg font-semibold text-white flex items-center gap-2">
-        <Palette size={20} className="text-purple-400" />
+    <div className="bg-white rounded-lg p-4 space-y-4 shadow-sm border border-gray-200">
+      <h3 className="text-lg font-semibold text-gray-900 flex items-center gap-2">
+        <Palette size={20} className="text-purple-600" />
         Styling Options
       </h3>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {/* Mood */}
         <div>
-          <label className="flex items-center gap-2 text-sm font-medium text-gray-300 mb-1">
+          <label className="flex items-center gap-2 text-sm font-medium text-gray-700 mb-1">
             <Sun size={16} />
             Mood
           </label>
           <select
             value={mood}
             onChange={(e) => onMoodChange(e.target.value)}
-            className="w-full bg-gray-700 border border-gray-600 rounded-md px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="w-full bg-white border border-gray-300 rounded-md px-3 py-2 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
           >
             {moods.map((m) => (
               <option key={m.value} value={m.value}>
@@ -70,14 +70,14 @@ export const StylePresets = ({
 
         {/* Style */}
         <div>
-          <label className="flex items-center gap-2 text-sm font-medium text-gray-300 mb-1">
+          <label className="flex items-center gap-2 text-sm font-medium text-gray-700 mb-1">
             <Paintbrush size={16} />
             Design Style
           </label>
           <select
             value={style}
             onChange={(e) => onStyleChange(e.target.value)}
-            className="w-full bg-gray-700 border border-gray-600 rounded-md px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="w-full bg-white border border-gray-300 rounded-md px-3 py-2 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
           >
             {styles.map((s) => (
               <option key={s.value} value={s.value}>
@@ -89,14 +89,14 @@ export const StylePresets = ({
 
         {/* Color Theme */}
         <div>
-          <label className="flex items-center gap-2 text-sm font-medium text-gray-300 mb-1">
+          <label className="flex items-center gap-2 text-sm font-medium text-gray-700 mb-1">
             <Palette size={16} />
             Color Theme
           </label>
           <select
             value={colorTheme}
             onChange={(e) => onColorThemeChange(e.target.value)}
-            className="w-full bg-gray-700 border border-gray-600 rounded-md px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="w-full bg-white border border-gray-300 rounded-md px-3 py-2 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
           >
             {colorThemes.map((ct) => (
               <option key={ct.value} value={ct.value}>
@@ -108,14 +108,14 @@ export const StylePresets = ({
 
         {/* Room Type */}
         <div>
-          <label className="flex items-center gap-2 text-sm font-medium text-gray-300 mb-1">
+          <label className="flex items-center gap-2 text-sm font-medium text-gray-700 mb-1">
             <Home size={16} />
             Room
           </label>
           <select
             value={roomType}
             onChange={(e) => onRoomTypeChange(e.target.value)}
-            className="w-full bg-gray-700 border border-gray-600 rounded-md px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="w-full bg-white border border-gray-300 rounded-md px-3 py-2 text-gray-900 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
           >
             {rooms.map((r) => (
               <option key={r.value} value={r.value}>
@@ -127,17 +127,17 @@ export const StylePresets = ({
 
         {/* Model Quality Toggle */}
         <div className="md:col-span-2 lg:col-span-2">
-          <label className="flex items-center gap-2 text-sm font-medium text-gray-300 mb-2">
+          <label className="flex items-center gap-2 text-sm font-medium text-gray-700 mb-2">
             <Cpu size={16} />
             Image Quality
           </label>
           <div className="flex gap-2">
             <button
               onClick={() => onModelQualityChange('fast')}
-              className={`flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-md transition-colors ${
+              className={`flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-md transition-colors shadow-sm ${
                 modelQuality === 'fast'
                   ? 'bg-purple-600 text-white'
-                  : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                  : 'bg-white border border-gray-300 text-gray-700 hover:bg-gray-50'
               }`}
             >
               <Zap size={16} />
@@ -145,17 +145,17 @@ export const StylePresets = ({
             </button>
             <button
               onClick={() => onModelQualityChange('high')}
-              className={`flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-md transition-colors ${
+              className={`flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-md transition-colors shadow-sm ${
                 modelQuality === 'high'
                   ? 'bg-purple-600 text-white'
-                  : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
+                  : 'bg-white border border-gray-300 text-gray-700 hover:bg-gray-50'
               }`}
             >
               <Sparkles size={16} />
               High Quality
             </button>
           </div>
-          <p className="text-xs text-gray-500 mt-1">
+          <p className="text-xs text-gray-600 mt-1">
             {modelQuality === 'fast' 
               ? 'Faster generation with good quality'
               : 'Best quality, takes longer to generate'

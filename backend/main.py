@@ -186,6 +186,23 @@ async def get_prices():
     return get_price_range()
 
 
+@app.get("/data/styled_room_images.json")
+async def get_styled_room_images():
+    """Get styled room images gallery data."""
+    styled_rooms_path = Path(__file__).parent.parent / "data" / "styled_room_images.json"
+    
+    if not styled_rooms_path.exists():
+        raise HTTPException(status_code=404, detail="Styled room images data not found")
+    
+    try:
+        with open(styled_rooms_path, "r") as f:
+            data = json.load(f)
+        return data
+    except Exception as e:
+        logger.error(f"Error loading styled room images: {e}")
+        raise HTTPException(status_code=500, detail="Failed to load styled room images")
+
+
 # ============== Styling Options ==============
 
 @app.get("/styling/moods")

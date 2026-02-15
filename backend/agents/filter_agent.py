@@ -43,15 +43,15 @@ def filter_products(
     for product in products:
         # Category filter (case-insensitive)
         if category:
-            product_category = product.get("PRIMARY_CATEGORY", "").lower()
-            if category.lower() not in product_category:
+            product_category = product.get("PRIMARY_CATEGORY") or ""
+            if category.lower() not in product_category.lower():
                 continue
         
         # Color filter (case-insensitive)
         if color:
-            product_color = product.get("COLOR", "").lower()
-            secondary_color = product.get("SECONDARYCOLOUR", "").lower()
-            if color.lower() not in product_color and color.lower() not in secondary_color:
+            product_color = product.get("COLOR") or ""
+            secondary_color = product.get("SECONDARYCOLOUR") or ""
+            if color.lower() not in product_color.lower() and color.lower() not in secondary_color.lower():
                 continue
         
         # Price range filter
@@ -87,7 +87,7 @@ def get_available_categories() -> dict:
     
     for product in products:
         cat = product.get("PRIMARY_CATEGORY")
-        if cat:
+        if cat and cat.strip():  # Only add non-empty categories
             categories.add(cat)
     
     return {
@@ -108,7 +108,7 @@ def get_available_colors() -> dict:
     
     for product in products:
         color = product.get("COLOR")
-        if color:
+        if color and color.strip():  # Only add non-empty colors
             colors.add(color)
     
     return {

@@ -1,0 +1,1370 @@
+{
+  "total_styled_images": 195,
+  "styled_rooms": [
+    {
+      "room_type": "Bathroom",
+      "category": "Bathroom Storage",
+      "color": "Clear",
+      "styled_image_url": "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 19
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bathroom Storage",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 8
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bathroom Cabinets and Shelves",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 6
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Mats",
+      "color": "Grey",
+      "styled_image_url": "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 6
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bathroom Cabinets and Shelves",
+      "color": "Brown",
+      "styled_image_url": "https://images.pexels.com/photos/1358912/pexels-photo-1358912.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 5
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Towels",
+      "color": "Blue",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 4
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Mats",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 4
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Sheets",
+      "color": "Blue",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 4
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Mats",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bathroom Trolleys",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bathroom Accessories",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Mats",
+      "color": "Blue",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Towels",
+      "color": "Grey",
+      "styled_image_url": "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Towels",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Towels",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bathroom Mirrors",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bathroom Storage",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Sheets",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Sheets",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Sheets",
+      "color": "Grey",
+      "styled_image_url": "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Towels",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Towels",
+      "color": "Brown",
+      "styled_image_url": "https://images.pexels.com/photos/1358912/pexels-photo-1358912.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bathroom Trolleys",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Towels",
+      "color": "Pink",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Mats",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Towels",
+      "color": "Silver",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Sheets",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Mats",
+      "color": "Brown",
+      "styled_image_url": "https://images.pexels.com/photos/1358912/pexels-photo-1358912.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Sheets",
+      "color": "Purple",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Sheets",
+      "color": "Pink",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Sheets",
+      "color": "Silver",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bathroom Accessories",
+      "color": "N/A",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Mats",
+      "color": "MULTI",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bathroom Storage",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Towels",
+      "color": "MULTI",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bathroom Storage",
+      "color": "Blue",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Sheets",
+      "color": "Beige",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Towels",
+      "color": "Purple",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bathroom Cabinets and Shelves",
+      "color": "Clear",
+      "styled_image_url": "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bathroom Cabinets and Shelves",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Sheets",
+      "color": "Brown",
+      "styled_image_url": "https://images.pexels.com/photos/1358912/pexels-photo-1358912.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Mats",
+      "color": "Beige",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bathroom",
+      "category": "Bath Towels",
+      "color": "Beige",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Mattress Protectors",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 26
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Quilt Cover Sets",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/6969837/pexels-photo-6969837.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 25
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Sheet Sets",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/6969837/pexels-photo-6969837.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 20
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Quilt Cover Sets",
+      "color": "Blue",
+      "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 19
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Quilt Cover Sets",
+      "color": "Multi",
+      "styled_image_url": "https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 18
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Pillows",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 17
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Quilt Cover Sets",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 15
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Sheet Sets",
+      "color": "Blue",
+      "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 14
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Sheet Sets",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 13
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Quilt Cover Sets",
+      "color": "Brown",
+      "styled_image_url": "https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 11
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bed Mattresses",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 11
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bedside Tables",
+      "color": "N/A",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 11
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Sheet Sets",
+      "color": "Beige",
+      "styled_image_url": "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 9
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Coverlets & Comforters",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/6969837/pexels-photo-6969837.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 8
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Sheet Sets",
+      "color": "Pink",
+      "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 8
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bedside Table Lamps",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 7
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Sheet Sets",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 7
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Sheet Sets",
+      "color": "Brown",
+      "styled_image_url": "https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 6
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Quilt Cover Sets",
+      "color": "Red",
+      "styled_image_url": "https://images.pexels.com/photos/1743231/pexels-photo-1743231.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 6
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Quilt Cover Sets",
+      "color": "Grey",
+      "styled_image_url": "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 6
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bedroom Furniture",
+      "color": "N/A",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 5
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Blankets & Throws",
+      "color": "Grey",
+      "styled_image_url": "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 5
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Sheet Sets",
+      "color": "Grey",
+      "styled_image_url": "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 5
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bedside Tables",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 5
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bed Frames & Bedheads",
+      "color": "N/A",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 5
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bedside Table Lamps",
+      "color": "Gold",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 4
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Quilt Cover Sets",
+      "color": "Purple",
+      "styled_image_url": "https://images.pexels.com/photos/2082090/pexels-photo-2082090.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 4
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Sheet Sets",
+      "color": "Purple",
+      "styled_image_url": "https://images.pexels.com/photos/2082090/pexels-photo-2082090.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 4
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bedside Table Lamps",
+      "color": "Blue",
+      "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bed Frames & Bedheads",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Sheet Sets",
+      "color": "Silver",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bedside Table Lamps",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Quilts",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bedroom Furniture",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Quilt Cover Sets",
+      "color": "Yellow",
+      "styled_image_url": "https://images.pexels.com/photos/1034584/pexels-photo-1034584.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bedroom Storage",
+      "color": "Clear",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Blankets & Throws",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/6969837/pexels-photo-6969837.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bedside Tables",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/6969837/pexels-photo-6969837.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bedside Tables",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bed Mattresses",
+      "color": "N/A",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bedside Table Lamps",
+      "color": "Beige",
+      "styled_image_url": "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bedside Table Lamps",
+      "color": "Brown",
+      "styled_image_url": "https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bedside Table Lamps",
+      "color": "Silver",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bedroom Furniture",
+      "color": "Brown",
+      "styled_image_url": "https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bedroom Storage",
+      "color": "Beige",
+      "styled_image_url": "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Blankets & Throws",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bedroom Furniture",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Quilt Cover Sets",
+      "color": "Print",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bedside Table Lamps",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/6969837/pexels-photo-6969837.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bedside Tables",
+      "color": "Beige",
+      "styled_image_url": "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Bed Frames & Bedheads",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/6969837/pexels-photo-6969837.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Bedroom",
+      "category": "Blankets & Throws",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Decor",
+      "category": "Artificial Plants & Flowers",
+      "color": "Multi",
+      "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 39
+    },
+    {
+      "room_type": "Decor",
+      "category": "Home Decor Accessories",
+      "color": "Multi",
+      "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 24
+    },
+    {
+      "room_type": "Decor",
+      "category": "Vases",
+      "color": "Multi",
+      "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 11
+    },
+    {
+      "room_type": "Decor",
+      "category": "Clocks",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Decor",
+      "category": "Artificial Plants & Flowers",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/1648771/pexels-photo-1 648771.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Decor",
+      "category": "Home Decor Accessories",
+      "color": "N/A",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Decor",
+      "category": "Home Decor Accessories",
+      "color": "Silver",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Decor",
+      "category": "Home Decor Accessories",
+      "color": "Orange",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Decor",
+      "category": "Clocks",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/1648771/pexels-photo-1 648771.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Decor",
+      "category": "Artificial Plants & Flowers",
+      "color": "Beige",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Dining Room",
+      "category": "Glassware",
+      "color": "Clear",
+      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 10
+    },
+    {
+      "room_type": "Dining Room",
+      "category": "Placemats & Coasters",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 5
+    },
+    {
+      "room_type": "Dining Room",
+      "category": "Placemats & Coasters",
+      "color": "Brown",
+      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 4
+    },
+    {
+      "room_type": "Dining Room",
+      "category": "Dining Chairs",
+      "color": "N/A",
+      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 4
+    },
+    {
+      "room_type": "Dining Room",
+      "category": "Placemats & Coasters",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 4
+    },
+    {
+      "room_type": "Dining Room",
+      "category": "Placemats & Coasters",
+      "color": "Blue",
+      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Dining Room",
+      "category": "Placemats & Coasters",
+      "color": "Beige",
+      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Dining Room",
+      "category": "Dining Tables",
+      "color": "N/A",
+      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Dining Room",
+      "category": "Dining Chairs",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Dining Room",
+      "category": "Placemats & Coasters",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Dining Room",
+      "category": "Placemats & Coasters",
+      "color": "Multi",
+      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Dining Room",
+      "category": "Dining Chairs",
+      "color": "Grey",
+      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Dining Room",
+      "category": "Dining Chairs",
+      "color": "Brown",
+      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Dining Room",
+      "category": "Glassware",
+      "color": "Pink",
+      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Kids Room",
+      "category": "Kids Storage",
+      "color": "N/A",
+      "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Kids Room",
+      "category": "Kids Storage",
+      "color": "Brown",
+      "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Food Storage Containers",
+      "color": "Clear",
+      "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 58
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Kitchen Gadgets",
+      "color": "Multi",
+      "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 32
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Pantry Storage",
+      "color": "Clear",
+      "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 26
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Pantry Storage",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 26
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Pantry Storage",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 16
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Kitchen Gadgets",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 12
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Kitchen Gadgets",
+      "color": "Silver",
+      "styled_image_url": "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 10
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Pantry Storage",
+      "color": "Brown",
+      "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 9
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Toasters",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 5
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Air Fryers",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 5
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Food Storage Containers",
+      "color": "N/A",
+      "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 4
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Toasters",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 4
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Pantry Storage",
+      "color": "Silver",
+      "styled_image_url": "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 4
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Air Fryers",
+      "color": "Silver",
+      "styled_image_url": "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 4
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Food Storage Containers",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 4
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Food Storage Containers",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 4
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Toasters",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Pantry Storage",
+      "color": "Grey",
+      "styled_image_url": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Food Storage Containers",
+      "color": "Blue",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Toasters",
+      "color": "Silver",
+      "styled_image_url": "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Kitchen Gadgets",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Food Storage Containers",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Kitchen Gadgets",
+      "color": "Brown",
+      "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Toasters",
+      "color": "Blue",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Kitchen Gadgets",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Kitchen Gadgets",
+      "color": "Yellow",
+      "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Kitchen Gadgets",
+      "color": "Clear",
+      "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Kitchen Gadgets",
+      "color": "Grey",
+      "styled_image_url": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Kitchen Gadgets",
+      "color": "Blue",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Kitchen Gadgets",
+      "color": "MULTI",
+      "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Toasters",
+      "color": "Grey",
+      "styled_image_url": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Pantry Storage",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Food Storage Containers",
+      "color": "MULTI",
+      "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Kitchen Gadgets",
+      "color": "Print",
+      "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Kitchen Gadgets",
+      "color": "Red",
+      "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Pantry Storage",
+      "color": "Multi",
+      "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Kitchen Gadgets",
+      "color": "Pink",
+      "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Kitchen Gadgets",
+      "color": "N/A",
+      "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Pantry Storage",
+      "color": "Print",
+      "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Kitchen",
+      "category": "Air Fryers",
+      "color": "Grey",
+      "styled_image_url": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Rugs",
+      "color": "Multi",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 9
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Rugs",
+      "color": "Beige",
+      "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 7
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Rugs",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 7
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Rugs",
+      "color": "Grey",
+      "styled_image_url": "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 6
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Rugs",
+      "color": "N/A",
+      "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 6
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Coffee Tables",
+      "color": "N/A",
+      "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 6
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Entertainment Units",
+      "color": "N/A",
+      "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 5
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Rugs",
+      "color": "Print",
+      "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 4
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Entertainment Units",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Coffee Tables",
+      "color": "Brown",
+      "styled_image_url": "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Coffee Tables",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Rugs",
+      "color": "Brown",
+      "styled_image_url": "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Entertainment Units",
+      "color": "Brown",
+      "styled_image_url": "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Floor Lamps",
+      "color": "Gold",
+      "styled_image_url": "https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Floor Lamps",
+      "color": "Multi",
+      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Rugs",
+      "color": "MULTI",
+      "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Floor Lamps",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Living Room Furniture",
+      "color": "N/A",
+      "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Entertainment Units",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Floor Lamps",
+      "color": "Brown",
+      "styled_image_url": "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Floor Lamps",
+      "color": "Beige",
+      "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Rugs",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Rugs",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Living Room Furniture",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Living Room Furniture",
+      "color": "Brown",
+      "styled_image_url": "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Living Room",
+      "category": "Floor Lamps",
+      "color": "Green",
+      "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Outdoor",
+      "category": "Pots & Planters",
+      "color": "Multi",
+      "styled_image_url": "https://images.pexels.com/photos/1334605/pexels-photo-1334605.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 36
+    },
+    {
+      "room_type": "Outdoor",
+      "category": "Pots & Planters",
+      "color": "White",
+      "styled_image_url": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 8
+    },
+    {
+      "room_type": "Outdoor",
+      "category": "Pots & Planters",
+      "color": "Black",
+      "styled_image_url": "https://images.pexels.com/photos/1334605/pexels-photo-1334605.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 3
+    },
+    {
+      "room_type": "Outdoor",
+      "category": "Outdoor Dining",
+      "color": "Pattern",
+      "styled_image_url": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Outdoor",
+      "category": "Pots & Planters",
+      "color": "Grey",
+      "styled_image_url": "https://images.pexels.com/photos/1334605/pexels-photo-1334605.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Outdoor",
+      "category": "Outdoor Dining",
+      "color": "Multi",
+      "styled_image_url": "https://images.pexels.com/photos/1334605/pexels-photo-1334605.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 2
+    },
+    {
+      "room_type": "Outdoor",
+      "category": "Pots & Planters",
+      "color": "Brown",
+      "styled_image_url": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    },
+    {
+      "room_type": "Outdoor",
+      "category": "Outdoor Dining",
+      "color": "Clear",
+      "styled_image_url": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 1
+    }
+  ]
+}

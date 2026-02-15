@@ -17,15 +17,15 @@ export const SelectedProducts = ({ products, onRemove, onClear }: SelectedProduc
   }
 
   return (
-    <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-4">
+    <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
       <div className="flex justify-between items-center mb-3">
-        <h3 className="text-lg font-semibold text-white flex items-center gap-2">
-          <Sparkles size={20} className="text-purple-400" />
+        <h3 className="text-lg font-semibold text-gray-900 flex items-center gap-2">
+          <Sparkles size={20} className="text-purple-600" />
           Selected Products ({products.length}/4)
         </h3>
         <button
           onClick={onClear}
-          className="text-sm text-gray-400 hover:text-white transition-colors"
+          className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
         >
           Clear All
         </button>
@@ -40,7 +40,7 @@ export const SelectedProducts = ({ products, onRemove, onClear }: SelectedProduc
           return (
             <div
               key={product.ITEM_ID}
-              className="relative group bg-gray-700 rounded-lg overflow-hidden"
+              className="relative group bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200"
             >
               <div className="w-20 h-20">
                 <img
@@ -54,12 +54,12 @@ export const SelectedProducts = ({ products, onRemove, onClear }: SelectedProduc
               </div>
               <button
                 onClick={() => onRemove(product.ITEM_ID)}
-                className="absolute -top-1 -right-1 bg-red-500 hover:bg-red-600 rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity"
+                className="absolute -top-1 -right-1 bg-red-500 hover:bg-red-600 rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity shadow-md"
               >
                 <X size={12} className="text-white" />
               </button>
-              <div className="absolute bottom-0 left-0 right-0 bg-black/70 px-1 py-0.5">
-                <p className="text-[10px] text-white truncate">{product.ITEM_NAME}</p>
+              <div className="absolute bottom-0 left-0 right-0 bg-white/90 backdrop-blur-sm px-1 py-0.5">
+                <p className="text-[10px] text-gray-900 truncate">{product.ITEM_NAME}</p>
               </div>
             </div>
           );

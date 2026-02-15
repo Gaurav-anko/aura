@@ -21,23 +21,23 @@ export const ProductCard = ({ product, isSelected, onToggle, disabled }: Product
     <div
       onClick={() => !disabled && onToggle(product.ITEM_ID)}
       className={`
-        relative rounded-lg overflow-hidden border-2 cursor-pointer transition-all duration-200
+        relative rounded-lg overflow-hidden border-2 cursor-pointer transition-all duration-200 bg-white shadow-sm
         ${isSelected 
-          ? 'border-purple-500 ring-2 ring-purple-500/50' 
-          : 'border-gray-700 hover:border-gray-500'
+          ? 'border-purple-500 ring-2 ring-purple-500/50 shadow-md' 
+          : 'border-gray-200 hover:border-gray-300 hover:shadow-md'
         }
         ${disabled && !isSelected ? 'opacity-50 cursor-not-allowed' : ''}
       `}
     >
       {/* Selection indicator */}
       {isSelected && (
-        <div className="absolute top-2 right-2 z-10 bg-purple-500 rounded-full p-1">
+        <div className="absolute top-2 right-2 z-10 bg-purple-600 rounded-full p-1 shadow-md">
           <Check size={16} className="text-white" />
         </div>
       )}
 
       {/* Product image */}
-      <div className="aspect-square bg-gray-800 overflow-hidden">
+      <div className="aspect-square bg-gray-100 overflow-hidden">
         <img
           src={imageUrl}
           alt={product.ITEM_NAME}
@@ -49,16 +49,16 @@ export const ProductCard = ({ product, isSelected, onToggle, disabled }: Product
       </div>
 
       {/* Product info */}
-      <div className="p-3 bg-gray-800">
-        <h3 className="text-sm font-medium text-white truncate" title={product.ITEM_NAME}>
+      <div className="p-3 bg-white">
+        <h3 className="text-sm font-medium text-gray-900 truncate" title={product.ITEM_NAME}>
           {product.ITEM_NAME}
         </h3>
         <div className="flex justify-between items-center mt-1">
-          <span className="text-xs text-gray-400">{product.PRIMARY_CATEGORY}</span>
-          <span className="text-sm font-semibold text-purple-400">${product.PRICE}</span>
+          <span className="text-xs text-gray-600">{product.PRIMARY_CATEGORY}</span>
+          <span className="text-sm font-semibold text-purple-600">${product.PRICE}</span>
         </div>
         <div className="flex gap-1 mt-2">
-          <span className="text-xs px-2 py-0.5 bg-gray-700 rounded-full text-gray-300">
+          <span className="text-xs px-2 py-0.5 bg-gray-100 rounded-full text-gray-700">
             {product.COLOR}
           </span>
         </div>
