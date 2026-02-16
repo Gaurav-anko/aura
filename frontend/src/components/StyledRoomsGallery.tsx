@@ -19,6 +19,7 @@ export const StyledRoomsGallery: React.FC = () => {
   const [selectedRoom, setSelectedRoom] = useState<string>('All');
   const [selectedColor, setSelectedColor] = useState<string>('All');
   const [selectedRoomForShare, setSelectedRoomForShare] = useState<StyledRoom | null>(null);
+  const [customMessage, setCustomMessage] = useState<string>('');
 
   useEffect(() => {
     // Fetch the styled room images data
@@ -75,15 +76,23 @@ export const StyledRoomsGallery: React.FC = () => {
   // Generate share content
   const generateShareContent = (room: StyledRoom) => {
     const title = `Check out this ${room.color} ${room.category} for your ${room.room_type}!`;
-    const description = `Get inspired by this stunning ${room.room_type.toLowerCase()} design featuring ${room.products_count} ${room.category.toLowerCase()} products. ${room.color} color theme. #HomeDecor #InteriorDesign #${room.room_type.replace(/\s+/g, '')}Ideas`;
+    const defaultDescription = `Get inspired by this stunning ${room.room_type.toLowerCase()} design featuring ${room.products_count} ${room.category.toLowerCase()} products. ${room.color} color theme. #HomeDecor #InteriorDesign #${room.room_type.replace(/\s+/g, '')}Ideas`;
     const url = window.location.href;
     const imageUrl = room.styled_image_url;
     
-    return { title, description, url, imageUrl };
+    return { title, description: defaultDescription, url, imageUrl };
+  };
+
+  // Open share modal and initialize custom message
+  const openShareModal = (room: StyledRoom) => {
+    const { description } = generateShareContent(room);
+    setCustomMessage(description);
+    setSelectedRoomForShare(room);
   };
 
   const shareToSocialMedia = (platform: string, room: StyledRoom) => {
-    const { title, description, url, imageUrl } = generateShareContent(room);
+    const { title, url, imageUrl } = generateShareContent(room);
+    const description = customMessage || generateShareContent(room).description;
     const encodedTitle = encodeURIComponent(title);
     const encodedDescription = encodeURIComponent(description);
     const encodedUrl = encodeURIComponent(url);
@@ -167,6 +176,53 @@ export const StyledRoomsGallery: React.FC = () => {
               <p className="text-gray-600 mb-6">
                 Share this beautiful {selectedRoomForShare.room_type.toLowerCase()} design inspiration with your friends and followers!
               </p>
+
+              {/* Custom Message Area */}
+              <div className="mb-6">
+                <div className="flex items-center justify-between mb-2">
+                  <label className="text-sm font-semibold text-gray-900">✍️ Customize Your Message</label>
+                  <span className="text-xs text-gray-500">{customMessage.length} characters</span>
+                </div>
+                <textarea
+                  value={customMessage}
+                  onChange={(e) => setCustomMessage(e.target.value)}
+                  placeholder="Add your description, hashtags, and comments..."
+                  rows={6}
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition-all resize-none text-sm text-gray-700 placeholder-gray-400"
+                />
+                <div className="flex flex-wrap gap-2 mt-2">
+                  <button
+                    onClick={() => setCustomMessage(customMessage + ' #HomeDecor')}
+                    className="text-xs px-3 py-1 bg-purple-50 text-purple-600 rounded-full hover:bg-purple-100 transition-colors"
+                  >
+                    #HomeDecor
+                  </button>
+                  <button
+                    onClick={() => setCustomMessage(customMessage + ' #InteriorDesign')}
+                    className="text-xs px-3 py-1 bg-purple-50 text-purple-600 rounded-full hover:bg-purple-100 transition-colors"
+                  >
+                    #InteriorDesign
+                  </button>
+                  <button
+                    onClick={() => setCustomMessage(customMessage + ' #HomeInspiration')}
+                    className="text-xs px-3 py-1 bg-purple-50 text-purple-600 rounded-full hover:bg-purple-100 transition-colors"
+                  >
+                    #HomeInspiration
+                  </button>
+                  <button
+                    onClick={() => setCustomMessage(customMessage + ` #${selectedRoomForShare.room_type.replace(/\s+/g, '')}`)}
+                    className="text-xs px-3 py-1 bg-purple-50 text-purple-600 rounded-full hover:bg-purple-100 transition-colors"
+                  >
+                    #{selectedRoomForShare.room_type.replace(/\s+/g, '')}
+                  </button>
+                  <button
+                    onClick={() => setCustomMessage(customMessage + ` #${selectedRoomForShare.color}`)}
+                    className="text-xs px-3 py-1 bg-purple-50 text-purple-600 rounded-full hover:bg-purple-100 transition-colors"
+                  >
+                    #{selectedRoomForShare.color}
+                  </button>
+                </div>
+              </div>
 
               {/* Social Media Sharing Buttons */}
               <div className="border-t pt-6">
@@ -326,7 +382,7 @@ export const StyledRoomsGallery: React.FC = () => {
             <div
               key={`${room.room_type}-${room.category}-${room.color}-${index}`}
               className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer"
-              onClick={() => setSelectedRoomForShare(room)}
+              onClick={() => openShareModal(room)}
             >
               {/* Image */}
               <div className="relative h-64 bg-gray-200 overflow-hidden group">
