@@ -15,7 +15,7 @@ import {
 } from './components';
 import { StyledRoomsGallery } from './components/StyledRoomsGallery';
 import { useProducts, useGenerateStyle, useRegenerate } from './hooks';
-import type { Product, StylingPlan } from './types';
+import type { StylingPlan } from './types';
 
 type TabType = 'styler' | 'gallery';
 
@@ -31,7 +31,6 @@ function App() {
 
   // Selection state
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
-  const [selectedProductsMap, setSelectedProductsMap] = useState<Map<string, Product>>(new Map());
 
   // Styling state
   const [mood, setMood] = useState('cozy');
@@ -60,14 +59,14 @@ function App() {
 
   // Get selected products (from stored map, not from filtered results)
   const selectedProducts = useMemo(() => {
-    return Array.from(selectedProductsMap.values());
-  }, [selectedProductsMap]);
-console.log('productsData : ', productsData)
+    if (!productsData?.products) return [];
+    return productsData.products.filter((p) => selectedIds.has(p.variation_id));
+  }, [productsData?.products, selectedIds]);
 
   console.log('App rendered with selectedIds:', Array.from(selectedIds), 'selectedProducts:', selectedProducts);
   // Toggle product selection
   const handleToggleProduct = (productId: string) => {
-    const product = productsData?.products.find(p => p.ITEM_ID === productId);
+    const product = productsData?.products.find(p => p.variation_id === productId);
     if (!product) return;
 
     setSelectedIds((prev) => {
@@ -79,22 +78,11 @@ console.log('productsData : ', productsData)
       }
       return next;
     });
-
-    setSelectedProductsMap((prev) => {
-      const next = new Map(prev);
-      if (next.has(productId)) {
-        next.delete(productId);
-      } else if (next.size < 4) {
-        next.set(productId, product);
-      }
-      return next;
-    });
   };
 
   // Clear selection
   const handleClearSelection = () => {
     setSelectedIds(new Set());
-    setSelectedProductsMap(new Map());
   };
 
   // Clear filters

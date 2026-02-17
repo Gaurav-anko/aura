@@ -165,7 +165,7 @@ with open(data_dir / "products.json", "r") as f:
 # Group by category-color-roomtype
 combinations = defaultdict(int)
 for product in products:
-    category = product.get("PRIMARY_CATEGORY")
+    category = product.get("CLASS_DESCRIPTION")
     color = product.get("COLOR")
     
     if category and color and category in CATEGORY_TO_ROOM:

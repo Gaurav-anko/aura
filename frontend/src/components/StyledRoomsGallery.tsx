@@ -73,7 +73,7 @@ export const StyledRoomsGallery: React.FC = () => {
       setProductsCache(prev => {
         const newCache = new Map(prev);
         products.forEach(product => {
-          newCache.set(product.VARIATION_ID, product);
+          newCache.set(product.variation_id, product);
         });
         return newCache;
       });
@@ -311,21 +311,16 @@ export const StyledRoomsGallery: React.FC = () => {
                   ) : (
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                       {getProductDetails(selectedRoomForShare.products_included).map((product) => (
-                        <div key={product.VARIATION_ID} className="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition-shadow border border-gray-200">
+                        <div key={product.variation_id} className="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition-shadow border border-gray-200">
                           <div className="relative h-40 bg-white">
                             <img
-                              src={Array.isArray(product.IMAGE_URL) ? product.IMAGE_URL[0] : product.IMAGE_URL}
+                              src={product.image_url}
                               alt={product.ITEM_NAME}
                               className="w-full h-full object-contain p-2"
                               onError={(e) => {
                                 (e.target as HTMLImageElement).src = 'https://via.placeholder.com/200x200/f3f4f6/9ca3af?text=No+Image';
                               }}
                             />
-                            {product.CLEARANCE && (
-                              <span className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
-                                SALE
-                              </span>
-                            )}
                           </div>
                           <div className="p-3">
                             <h4 className="text-xs font-semibold text-gray-900 mb-1 line-clamp-2 h-8">
@@ -341,9 +336,9 @@ export const StyledRoomsGallery: React.FC = () => {
                                 </span>
                               )}
                             </div>
-                            {product.PRIMARY_CATEGORY && (
+                            {product.CLASS_DESCRIPTION && (
                               <p className="text-xs text-gray-600 truncate">
-                                {product.PRIMARY_CATEGORY}
+                                {product.CLASS_DESCRIPTION}
                               </p>
                             )}
                           </div>

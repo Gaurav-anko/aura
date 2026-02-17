@@ -52,11 +52,11 @@ export const ProductGrid = ({
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
       {products.map((product) => (
         <ProductCard
-          key={product.ITEM_ID}
+          key={product.variation_id}
           product={product}
-          isSelected={selectedIds.has(product.ITEM_ID)}
+          isSelected={selectedIds.has(product.variation_id)}
           onToggle={onToggleProduct}
-          disabled={isMaxSelected && !selectedIds.has(product.ITEM_ID)}
+          disabled={isMaxSelected && !selectedIds.has(product.variation_id)}
         />
       ))}
     </div>

@@ -1,10 +1,48 @@
 """
 Styling Agent
 Uses Google ADK to create styling plans for product compositions.
+Updated for new schema with dimensions field and image_url/alt_image_urls.
 """
 
 from typing import Optional
 from google.adk.agents import Agent
+
+
+def get_placement_suggestion(class_desc: str, item_name: str) -> str:
+    """Suggest placement for a product based on its category."""
+    class_lower = class_desc.lower() if class_desc else ""
+    name_lower = item_name.lower() if item_name else ""
+    
+    if "rug" in class_lower or "rug" in name_lower:
+        return "on the floor as the base layer of the room"
+    elif "lamp" in class_lower or "lighting" in class_lower:
+        return "on a side table or floor, providing ambient lighting"
+    elif "sofa" in class_lower or "couch" in name_lower:
+        return "as the central seating piece"
+    elif "chair" in class_lower:
+        return "as accent seating"
+    elif "table" in class_lower:
+        return "as a functional surface piece"
+    elif "plant" in class_lower or "plant" in name_lower:
+        return "as a natural accent, on a shelf or floor"
+    elif "storage" in class_lower or "basket" in name_lower or "container" in class_lower:
+        return "as a stylish storage solution"
+    elif "bench" in class_lower or "bench" in name_lower:
+        return "at the foot of the bed or against a wall"
+    elif "cushion" in class_lower or "pillow" in name_lower:
+        return "on the sofa or chair for added comfort"
+    elif "throw" in class_lower or "blanket" in name_lower:
+        return "draped over seating for texture and warmth"
+    elif "vase" in class_lower or "vase" in name_lower:
+        return "on a table or shelf as a decorative accent"
+    elif "candle" in class_lower:
+        return "grouped on a tray or coffee table"
+    elif "mirror" in class_lower:
+        return "on a wall to add depth and reflect light"
+    elif "towel" in class_lower:
+        return "folded neatly in a bathroom setting"
+    else:
+        return "positioned naturally within the room setting"
 
 
 def create_styling_plan(
@@ -18,6 +56,14 @@ def create_styling_plan(
     """
     Create a detailed styling plan for generating a scene with the selected products.
     
+    Uses new schema fields:
+    - ITEM_NAME: Product name
+    - COLOR, SECONDARYCOLOUR: Product colors
+    - CLASS_DESCRIPTION: Product category
+    - dimensions: Product dimensions string (e.g., "235cm (L) x 160cm (W)")
+    - image_url: Primary product image
+    - alt_image_urls: Alternate product images
+    
     Args:
         products: List of product dictionaries with ITEM_NAME, DETAILED_DESCRIPTION, COLOR
         mood: Desired mood (cozy, elegant, minimalist, vibrant, relaxing)
@@ -29,34 +75,71 @@ def create_styling_plan(
     Returns:
         dict with styling plan including scene description and composition prompt
     """
-    # Extract product details for the prompt
+    # Build detailed product descriptions using new schema
     product_descriptions = []
+    product_details = []
+    
     for i, product in enumerate(products, 1):
         name = product.get("ITEM_NAME", "Unknown product")
-        desc = product.get("DETAILED_DESCRIPTION", "")
         color = product.get("COLOR", "")
-        product_descriptions.append(f"{i}. {name} ({color}): {desc}")
+        secondary_color = product.get("SECONDARYCOLOUR", "")
+        dimensions = product.get("dimensions", "")
+        class_desc = product.get("CLASS_DESCRIPTION", "")
+        image_url = product.get("image_url", "")
+        alt_image_urls = product.get("alt_image_urls", [])
+        
+        # Build color description
+        color_desc = color
+        if secondary_color and secondary_color != color:
+            color_desc = f"{color}/{secondary_color}"
+        
+        # Get placement suggestion
+        placement = get_placement_suggestion(class_desc, name)
+        
+        # Build product detail entry
+        product_detail = {
+            "index": i,
+            "name": name,
+            "category": class_desc,
+            "color": color_desc,
+            "dimensions": dimensions,
+            "placement": placement,
+            "image_url": image_url,
+            "alt_image_count": len(alt_image_urls),
+        }
+        product_details.append(product_detail)
+        
+        # Build text description for prompt
+        product_descriptions.append(
+            f"PRODUCT {i}: {name}\n"
+            f"  - Category: {class_desc}\n"
+            f"  - Colors: {color_desc}\n"
+            f"  - Dimensions: {dimensions if dimensions else 'Standard size'}\n"
+            f"  - Placement: {placement}\n"
+            f"  - MUST use exact appearance from reference image #{i}"
+        )
     
-    products_text = "\n".join(product_descriptions)
+    products_text = "\n\n".join(product_descriptions)
     
-    # Build the scene composition prompt
-    scene_prompt = f"""Create a photorealistic interior design photograph of a {mood} {style} {room_type} featuring ALL of the following products naturally arranged together:
+    # Build the scene composition prompt with emphasis on using EXACT products
+    scene_prompt = f"""Create a photorealistic interior design photograph of a {mood} {style} {room_type}.
 
+=== PRODUCTS TO FEATURE (USE EXACT APPEARANCE FROM REFERENCE IMAGES) ===
 {products_text}
 
-Style guidelines:
+=== STYLING DIRECTION ===
 - Mood: {mood} atmosphere with appropriate lighting
-- Design style: {style} interior design aesthetic
-- Color theme: {color_theme} color palette
-- Room: Well-designed {room_type} setting
+- Design Style: {style} interior design aesthetic  
+- Color Theme: {color_theme} color palette that complements the products
+- Room Type: Well-designed {room_type} setting
+- Product Count: {len(products)} products MUST all be visible
 
-Technical requirements:
-- Professional interior photography quality
-- Natural, realistic lighting (soft daylight or warm ambient)
-- Products should be clearly visible and properly scaled
-- High-end lifestyle photography suitable for e-commerce
-- 4K quality, sharp focus, proper composition
-- Products arranged in a cohesive, styled scene"""
+=== COMPOSITION GUIDELINES ===
+1. Layer the products naturally - larger items as anchors, smaller items as accents
+2. Create visual balance using the rule of thirds
+3. Ensure proper scale relationships between products based on their dimensions
+4. Use natural sight lines to draw attention to each product
+5. Leave appropriate negative space for a clean, uncluttered look
 
     # Append custom prompt if provided
     if custom_prompt and custom_prompt.strip():
@@ -75,7 +158,8 @@ Technical requirements:
             "room_type": room_type,
         },
         "product_count": len(products),
-        "products_included": [p.get("ITEM_NAME") for p in products],
+        "products_included": product_names,
+        "product_details": product_details,
     }
 
 
@@ -88,7 +172,7 @@ def refine_styling_plan(
     
     Args:
         previous_plan: The previous styling plan dict
-        feedback: User's feedback for refinement (e.g., "make it brighter", "add more plants")
+        feedback: User's feedback for refinement
         
     Returns:
         dict with updated styling plan incorporating feedback
