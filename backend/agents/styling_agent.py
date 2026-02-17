@@ -167,16 +167,7 @@ def refine_styling_plan(
     previous_plan: dict,
     feedback: str,
 ) -> dict:
-    """
-    Refine a styling plan based on user feedback.
-    
-    Args:
-        previous_plan: The previous styling plan dict
-        feedback: User's feedback for refinement
-        
-    Returns:
-        dict with updated styling plan incorporating feedback
-    """
+    """Refine a styling plan based on user feedback."""
     # Get the original prompt and append feedback modifications
     original_prompt = previous_plan.get("scene_prompt", "")
     
