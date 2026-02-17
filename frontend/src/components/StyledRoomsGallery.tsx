@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import type { Product } from '../types/product';
 
 interface StyledRoom {
   id: string;
@@ -7,6 +8,7 @@ interface StyledRoom {
   color: string;
   styled_image_url: string;
   products_count: number;
+  products_included: Array<string>;
 }
 
 interface StyledRoomsData {
@@ -21,6 +23,8 @@ export const StyledRoomsGallery: React.FC = () => {
   const [selectedColor, setSelectedColor] = useState<string>('All');
   const [selectedRoomForShare, setSelectedRoomForShare] = useState<StyledRoom | null>(null);
   const [customMessage, setCustomMessage] = useState<string>('');
+  const [productsCache, setProductsCache] = useState<Map<string, Product>>(new Map());
+  const [loadingProducts, setLoadingProducts] = useState(false);
 
   useEffect(() => {
     // Fetch the styled room images data
@@ -40,6 +44,45 @@ export const StyledRoomsGallery: React.FC = () => {
         setLoading(false);
       });
   }, []);
+
+  // Fetch products for a specific room when needed
+  const fetchProductsForRoom = async (variationIds: string[]) => {
+    if (!variationIds || variationIds.length === 0) return;
+
+    // Check if all products are already cached
+    const uncachedIds = variationIds.filter(id => !productsCache.has(id));
+    if (uncachedIds.length === 0) return;
+
+    setLoadingProducts(true);
+    try {
+      const response = await fetch('/api/products/by-ids', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(uncachedIds),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const products: Product[] = await response.json();
+      
+      // Update cache with new products
+      setProductsCache(prev => {
+        const newCache = new Map(prev);
+        products.forEach(product => {
+          newCache.set(product.VARIATION_ID, product);
+        });
+        return newCache;
+      });
+    } catch (error) {
+      console.error('Error loading products:', error);
+    } finally {
+      setLoadingProducts(false);
+    }
+  };
 
   if (loading) {
     return (
@@ -74,10 +117,18 @@ export const StyledRoomsGallery: React.FC = () => {
     return matchesRoom && matchesColor;
   });
 
+  // Get product details from cache
+  const getProductDetails = (variationIds: string[]): Product[] => {
+    if (!variationIds || variationIds.length === 0) return [];
+    return variationIds
+      .map(id => productsCache.get(id))
+      .filter((product): product is Product => product !== undefined);
+  };
+
   // Generate share content
   const generateShareContent = (room: StyledRoom) => {
     const title = `Check out this ${room.color} ${room.category} for your ${room.room_type}!`;
-    const defaultDescription = `Get inspired by this stunning ${room.room_type.toLowerCase()} design featuring ${room.products_count} ${room.category.toLowerCase()} products. ${room.color} color theme. #HomeDecor #InteriorDesign #${room.room_type.replace(/\s+/g, '')}Ideas`;
+    const defaultDescription = `Get inspired by this stunning ${room.room_type.toLowerCase()} design featuring ${room?.products_included?.length} ${room.category.toLowerCase()} products. ${room.color} color theme. #HomeDecor #InteriorDesign #${room.room_type.replace(/\s+/g, '')}Ideas`;
     const url = window.location.href;
     const imageUrl = room.styled_image_url;
     
@@ -85,10 +136,15 @@ export const StyledRoomsGallery: React.FC = () => {
   };
 
   // Open share modal and initialize custom message
-  const openShareModal = (room: StyledRoom) => {
+  const openShareModal = async (room: StyledRoom) => {
     const { description } = generateShareContent(room);
     setCustomMessage(description);
     setSelectedRoomForShare(room);
+    
+    // Fetch products for this room if not already cached
+    if (room.products_included && room.products_included.length > 0) {
+      await fetchProductsForRoom(room.products_included);
+    }
   };
 
   const shareToSocialMedia = (platform: string, room: StyledRoom) => {
@@ -141,7 +197,7 @@ export const StyledRoomsGallery: React.FC = () => {
       {/* Share Modal */}
       {selectedRoomForShare && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4" onClick={() => setSelectedRoomForShare(null)}>
-          <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl" onClick={(e) => e.stopPropagation()}>
+          <div className="bg-white rounded-2xl max-w-5xl w-full max-h-[95vh] overflow-y-auto shadow-2xl" onClick={(e) => e.stopPropagation()}>
             {/* Modal Header */}
             <div className="relative">
               <img 
@@ -170,7 +226,7 @@ export const StyledRoomsGallery: React.FC = () => {
                   {selectedRoomForShare.color}
                 </span>
                 <span className="inline-block bg-green-100 text-green-700 text-xs font-semibold px-3 py-1 rounded-full">
-                  {selectedRoomForShare.products_count} Products
+                  {selectedRoomForShare?.products_included?.length} Products
                 </span>
               </div>
 
@@ -224,6 +280,84 @@ export const StyledRoomsGallery: React.FC = () => {
                   </button>
                 </div>
               </div>
+
+              {/* Products Section */}
+              {selectedRoomForShare.products_included && selectedRoomForShare.products_included.length > 0 && (
+                <div className="border-t pt-6 mb-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="text-lg font-semibold text-gray-900">🛍️ Featured Products ({selectedRoomForShare.products_included.length})</h3>
+                    <button
+                      onClick={() => {
+                        const products = getProductDetails(selectedRoomForShare.products_included);
+                        if (products.length > 0) {
+                          // TODO: Implement add to cart functionality
+                          alert(`Adding ${products.length} products to cart!`);
+                        }
+                      }}
+                      disabled={loadingProducts}
+                      className="flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-lg transition-colors font-medium text-sm shadow-sm"
+                    >
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                      Add Products to Cart
+                    </button>
+                  </div>
+                  {loadingProducts ? (
+                    <div className="text-center py-8">
+                      <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-purple-600 mx-auto mb-2"></div>
+                      <p className="text-sm text-gray-500">Loading products...</p>
+                    </div>
+                  ) : (
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                      {getProductDetails(selectedRoomForShare.products_included).map((product) => (
+                        <div key={product.VARIATION_ID} className="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition-shadow border border-gray-200">
+                          <div className="relative h-40 bg-white">
+                            <img
+                              src={Array.isArray(product.IMAGE_URL) ? product.IMAGE_URL[0] : product.IMAGE_URL}
+                              alt={product.ITEM_NAME}
+                              className="w-full h-full object-contain p-2"
+                              onError={(e) => {
+                                (e.target as HTMLImageElement).src = 'https://via.placeholder.com/200x200/f3f4f6/9ca3af?text=No+Image';
+                              }}
+                            />
+                            {product.CLEARANCE && (
+                              <span className="absolute top-2 right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
+                                SALE
+                              </span>
+                            )}
+                          </div>
+                          <div className="p-3">
+                            <h4 className="text-xs font-semibold text-gray-900 mb-1 line-clamp-2 h-8">
+                              {product.ITEM_NAME}
+                            </h4>
+                            <div className="flex items-center justify-between mb-2">
+                              <span className="text-sm font-bold text-purple-600">
+                                ${product.PRICE.toFixed(2)}
+                              </span>
+                              {product.COLOR && (
+                                <span className="text-xs text-gray-500 bg-gray-200 px-2 py-0.5 rounded">
+                                  {product.COLOR}
+                                </span>
+                              )}
+                            </div>
+                            {product.PRIMARY_CATEGORY && (
+                              <p className="text-xs text-gray-600 truncate">
+                                {product.PRIMARY_CATEGORY}
+                              </p>
+                            )}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  {!loadingProducts && getProductDetails(selectedRoomForShare.products_included).length === 0 && (
+                    <div className="text-center py-8 text-gray-500">
+                      <p>Products not found in catalog</p>
+                    </div>
+                  )}
+                </div>
+              )}
 
               {/* Social Media Sharing Buttons */}
               <div className="border-t pt-6">
@@ -383,7 +517,7 @@ export const StyledRoomsGallery: React.FC = () => {
             <div
               key={room.id}
               className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer"
-              onClick={() => openShareModal(room)}
+              onClick={() => void openShareModal(room)}
             >
               {/* Image */}
               <div className="relative h-64 bg-gray-200 overflow-hidden group">
@@ -440,7 +574,7 @@ export const StyledRoomsGallery: React.FC = () => {
                   
                   <div className="flex items-center justify-between text-sm">
                     <span className="text-gray-600">Products Available:</span>
-                    <span className="font-semibold text-purple-600">{room.products_count}</span>
+                    <span className="font-semibold text-purple-600">{room?.products_included?.length}</span>
                   </div>
                 </div>
 
@@ -452,7 +586,7 @@ export const StyledRoomsGallery: React.FC = () => {
                   }}
                   className="mt-4 w-full bg-gray-100 hover:bg-purple-600 hover:text-white text-gray-700 py-2 px-4 rounded-lg transition-colors duration-200 font-medium text-sm"
                 >
-                  View {room.products_count} Products
+                  View {room?.products_included?.length} Products
                 </button>
               </div>
             </div>

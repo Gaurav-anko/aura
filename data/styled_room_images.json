@@ -9,15 +9,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 19,
       "products_included": [
-        {
-          "variation_id": "43227389"
-        },
-        {
-          "variation_id": "43329625"
-        },
-        {
-          "variation_id": "43024162"
-        }
+        "43227389",
+        "43329625",
+        "43024162"
       ]
     },
     {
@@ -28,15 +22,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 8,
       "products_included": [
-        {
-          "variation_id": "43543533"
-        },
-        {
-          "variation_id": "43639946"
-        },
-        {
-          "variation_id": "43482467"
-        }
+        "43543533",
+        "43639946",
+        "43482467"
       ]
     },
     {
@@ -47,15 +35,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 6,
       "products_included": [
-        {
-          "variation_id": "43639991"
-        },
-        {
-          "variation_id": "43639953"
-        },
-        {
-          "variation_id": "43482863"
-        }
+        "43639991",
+        "43639953",
+        "43482863"
       ]
     },
     {
@@ -66,15 +48,9 @@
       "styled_image_url": "https://images.pexels.com/photos/19916729/pexels-photo-19916729.jpeg?_gl=1*1h2ahq7*_ga*Mzg2MTQyODguMTc3MTIyMTA5Mg..*_ga_8JE65Q40S6*czE3NzEyMjEwOTIkbzEkZzEkdDE3NzEyMjExMDQkajQ4JGwwJGgw",
       "products_count": 6,
       "products_included": [
-        {
-          "variation_id": "42458142"
-        },
-        {
-          "variation_id": "43632572"
-        },
-        {
-          "variation_id": "43631315"
-        }
+        "42458142",
+        "43632572",
+        "43631315"
       ]
     },
     {
@@ -85,15 +61,9 @@
       "styled_image_url": "https://images.pexels.com/photos/6296924/pexels-photo-6296924.jpeg?_gl=1*pav27g*_ga*Mzg2MTQyODguMTc3MTIyMTA5Mg..*_ga_8JE65Q40S6*czE3NzEyMjEwOTIkbzEkZzEkdDE3NzEyMjM0NjEkajU5JGwwJGgw",
       "products_count": 5,
       "products_included": [
-        {
-          "variation_id": "43546527"
-        },
-        {
-          "variation_id": "43546503"
-        },
-        {
-          "variation_id": "43544035"
-        }
+        "43546527",
+        "43546503",
+        "43544035"
       ]
     },
     {
@@ -104,15 +74,9 @@
       "styled_image_url": "https://images.pexels.com/photos/12932367/pexels-photo-12932367.jpeg?_gl=1*18e51sg*_ga*Mzg2MTQyODguMTc3MTIyMTA5Mg..*_ga_8JE65Q40S6*czE3NzEyMjEwOTIkbzEkZzEkdDE3NzEyMjQwNzYkajYwJGwwJGgw",
       "products_count": 4,
       "products_included": [
-        {
-          "variation_id": "43493074"
-        },
-        {
-          "variation_id": "43652549"
-        },
-        {
-          "variation_id": "43676095"
-        }
+        "43493074",
+        "43652549",
+        "43676095"
       ]
     },
     {
@@ -123,15 +87,9 @@
       "styled_image_url": "https://images.pexels.com/photos/19916729/pexels-photo-19916729.jpeg?_gl=1*1h2ahq7*_ga*Mzg2MTQyODguMTc3MTIyMTA5Mg..*_ga_8JE65Q40S6*czE3NzEyMjEwOTIkbzEkZzEkdDE3NzEyMjExMDQkajQ4JGwwJGgw",
       "products_count": 4,
       "products_included": [
-        {
-          "variation_id": "43634842"
-        },
-        {
-          "variation_id": "43603893"
-        },
-        {
-          "variation_id": "43629862"
-        }
+        "43634842",
+        "43603893",
+        "43629862"
       ]
     },
     {
@@ -142,18 +100,10 @@
       "styled_image_url": "https://images.unsplash.com/photo-1714058973555-a255930b9a39?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIyfHxiYXRocm9vbSUyMHRvd2VsfGVufDB8fDB8fHww",
       "products_count": 4,
       "products_included": [
-        {
-          "variation_id": "43630271"
-        },
-        {
-          "variation_id": "43632367"
-        },
-        {
-          "variation_id": "43634842"
-        },
-        {
-          "variation_id": "43541546"
-        }
+        "43630271",
+        "43632367",
+        "43634842",
+        "43541546"
       ]
     },
     {
@@ -164,18 +114,10 @@
       "styled_image_url": "https://images.pexels.com/photos/6734409/pexels-photo-6734409.jpeg?_gl=1*1nty4s7*_ga*Mzg2MTQyODguMTc3MTIyMTA5Mg..*_ga_8JE65Q40S6*czE3NzEyMzIzODQkbzIkZzEkdDE3NzEyMzIzOTgkajQ2JGwwJGgw",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43257263"
-        },
-        {
-          "variation_id": "43639953"
-        },
-        {
-          "variation_id": "42077459"
-        },
-        {
-          "variation_id": "43632343"
-        }
+        "43257263",
+        "43639953",
+        "42077459",
+        "43632343"
       ]
     },
     {
@@ -186,18 +128,10 @@
       "styled_image_url": "https://5.imimg.com/data5/SELLER/Default/2022/4/BG/CM/LK/145811915/trolley-cart-rolling-utility-cart-for-bathroom-kitchen-laundry-room-bathroom-multifunction-500x500.jpg",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43630271"
-        },
-        {
-          "variation_id": "43631681"
-        },
-        {
-          "variation_id": "43274369"
-        },
-        {
-          "variation_id": "43632343"
-        }
+        "43630271",
+        "43631681",
+        "43274369",
+        "43632343"
       ]
     },
     {
@@ -208,18 +142,10 @@
       "styled_image_url": "https://images.pexels.com/photos/4239013/pexels-photo-4239013.jpeg?_gl=1*9rv183*_ga*Mzg2MTQyODguMTc3MTIyMTA5Mg..*_ga_8JE65Q40S6*czE3NzEyMjEwOTIkbzEkZzEkdDE3NzEyMjMwNTgkajU5JGwwJGgw",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43631674"
-        },
-        {
-          "variation_id": "43632343"
-        },
-        {
-          "variation_id": "43639991"
-        },
-        {
-          "variation_id": "43639953"
-        }
+        "43631674",
+        "43632343",
+        "43639991",
+        "43639953"
       ]
     },
     {
@@ -230,15 +156,9 @@
       "styled_image_url": "https://www.pexels.com/photo/rustic-bathroom-with-freestanding-tub-and-brick-wall-29887326/",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43652549"
-        },
-        {
-          "variation_id": "43074662"
-        },
-        {
-          "variation_id": "43678532"
-        }
+        "43652549",
+        "43074662",
+        "43678532"
       ]
     },
     {
@@ -249,18 +169,10 @@
       "styled_image_url": "https://images.pexels.com/photos/29614917/pexels-photo-29614917.jpeg?_gl=1*annhea*_ga*Mzg2MTQyODguMTc3MTIyMTA5Mg..*_ga_8JE65Q40S6*czE3NzEyMjEwOTIkbzEkZzEkdDE3NzEyMjI1MDQkajU5JGwwJGgw",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43632558"
-        },
-        {
-          "variation_id": "43555345"
-        },
-        {
-          "variation_id": "43489640"
-        },
-        {
-          "variation_id": "43554775"
-        }
+        "43632558",
+        "43555345",
+        "43489640",
+        "43554775"
       ]
     },
     {
@@ -271,15 +183,9 @@
       "styled_image_url": "https://www.lummi.ai/photo/inviting-bathroom-counter-design-evp4",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43556151"
-        },
-        {
-          "variation_id": "43635313"
-        },
-        {
-          "variation_id": "43631322"
-        }
+        "43556151",
+        "43635313",
+        "43631322"
       ]
     },
     {
@@ -290,15 +196,9 @@
       "styled_image_url": "https://images.pexels.com/photos/29614917/pexels-photo-29614917.jpeg?_gl=1*annhea*_ga*Mzg2MTQyODguMTc3MTIyMTA5Mg..*_ga_8JE65Q40S6*czE3NzEyMjEwOTIkbzEkZzEkdDE3NzEyMjI1MDQkajU5JGwwJGgw",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43639946"
-        },
-        {
-          "variation_id": "43639991"
-        },
-        {
-          "variation_id": "43631681"
-        }
+        "43639946",
+        "43639991",
+        "43631681"
       ]
     },
     {
@@ -309,18 +209,10 @@
       "styled_image_url": "https://www.lummi.ai/api/pro/image/307535ab-3614-4a69-b9ea-57e7b2cec7ee?asset=original&cb=gg9Qqu&auto=format&w=1500",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43662432"
-        },
-        {
-          "variation_id": "43631681"
-        },
-        {
-          "variation_id": "43153992"
-        },
-        {
-          "variation_id": "43544011"
-        }
+        "43662432",
+        "43631681",
+        "43153992",
+        "43544011"
       ]
     },
     {
@@ -331,18 +223,10 @@
       "styled_image_url": "https://www.lummi.ai/api/render/image/776427a9-24e6-4907-af9b-73cc26933f1c?token=eyJhbGciOiJIUzI1NiJ9.eyJpZHMiOlsiNzc2NDI3YTktMjRlNi00OTA3LWFmOWItNzNjYzI2OTMzZjFjIl0sInJlc29sdXRpb24iOiJtZWRpdW0iLCJyZW5kZXJTcGVjcyI6eyJlZmZlY3RzIjp7InJlZnJhbWUiOnt9fX0sInNob3VsZEF1dG9Eb3dubG9hZCI6ZmFsc2UsImp0aSI6IkxBaG11RnViTU53OXBHcEZJelhtLSIsImlhdCI6MTc3MTIzNDg3MiwiZXhwIjoxNzcxMjM0OTMyfQ.rvziRLtpRtrUSn4f7tZOz8siT-e56vHzll3etL4Vsw8",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43624447"
-        },
-        {
-          "variation_id": "43624591"
-        },
-        {
-          "variation_id": "43627448"
-        },
-        {
-          "variation_id": "43488360"
-        }
+        "43624447",
+        "43624591",
+        "43627448",
+        "43488360"
       ]
     },
     {
@@ -353,15 +237,9 @@
       "styled_image_url": "https://www.lummi.ai/photo/serene-bathroom-corner-7dfc3",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43631322"
-        },
-        {
-          "variation_id": "43629862"
-        },
-        {
-          "variation_id": "43635313"
-        }
+        "43631322",
+        "43629862",
+        "43635313"
       ]
     },
     {
@@ -372,15 +250,9 @@
       "styled_image_url": "https://www.lummi.ai/photo/modern-bathroom-with-freestanding-bathtub-j96k4",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43631674"
-        },
-        {
-          "variation_id": "43632343"
-        },
-        {
-          "variation_id": "43630271"
-        }
+        "43631674",
+        "43632343",
+        "43630271"
       ]
     },
     {
@@ -391,18 +263,10 @@
       "styled_image_url": "https://www.lummi.ai/photo/hygene-kleine-toilette-kleine-toilette-in-the-style-of-39db0d70-1e79-403b-8b01-4e2df4daa1cf-gicv7",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43632558"
-        },
-        {
-          "variation_id": "43490219"
-        },
-        {
-          "variation_id": "43554836"
-        },
-        {
-          "variation_id": "43632572"
-        }
+        "43632558",
+        "43490219",
+        "43554836",
+        "43632572"
       ]
     },
     {
@@ -413,18 +277,10 @@
       "styled_image_url": "https://www.lummi.ai/photo/minimalist-bathroom-setting-ux0ae",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43624478"
-        },
-        {
-          "variation_id": "43624447"
-        },
-        {
-          "variation_id": "43486922"
-        },
-        {
-          "variation_id": "43624591"
-        }
+        "43624478",
+        "43624447",
+        "43486922",
+        "43624591"
       ]
     },
     {
@@ -435,15 +291,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmbDLVDAgbhX4NyuJzzr55wSR5pJTLmVg8SnqqZBjwtTa6?auto=format&w=1500",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43624478"
-        },
-        {
-          "variation_id": "43624591"
-        },
-        {
-          "variation_id": "43624775"
-        }
+        "43624478",
+        "43624591",
+        "43624775"
       ]
     },
     {
@@ -454,15 +304,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmUMZEuHf6b9T6NGG17mMyCXP1Jvifffsx4Af4trBZgC5G?auto=format&w=1500",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43489282"
-        },
-        {
-          "variation_id": "43678518"
-        },
-        {
-          "variation_id": "43632367"
-        }
+        "43489282",
+        "43678518",
+        "43632367"
       ]
     },
     {
@@ -473,15 +317,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmQVxmpwP6yK5MjqsqQgtjLdAjmg1qrCXz2FEwn5NVonSY?auto=format&w=1500",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43624447"
-        },
-        {
-          "variation_id": "43624775"
-        },
-        {
-          "variation_id": "43624591"
-        }
+        "43624447",
+        "43624775",
+        "43624591"
       ]
     },
     {
@@ -492,15 +330,9 @@
       "styled_image_url": "https://www.lummi.ai/api/render/image/2081f444-ab7e-46ae-8b31-8df3795edcaa?token=eyJhbGciOiJIUzI1NiJ9.eyJpZHMiOlsiMjA4MWY0NDQtYWI3ZS00NmFlLThiMzEtOGRmMzc5NWVkY2FhIl0sInJlc29sdXRpb24iOiJtZWRpdW0iLCJyZW5kZXJTcGVjcyI6eyJlZmZlY3RzIjp7InJlZnJhbWUiOnt9fX0sInNob3VsZEF1dG9Eb3dubG9hZCI6ZmFsc2UsImp0aSI6IlRWSjFXUDNtSWtCT3VycWtCNjlsZCIsImlhdCI6MTc3MTIzNjkxNSwiZXhwIjoxNzcxMjM2OTc1fQ.R0fVqScKMGrGelG5XQArWwr-xKJnSsVez1M5ZizVBbc",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "42881162"
-        },
-        {
-          "variation_id": "43634842"
-        },
-        {
-          "variation_id": "43628179"
-        }
+        "42881162",
+        "43634842",
+        "43628179"
       ]
     },
     {
@@ -511,15 +343,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmVNycPUP85DcyWH5fqWKARdWEL5tkqY9MVZVwbT6HkRVD?auto=format&w=1500",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43628179"
-        },
-        {
-          "variation_id": "43624478"
-        },
-        {
-          "variation_id": "43556083"
-        }
+        "43628179",
+        "43624478",
+        "43556083"
       ]
     },
     {
@@ -530,18 +356,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmUMZEuHf6b9T6NGG17mMyCXP1Jvifffsx4Af4trBZgC5G?auto=format&w=1500",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43678532"
-        },
-        {
-          "variation_id": "43628179"
-        },
-        {
-          "variation_id": "43678518"
-        },
-        {
-          "variation_id": "43490240"
-        }
+        "43678532",
+        "43628179",
+        "43678518",
+        "43490240"
       ]
     },
     {
@@ -552,18 +370,10 @@
       "styled_image_url": "https://www.lummi.ai/api/pro/image/415a924f-0dec-4acb-9ea8-777cac654f51?asset=original&cb=2u3A68&auto=format&w=1500",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43541546"
-        },
-        {
-          "variation_id": "43557646"
-        },
-        {
-          "variation_id": "43557615"
-        },
-        {
-          "variation_id": "43628179"
-        }
+        "43541546",
+        "43557646",
+        "43557615",
+        "43628179"
       ]
     },
     {
@@ -574,15 +384,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmQZyQfwzLeVu2yxPLETRuwAKn8ZqoDuAeFjJgNf51nKdo?auto=format&w=1500",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43638420"
-        },
-        {
-          "variation_id": "43616497"
-        },
-        {
-          "variation_id": "43541546"
-        }
+        "43638420",
+        "43616497",
+        "43541546"
       ]
     },
     {
@@ -593,15 +397,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmV3d6k7AD36grZ7XE5M2eqeMz6phJJodXFEwUt1vEPu5x?auto=format&w=1500",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43635313"
-        },
-        {
-          "variation_id": "43624836"
-        },
-        {
-          "variation_id": "43543472"
-        }
+        "43635313",
+        "43624836",
+        "43543472"
       ]
     },
     {
@@ -612,15 +410,9 @@
       "styled_image_url": "https://www.lummi.ai/photo/elegant-contemporary-bathroom-tpqa9",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43678532"
-        },
-        {
-          "variation_id": "43665709"
-        },
-        {
-          "variation_id": "43652549"
-        }
+        "43678532",
+        "43665709",
+        "43652549"
       ]
     },
     {
@@ -631,15 +423,9 @@
       "styled_image_url": "https://www.lummi.ai/api/pro/image/307535ab-3614-4a69-b9ea-57e7b2cec7ee?asset=original&cb=gg9Qqu&auto=format&w=1500",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43541546"
-        },
-        {
-          "variation_id": "43631568"
-        },
-        {
-          "variation_id": "43631865"
-        }
+        "43541546",
+        "43631568",
+        "43631865"
       ]
     },
     {
@@ -650,15 +436,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmV3d6k7AD36grZ7XE5M2eqeMz6phJJodXFEwUt1vEPu5x?auto=format&w=1500",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43624836"
-        },
-        {
-          "variation_id": "43629862"
-        },
-        {
-          "variation_id": "43545148"
-        }
+        "43624836",
+        "43629862",
+        "43545148"
       ]
     },
     {
@@ -669,18 +449,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmfYqrD3NS2ndqcKDxkvTHc1QdbfB86P6HAc4yipuBBG7H?auto=format&w=1500",
       "products_count": 26,
       "products_included": [
-        {
-          "variation_id": "43639991"
-        },
-        {
-          "variation_id": "42127222"
-        },
-        {
-          "variation_id": "43639946"
-        },
-        {
-          "variation_id": "42127314"
-        }
+        "43639991",
+        "42127222",
+        "43639946",
+        "42127314"
       ]
     },
     {
@@ -691,15 +463,9 @@
       "styled_image_url": "https://www.lummi.ai/api/render/image/8d8e4bbb-637c-409d-9bec-c24fdafd655c?token=eyJhbGciOiJIUzI1NiJ9.eyJpZHMiOlsiOGQ4ZTRiYmItNjM3Yy00MDlkLTliZWMtYzI0ZmRhZmQ2NTVjIl0sInJlc29sdXRpb24iOiJtZWRpdW0iLCJyZW5kZXJTcGVjcyI6eyJlZmZlY3RzIjp7InJlZnJhbWUiOnt9fX0sInNob3VsZEF1dG9Eb3dubG9hZCI6ZmFsc2UsImp0aSI6IkNGbXBOdkpWZmUyVUNINmZvSnU0OCIsImlhdCI6MTc3MTI2MzE0MCwiZXhwIjoxNzcxMjYzMjAwfQ.HNGmtaGLvaeQO5FCbHL-tX-H9Rc_2S1QCtNGqDgAvEs",
       "products_count": 25,
       "products_included": [
-        {
-          "variation_id": "73632238"
-        },
-        {
-          "variation_id": "73481553"
-        },
-        {
-          "variation_id": "73290636"
-        }
+        "73632238",
+        "73481553",
+        "73290636"
       ]
     },
     {
@@ -710,15 +476,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmPZ8osVZ2RnStDGNG9YWiL1aS7JbaoFXY74Sr7GCuSRcB?auto=format&w=640",
       "products_count": 20,
       "products_included": [
-        {
-          "variation_id": "43677337"
-        },
-        {
-          "variation_id": "73633778"
-        },
-        {
-          "variation_id": "43353859"
-        }
+        "43677337",
+        "73633778",
+        "43353859"
       ]
     },
     {
@@ -729,18 +489,10 @@
       "styled_image_url": "https://www.lummi.ai/api/pro/image/7ceb6435-a780-49c7-aee7-f408f0674990?asset=original&cb=hMBvG8&auto=format&w=640",
       "products_count": 19,
       "products_included": [
-        {
-          "variation_id": "73288602"
-        },
-        {
-          "variation_id": "73290629"
-        },
-        {
-          "variation_id": "43652549"
-        },
-        {
-          "variation_id": "73288572"
-        }
+        "73288602",
+        "73290629",
+        "43652549",
+        "73288572"
       ]
     },
     {
@@ -751,18 +503,10 @@
       "styled_image_url": "https://www.lummi.ai/api/pro/image/b6c54197-b889-44ce-8a47-0671af582f7c?asset=original&cb=7BFJ2i&auto=format&w=640",
       "products_count": 17,
       "products_included": [
-        {
-          "variation_id": "43399192"
-        },
-        {
-          "variation_id": "43559220"
-        },
-        {
-          "variation_id": "43639991"
-        },
-        {
-          "variation_id": "42847397"
-        }
+        "43399192",
+        "43559220",
+        "43639991",
+        "42847397"
       ]
     },
     {
@@ -773,18 +517,10 @@
       "styled_image_url": "https://www.lummi.ai/api/pro/image/b6c54197-b889-44ce-8a47-0671af582f7c?asset=original&cb=7BFJ2i&auto=format&w=640",
       "products_count": 15,
       "products_included": [
-        {
-          "variation_id": "73633372"
-        },
-        {
-          "variation_id": "43469345"
-        },
-        {
-          "variation_id": "43631674"
-        },
-        {
-          "variation_id": "73632184"
-        }
+        "73633372",
+        "43469345",
+        "43631674",
+        "73632184"
       ]
     },
     {
@@ -795,18 +531,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmSU9WP2erLz4VPR6xZ8eHtXrAa2fhhUVsjoFJDJzvBPJn?auto=format&w=640",
       "products_count": 14,
       "products_included": [
-        {
-          "variation_id": "43468201"
-        },
-        {
-          "variation_id": "43220618"
-        },
-        {
-          "variation_id": "43220595"
-        },
-        {
-          "variation_id": "43220656"
-        }
+        "43468201",
+        "43220618",
+        "43220595",
+        "43220656"
       ]
     },
     {
@@ -817,18 +545,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmRwbGNehbti3EhgxJ4R4srxv2bE4pgpj3FNYB6quTqYYD?auto=format&w=640",
       "products_count": 13,
       "products_included": [
-        {
-          "variation_id": "73300144"
-        },
-        {
-          "variation_id": "40064482"
-        },
-        {
-          "variation_id": "43354191"
-        },
-        {
-          "variation_id": "43354214"
-        }
+        "73300144",
+        "40064482",
+        "43354191",
+        "43354214"
       ]
     },
     {
@@ -839,15 +559,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmQGhwJwrFz1SYBE5kKHv1gEcuxgvN5pjG6M8fJUdJAbp1?auto=format&w=640",
       "products_count": 11,
       "products_included": [
-        {
-          "variation_id": "73922919"
-        },
-        {
-          "variation_id": "73632146"
-        },
-        {
-          "variation_id": "73301103"
-        }
+        "73922919",
+        "73632146",
+        "73301103"
       ]
     },
     {
@@ -858,18 +572,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmRwbGNehbti3EhgxJ4R4srxv2bE4pgpj3FNYB6quTqYYD?auto=format&w=640",
       "products_count": 11,
       "products_included": [
-        {
-          "variation_id": "42932239"
-        },
-        {
-          "variation_id": "42871774"
-        },
-        {
-          "variation_id": "42932123"
-        },
-        {
-          "variation_id": "43630271"
-        }
+        "42932239",
+        "42871774",
+        "42932123",
+        "43630271"
       ]
     },
     {
@@ -880,15 +586,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmRsyZa5Ff7TJTbrDgxHKBBA5oDcbS2zGnC6pmQv4nCJtp?auto=format&w=640",
       "products_count": 11,
       "products_included": [
-        {
-          "variation_id": "43520916"
-        },
-        {
-          "variation_id": "43394296"
-        },
-        {
-          "variation_id": "43105380"
-        }
+        "43520916",
+        "43394296",
+        "43105380"
       ]
     },
     {
@@ -899,18 +599,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmRbL1ww5CMNZM9CMaywc29Td5tJo8nwTNqdtRZ5E5vxAc?auto=format&w=640",
       "products_count": 9,
       "products_included": [
-        {
-          "variation_id": "43635092"
-        },
-        {
-          "variation_id": "43353835"
-        },
-        {
-          "variation_id": "43353804"
-        },
-        {
-          "variation_id": "73294726"
-        }
+        "43635092",
+        "43353835",
+        "43353804",
+        "73294726"
       ]
     },
     {
@@ -921,15 +613,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmbstAkHsg7C3RNVVmF47H7XW4oi2CASQZGetRXywLRcxq?auto=format&w=640",
       "products_count": 8,
       "products_included": [
-        {
-          "variation_id": "73294382"
-        },
-        {
-          "variation_id": "43624836"
-        },
-        {
-          "variation_id": "43677337"
-        }
+        "73294382",
+        "43624836",
+        "43677337"
       ]
     },
     {
@@ -940,15 +626,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmW4ktMVCbkDc7uuxr8voEHcdffazBXcxoBHLexsJQeCZ2?auto=format&w=640",
       "products_count": 8,
       "products_included": [
-        {
-          "variation_id": "73733195"
-        },
-        {
-          "variation_id": "43228089"
-        },
-        {
-          "variation_id": "43228119"
-        }
+        "73733195",
+        "43228089",
+        "43228119"
       ]
     },
     {
@@ -959,18 +639,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/Qme1oz46q4psWVyawNGDhPQZMgAartdF54Do1Yn4QMt8rW?auto=format&w=640",
       "products_count": 7,
       "products_included": [
-        {
-          "variation_id": "43632343"
-        },
-        {
-          "variation_id": "43381807"
-        },
-        {
-          "variation_id": "43533473"
-        },
-        {
-          "variation_id": "43151264"
-        }
+        "43632343",
+        "43381807",
+        "43533473",
+        "43151264"
       ]
     },
     {
@@ -981,18 +653,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmZwjaeyDNK5dWhWovV51u5JbJdEmEDDwtKf761XZbBRQQ?auto=format&w=640",
       "products_count": 7,
       "products_included": [
-        {
-          "variation_id": "43624447"
-        },
-        {
-          "variation_id": "43354146"
-        },
-        {
-          "variation_id": "43354139"
-        },
-        {
-          "variation_id": "43220502"
-        }
+        "43624447",
+        "43354146",
+        "43354139",
+        "43220502"
       ]
     },
     {
@@ -1003,18 +667,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmShRCQwmv4gPX7VaLBuVhiXFBp6j42ymXeCoahkx7cy1h?auto=format&w=640",
       "products_count": 6,
       "products_included": [
-        {
-          "variation_id": "43678525"
-        },
-        {
-          "variation_id": "43349357"
-        },
-        {
-          "variation_id": "73753711"
-        },
-        {
-          "variation_id": "73753704"
-        }
+        "43678525",
+        "43349357",
+        "73753711",
+        "73753704"
       ]
     },
     {
@@ -1025,18 +681,10 @@
       "styled_image_url": "https://www.lummi.ai/api/pro/image/596bf58f-2bce-46a9-be3f-a89610c8aeb6?asset=original&cb=tYRYDf&auto=format&w=640",
       "products_count": 6,
       "products_included": [
-        {
-          "variation_id": "73462576"
-        },
-        {
-          "variation_id": "43678549"
-        },
-        {
-          "variation_id": "73775294"
-        },
-        {
-          "variation_id": "73462569"
-        }
+        "73462576",
+        "43678549",
+        "73775294",
+        "73462569"
       ]
     },
     {
@@ -1047,18 +695,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmZaRopyDFiyAhSrnWejCQxvzNHMzKzBAhhwnAnjJEi97p?auto=format&w=640",
       "products_count": 6,
       "products_included": [
-        {
-          "variation_id": "43469383"
-        },
-        {
-          "variation_id": "73289999"
-        },
-        {
-          "variation_id": "43632558"
-        },
-        {
-          "variation_id": "43632572"
-        }
+        "43469383",
+        "73289999",
+        "43632558",
+        "43632572"
       ]
     },
     {
@@ -1069,18 +709,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmfPdr8cr45avPzJuHR9ZcDZPZvj4dnghzYyzGwrpBDZbG?auto=format&w=640",
       "products_count": 5,
       "products_included": [
-        {
-          "variation_id": "43283095"
-        },
-        {
-          "variation_id": "43139125"
-        },
-        {
-          "variation_id": "43139101"
-        },
-        {
-          "variation_id": "43557646"
-        }
+        "43283095",
+        "43139125",
+        "43139101",
+        "43557646"
       ]
     },
     {
@@ -1091,15 +723,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmSBUSyHFzejtERqgcsSMD2H7347UvKPGzyPiapMkFodhm?auto=format&w=640",
       "products_count": 5,
       "products_included": [
-        {
-          "variation_id": "73632740"
-        },
-        {
-          "variation_id": "43632558"
-        },
-        {
-          "variation_id": "73632733"
-        }
+        "73632740",
+        "43632558",
+        "73632733"
       ]
     },
     {
@@ -1110,18 +736,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmcoixVsAU6wm1hgKEDZRgc9tpn7Q8U9h7uAgpcQ9Pparh?auto=format&w=640",
       "products_count": 5,
       "products_included": [
-        {
-          "variation_id": "43354269"
-        },
-        {
-          "variation_id": "43354252"
-        },
-        {
-          "variation_id": "43632572"
-        },
-        {
-          "variation_id": "43354276"
-        }
+        "43354269",
+        "43354252",
+        "43632572",
+        "43354276"
       ]
     },
     {
@@ -1132,18 +750,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmRwbGNehbti3EhgxJ4R4srxv2bE4pgpj3FNYB6quTqYYD?auto=format&w=640",
       "products_count": 5,
       "products_included": [
-        {
-          "variation_id": "43515028"
-        },
-        {
-          "variation_id": "43633975"
-        },
-        {
-          "variation_id": "43636273"
-        },
-        {
-          "variation_id": "43639991"
-        }
+        "43515028",
+        "43633975",
+        "43636273",
+        "43639991"
       ]
     },
     {
@@ -1154,15 +764,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmZdmnmjRR8gpk5oubg8ZEvyRANtkNeFZQHrrXaDmn9yt1?auto=format&w=640",
       "products_count": 5,
       "products_included": [
-        {
-          "variation_id": "43348831"
-        },
-        {
-          "variation_id": "43228393"
-        },
-        {
-          "variation_id": "43534395"
-        }
+        "43348831",
+        "43228393",
+        "43534395"
       ]
     },
     {
@@ -1173,18 +777,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmQbfdBD1kTT2pX9pYhkQK3fdxsdeCBPH666GECDEnhves?auto=format&w=640",
       "products_count": 4,
       "products_included": [
-        {
-          "variation_id": "43544431"
-        },
-        {
-          "variation_id": "43544325"
-        },
-        {
-          "variation_id": "43556335"
-        },
-        {
-          "variation_id": "43455706"
-        }
+        "43544431",
+        "43544325",
+        "43556335",
+        "43455706"
       ]
     },
     {
@@ -1195,18 +791,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmYGbx6fqMTzZh6q4S9ozRC7dVfJGcfYgV8yBvtrfMZdU8?auto=format&w=640",
       "products_count": 4,
       "products_included": [
-        {
-          "variation_id": "73786313"
-        },
-        {
-          "variation_id": "73786306"
-        },
-        {
-          "variation_id": "73786320"
-        },
-        {
-          "variation_id": "73786290"
-        }
+        "73786313",
+        "73786306",
+        "73786320",
+        "73786290"
       ]
     },
     {
@@ -1217,15 +805,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmYGbx6fqMTzZh6q4S9ozRC7dVfJGcfYgV8yBvtrfMZdU8?auto=format&w=640",
       "products_count": 4,
       "products_included": [
-        {
-          "variation_id": "73150374"
-        },
-        {
-          "variation_id": "73150381"
-        },
-        {
-          "variation_id": "73150404"
-        }
+        "73150374",
+        "73150381",
+        "73150404"
       ]
     },
     {
@@ -1236,15 +818,9 @@
       "styled_image_url": "https://www.lummi.ai/api/pro/image/513ca8a1-e780-4208-abdc-b4e470ee65b8?asset=original&cb=yYzaEq&auto=format&w=640",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43628179"
-        },
-        {
-          "variation_id": "43589005"
-        },
-        {
-          "variation_id": "43676095"
-        }
+        "43628179",
+        "43589005",
+        "43676095"
       ]
     },
     {
@@ -1255,15 +831,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmRkdQ33XUQkyUhhMHjLLMbRzSdtag1BEvzDNH3gJcyk9L?auto=format&w=640",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43633692"
-        },
-        {
-          "variation_id": "43071296"
-        },
-        {
-          "variation_id": "43632343"
-        }
+        "43633692",
+        "43071296",
+        "43632343"
       ]
     },
     {
@@ -1274,18 +844,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmefHDwaQUuEFWAZVLospKJMabeUwS2wQSpeeLbAg3QZzQ?auto=format&w=640",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43468133"
-        },
-        {
-          "variation_id": "43220700"
-        },
-        {
-          "variation_id": "43354221"
-        },
-        {
-          "variation_id": "43541546"
-        }
+        "43468133",
+        "43220700",
+        "43354221",
+        "43541546"
       ]
     },
     {
@@ -1296,18 +858,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmfKqCFEgxrP1Rd3Gn9JkrpMTEmTs9GbjfwYwxTkxzoBUq?auto=format&w=640",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43547647"
-        },
-        {
-          "variation_id": "43633470"
-        },
-        {
-          "variation_id": "43624591"
-        },
-        {
-          "variation_id": "43573387"
-        }
+        "43547647",
+        "43633470",
+        "43624591",
+        "43573387"
       ]
     },
     {
@@ -1318,18 +872,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmaeB3xKjsoVg4K3CZijccaxzrHF1iyqmBv4cmn6GjqCMV?auto=format&w=640",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43487813"
-        },
-        {
-          "variation_id": "42127475"
-        },
-        {
-          "variation_id": "42108665"
-        },
-        {
-          "variation_id": "43487806"
-        }
+        "43487813",
+        "42127475",
+        "42108665",
+        "43487806"
       ]
     },
     {
@@ -1340,15 +886,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmRbhSGzQVmzpaWrLBpZJJX1RZnwU8A4pqsFeUYzuZwYdg?auto=format&w=640",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43624447"
-        },
-        {
-          "variation_id": "43624775"
-        },
-        {
-          "variation_id": "43624591"
-        }
+        "43624447",
+        "43624775",
+        "43624591"
       ]
     },
     {
@@ -1359,18 +899,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmZnyT5ZuQymTum8gm2UMz7MDzDharNynTjmgkHRKNSB4S?auto=format&w=640",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43541546"
-        },
-        {
-          "variation_id": "73534051"
-        },
-        {
-          "variation_id": "73290667"
-        },
-        {
-          "variation_id": "43440955"
-        }
+        "43541546",
+        "73534051",
+        "73290667",
+        "43440955"
       ]
     },
     {
@@ -1381,15 +913,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmbstAkHsg7C3RNVVmF47H7XW4oi2CASQZGetRXywLRcxq?auto=format&w=640",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43634842"
-        },
-        {
-          "variation_id": "43631322"
-        },
-        {
-          "variation_id": "43635313"
-        }
+        "43634842",
+        "43631322",
+        "43635313"
       ]
     },
     {
@@ -1400,18 +926,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmQbfdBD1kTT2pX9pYhkQK3fdxsdeCBPH666GECDEnhves?auto=format&w=640",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43476091"
-        },
-        {
-          "variation_id": "43632428"
-        },
-        {
-          "variation_id": "43635092"
-        },
-        {
-          "variation_id": "73680345"
-        }
+        "43476091",
+        "43632428",
+        "43635092",
+        "73680345"
       ]
     },
     {
@@ -1422,18 +940,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmdhZiepSLydh4rCfh24HkX1xuVDyoK8cBuG528ditef6g?auto=format&w=640",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43265657"
-        },
-        {
-          "variation_id": "43678525"
-        },
-        {
-          "variation_id": "43633388"
-        },
-        {
-          "variation_id": "43633371"
-        }
+        "43265657",
+        "43678525",
+        "43633388",
+        "43633371"
       ]
     },
     {
@@ -1444,18 +954,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmVUe6u9JHiCkPQXs8PYEqXa3K4y3fnuYeEuuByK8ULokJ?auto=format&w=640",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43633470"
-        },
-        {
-          "variation_id": "43151264"
-        },
-        {
-          "variation_id": "43573394"
-        },
-        {
-          "variation_id": "43455706"
-        }
+        "43633470",
+        "43151264",
+        "43573394",
+        "43455706"
       ]
     },
     {
@@ -1466,18 +968,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmWN3FHF11ZCev2aedVYtXueDhAnq9SwbWYCLGRFQQXhXE?auto=format&w=640",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43624478"
-        },
-        {
-          "variation_id": "43634842"
-        },
-        {
-          "variation_id": "43628179"
-        },
-        {
-          "variation_id": "42932352"
-        }
+        "43624478",
+        "43634842",
+        "43628179",
+        "42932352"
       ]
     },
     {
@@ -1488,18 +982,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/Qma2DPGasNSGR8HnWDu7MoKY7qwmcDr3u1F4r4XSCQ7pqx?auto=format&w=640",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43635092"
-        },
-        {
-          "variation_id": "73680345"
-        },
-        {
-          "variation_id": "43632428"
-        },
-        {
-          "variation_id": "43385539"
-        }
+        "43635092",
+        "73680345",
+        "43632428",
+        "43385539"
       ]
     },
     {
@@ -1510,18 +996,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 39,
       "products_included": [
-        {
-          "variation_id": "43478583"
-        },
-        {
-          "variation_id": "43545230"
-        },
-        {
-          "variation_id": "43541515"
-        },
-        {
-          "variation_id": "43541591"
-        }
+        "43478583",
+        "43545230",
+        "43541515",
+        "43541591"
       ]
     },
     {
@@ -1532,15 +1010,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 24,
       "products_included": [
-        {
-          "variation_id": "43331727"
-        },
-        {
-          "variation_id": "42962847"
-        },
-        {
-          "variation_id": "42962854"
-        }
+        "43331727",
+        "42962847",
+        "42962854"
       ]
     },
     {
@@ -1551,18 +1023,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/Qma5NSVpD3ZKPfe14D62ReGsELzpp2hzMbNQxYgjSCMNRL?auto=format&w=640",
       "products_count": 11,
       "products_included": [
-        {
-          "variation_id": "43637591"
-        },
-        {
-          "variation_id": "42963349"
-        },
-        {
-          "variation_id": "43642960"
-        },
-        {
-          "variation_id": "43545469"
-        }
+        "43637591",
+        "42963349",
+        "43642960",
+        "43545469"
       ]
     },
     {
@@ -1573,18 +1037,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmU6Eh1eBexLWCFAHcAzQ5MPbf2cua25tMQPJMApRe6QEr?auto=format&w=640",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43235902"
-        },
-        {
-          "variation_id": "43253494"
-        },
-        {
-          "variation_id": "43630271"
-        },
-        {
-          "variation_id": "43639946"
-        }
+        "43235902",
+        "43253494",
+        "43630271",
+        "43639946"
       ]
     },
     {
@@ -1595,15 +1051,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmRjyAeHSH7zAk9xMcRinjpaLRFdPWmGGzqEBLGPSwPHhV?auto=format&w=640",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43631322"
-        },
-        {
-          "variation_id": "43677337"
-        },
-        {
-          "variation_id": "43634842"
-        }
+        "43631322",
+        "43677337",
+        "43634842"
       ]
     },
     {
@@ -1614,15 +1064,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmRjRNaLEiDqJX5VCgRqzZYtN47QZZvDZWEDu4RyF3epm3?auto=format&w=640",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "42476511"
-        },
-        {
-          "variation_id": "42258964"
-        },
-        {
-          "variation_id": "43557646"
-        }
+        "42476511",
+        "42258964",
+        "43557646"
       ]
     },
     {
@@ -1633,15 +1077,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmdQg7BHcbRepX9CRRH9b4AVYRao4xVB8T8BebzG79W3sU?auto=format&w=640",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43628179"
-        },
-        {
-          "variation_id": "42633587"
-        },
-        {
-          "variation_id": "43624478"
-        }
+        "43628179",
+        "42633587",
+        "43624478"
       ]
     },
     {
@@ -1652,18 +1090,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmULqkk7Xdos5K9wLesjpfwDAUskMco3r7FcqTuySLNGBh?auto=format&w=640",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43331727"
-        },
-        {
-          "variation_id": "43634842"
-        },
-        {
-          "variation_id": "43541546"
-        },
-        {
-          "variation_id": "43624478"
-        }
+        "43331727",
+        "43634842",
+        "43541546",
+        "43624478"
       ]
     },
     {
@@ -1674,15 +1104,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmSPEZ1boHfMPJcYNgfPHP9mg1Y1tsTNdLqFG147fQuaiD?auto=format&w=640",
       "products_count": 10,
       "products_included": [
-        {
-          "variation_id": "42998983"
-        },
-        {
-          "variation_id": "42875123"
-        },
-        {
-          "variation_id": "42184393"
-        }
+        "42998983",
+        "42875123",
+        "42184393"
       ]
     },
     {
@@ -1693,18 +1117,10 @@
       "styled_image_url": "https://www.next.ae/en/style/st179283/am3213",
       "products_count": 5,
       "products_included": [
-        {
-          "variation_id": "43624775"
-        },
-        {
-          "variation_id": "43624478"
-        },
-        {
-          "variation_id": "43393121"
-        },
-        {
-          "variation_id": "43131754"
-        }
+        "43624775",
+        "43624478",
+        "43393121",
+        "43131754"
       ]
     },
     {
@@ -1715,18 +1131,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmVUDsUMPpuaXsepijNa24YttMT5r9mLiyGGC99QtUfSjs?auto=format&w=640",
       "products_count": 4,
       "products_included": [
-        {
-          "variation_id": "43678525"
-        },
-        {
-          "variation_id": "42570158"
-        },
-        {
-          "variation_id": "41963456"
-        },
-        {
-          "variation_id": "42535331"
-        }
+        "43678525",
+        "42570158",
+        "41963456",
+        "42535331"
       ]
     },
     {
@@ -1737,18 +1145,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 4,
       "products_included": [
-        {
-          "variation_id": "43641383"
-        },
-        {
-          "variation_id": "43638635"
-        },
-        {
-          "variation_id": "43281329"
-        },
-        {
-          "variation_id": "43393763"
-        }
+        "43641383",
+        "43638635",
+        "43281329",
+        "43393763"
       ]
     },
     {
@@ -1759,15 +1159,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43538768"
-        },
-        {
-          "variation_id": "43557646"
-        },
-        {
-          "variation_id": "43107582"
-        }
+        "43538768",
+        "43557646",
+        "43107582"
       ]
     },
     {
@@ -1778,15 +1172,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmYvkXDWJRKxkWK3PrD241MFSsBfmEb12uE66Uf3BTrb6e?auto=format&w=640",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43637676"
-        },
-        {
-          "variation_id": "43624775"
-        },
-        {
-          "variation_id": "43624447"
-        }
+        "43637676",
+        "43624775",
+        "43624447"
       ]
     },
     {
@@ -1797,18 +1185,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmXG7AUDA6EcksTawwykZeDi7yn9AHPb3tRKvZhni1nPSg?auto=format&w=640",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43541546"
-        },
-        {
-          "variation_id": "43634842"
-        },
-        {
-          "variation_id": "43624478"
-        },
-        {
-          "variation_id": "43678518"
-        }
+        "43541546",
+        "43634842",
+        "43624478",
+        "43678518"
       ]
     },
     {
@@ -1819,15 +1199,9 @@
       "styled_image_url": "https://assets.lummi.ai/assets/QmazxjXWT7UvZeYsyk8WBBXKGxCWwbgptYG1jav7UjfZ2V?auto=format&w=640",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43678525"
-        },
-        {
-          "variation_id": "43678532"
-        },
-        {
-          "variation_id": "43541546"
-        }
+        "43678525",
+        "43678532",
+        "43541546"
       ]
     },
     {
@@ -1838,18 +1212,10 @@
       "styled_image_url": "https://assets.lummi.ai/assets/Qmcy2xcHwt9wEAeMsqp5EAkpjB3rmWC6B8zzd5sD4XNErU?auto=format&w=640",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43670116"
-        },
-        {
-          "variation_id": "43632367"
-        },
-        {
-          "variation_id": "43628179"
-        },
-        {
-          "variation_id": "43678518"
-        }
+        "43670116",
+        "43632367",
+        "43628179",
+        "43678518"
       ]
     },
     {
@@ -1860,18 +1226,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43517947"
-        },
-        {
-          "variation_id": "43517923"
-        },
-        {
-          "variation_id": "43517992"
-        },
-        {
-          "variation_id": "43557646"
-        }
+        "43517947",
+        "43517923",
+        "43517992",
+        "43557646"
       ]
     },
     {
@@ -1882,18 +1240,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43628179"
-        },
-        {
-          "variation_id": "43630271"
-        },
-        {
-          "variation_id": "43678525"
-        },
-        {
-          "variation_id": "43331031"
-        }
+        "43628179",
+        "43630271",
+        "43678525",
+        "43331031"
       ]
     },
     {
@@ -1904,18 +1254,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 58,
       "products_included": [
-        {
-          "variation_id": "42915034"
-        },
-        {
-          "variation_id": "42888123"
-        },
-        {
-          "variation_id": "43521234"
-        },
-        {
-          "variation_id": "42567141"
-        }
+        "42915034",
+        "42888123",
+        "43521234",
+        "42567141"
       ]
     },
     {
@@ -1926,15 +1268,9 @@
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 32,
       "products_included": [
-        {
-          "variation_id": "42898450"
-        },
-        {
-          "variation_id": "41966402"
-        },
-        {
-          "variation_id": "43632053"
-        }
+        "42898450",
+        "41966402",
+        "43632053"
       ]
     },
     {
@@ -1945,18 +1281,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 26,
       "products_included": [
-        {
-          "variation_id": "42691815"
-        },
-        {
-          "variation_id": "43475155"
-        },
-        {
-          "variation_id": "42436171"
-        },
-        {
-          "variation_id": "43121168"
-        }
+        "42691815",
+        "43475155",
+        "42436171",
+        "43121168"
       ]
     },
     {
@@ -1967,15 +1295,9 @@
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 26,
       "products_included": [
-        {
-          "variation_id": "43474929"
-        },
-        {
-          "variation_id": "43474981"
-        },
-        {
-          "variation_id": "43103782"
-        }
+        "43474929",
+        "43474981",
+        "43103782"
       ]
     },
     {
@@ -1986,18 +1308,10 @@
       "styled_image_url": "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 16,
       "products_included": [
-        {
-          "variation_id": "43624591"
-        },
-        {
-          "variation_id": "43473090"
-        },
-        {
-          "variation_id": "43557271"
-        },
-        {
-          "variation_id": "43532773"
-        }
+        "43624591",
+        "43473090",
+        "43557271",
+        "43532773"
       ]
     },
     {
@@ -2008,18 +1322,10 @@
       "styled_image_url": "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 12,
       "products_included": [
-        {
-          "variation_id": "43624775"
-        },
-        {
-          "variation_id": "43543724"
-        },
-        {
-          "variation_id": "43624478"
-        },
-        {
-          "variation_id": "43117529"
-        }
+        "43624775",
+        "43543724",
+        "43624478",
+        "43117529"
       ]
     },
     {
@@ -2030,15 +1336,9 @@
       "styled_image_url": "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 10,
       "products_included": [
-        {
-          "variation_id": "42712213"
-        },
-        {
-          "variation_id": "42205401"
-        },
-        {
-          "variation_id": "41527481"
-        }
+        "42712213",
+        "42205401",
+        "41527481"
       ]
     },
     {
@@ -2049,18 +1349,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 9,
       "products_included": [
-        {
-          "variation_id": "42232209"
-        },
-        {
-          "variation_id": "42689041"
-        },
-        {
-          "variation_id": "42232193"
-        },
-        {
-          "variation_id": "43678525"
-        }
+        "42232209",
+        "42689041",
+        "42232193",
+        "43678525"
       ]
     },
     {
@@ -2071,18 +1363,10 @@
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 5,
       "products_included": [
-        {
-          "variation_id": "43631681"
-        },
-        {
-          "variation_id": "43639953"
-        },
-        {
-          "variation_id": "43639991"
-        },
-        {
-          "variation_id": "43464548"
-        }
+        "43631681",
+        "43639953",
+        "43639991",
+        "43464548"
       ]
     },
     {
@@ -2093,15 +1377,9 @@
       "styled_image_url": "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 5,
       "products_included": [
-        {
-          "variation_id": "43624591"
-        },
-        {
-          "variation_id": "43549665"
-        },
-        {
-          "variation_id": "43624447"
-        }
+        "43624591",
+        "43549665",
+        "43624447"
       ]
     },
     {
@@ -2112,15 +1390,9 @@
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 4,
       "products_included": [
-        {
-          "variation_id": "43557646"
-        },
-        {
-          "variation_id": "43668427"
-        },
-        {
-          "variation_id": "43668335"
-        }
+        "43557646",
+        "43668427",
+        "43668335"
       ]
     },
     {
@@ -2131,15 +1403,9 @@
       "styled_image_url": "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 4,
       "products_included": [
-        {
-          "variation_id": "43465897"
-        },
-        {
-          "variation_id": "42570943"
-        },
-        {
-          "variation_id": "43624775"
-        }
+        "43465897",
+        "42570943",
+        "43624775"
       ]
     },
     {
@@ -2150,15 +1416,9 @@
       "styled_image_url": "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 4,
       "products_included": [
-        {
-          "variation_id": "41323069"
-        },
-        {
-          "variation_id": "43018864"
-        },
-        {
-          "variation_id": "42565987"
-        }
+        "41323069",
+        "43018864",
+        "42565987"
       ]
     },
     {
@@ -2169,15 +1429,9 @@
       "styled_image_url": "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 4,
       "products_included": [
-        {
-          "variation_id": "43536429"
-        },
-        {
-          "variation_id": "42336426"
-        },
-        {
-          "variation_id": "43545636"
-        }
+        "43536429",
+        "42336426",
+        "43545636"
       ]
     },
     {
@@ -2188,15 +1442,9 @@
       "styled_image_url": "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 4,
       "products_included": [
-        {
-          "variation_id": "43624447"
-        },
-        {
-          "variation_id": "43624591"
-        },
-        {
-          "variation_id": "42823766"
-        }
+        "43624447",
+        "43624591",
+        "42823766"
       ]
     },
     {
@@ -2207,15 +1455,9 @@
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 4,
       "products_included": [
-        {
-          "variation_id": "43639991"
-        },
-        {
-          "variation_id": "43631681"
-        },
-        {
-          "variation_id": "43475759"
-        }
+        "43639991",
+        "43631681",
+        "43475759"
       ]
     },
     {
@@ -2226,18 +1468,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43629862"
-        },
-        {
-          "variation_id": "43677337"
-        },
-        {
-          "variation_id": "43624836"
-        },
-        {
-          "variation_id": "43631322"
-        }
+        "43629862",
+        "43677337",
+        "43624836",
+        "43631322"
       ]
     },
     {
@@ -2248,15 +1482,9 @@
       "styled_image_url": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43632558"
-        },
-        {
-          "variation_id": "43475940"
-        },
-        {
-          "variation_id": "43378760"
-        }
+        "43632558",
+        "43475940",
+        "43378760"
       ]
     },
     {
@@ -2267,18 +1495,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43473380"
-        },
-        {
-          "variation_id": "43473359"
-        },
-        {
-          "variation_id": "43652549"
-        },
-        {
-          "variation_id": "43628179"
-        }
+        "43473380",
+        "43473359",
+        "43652549",
+        "43628179"
       ]
     },
     {
@@ -2289,18 +1509,10 @@
       "styled_image_url": "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "42676102"
-        },
-        {
-          "variation_id": "43634842"
-        },
-        {
-          "variation_id": "43541546"
-        },
-        {
-          "variation_id": "43628179"
-        }
+        "42676102",
+        "43634842",
+        "43541546",
+        "43628179"
       ]
     },
     {
@@ -2311,18 +1523,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43629862"
-        },
-        {
-          "variation_id": "43677337"
-        },
-        {
-          "variation_id": "43537235"
-        },
-        {
-          "variation_id": "43377145"
-        }
+        "43629862",
+        "43677337",
+        "43537235",
+        "43377145"
       ]
     },
     {
@@ -2333,18 +1537,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43634842"
-        },
-        {
-          "variation_id": "43624836"
-        },
-        {
-          "variation_id": "43312092"
-        },
-        {
-          "variation_id": "43631322"
-        }
+        "43634842",
+        "43624836",
+        "43312092",
+        "43631322"
       ]
     },
     {
@@ -2355,15 +1551,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43678525"
-        },
-        {
-          "variation_id": "42685012"
-        },
-        {
-          "variation_id": "41531457"
-        }
+        "43678525",
+        "42685012",
+        "41531457"
       ]
     },
     {
@@ -2374,15 +1564,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43628179"
-        },
-        {
-          "variation_id": "43625864"
-        },
-        {
-          "variation_id": "43652549"
-        }
+        "43628179",
+        "43625864",
+        "43652549"
       ]
     },
     {
@@ -2393,18 +1577,10 @@
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43227488"
-        },
-        {
-          "variation_id": "43530687"
-        },
-        {
-          "variation_id": "43631674"
-        },
-        {
-          "variation_id": "43631681"
-        }
+        "43227488",
+        "43530687",
+        "43631674",
+        "43631681"
       ]
     },
     {
@@ -2415,18 +1591,10 @@
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43476503"
-        },
-        {
-          "variation_id": "43546169"
-        },
-        {
-          "variation_id": "43543748"
-        },
-        {
-          "variation_id": "43117529"
-        }
+        "43476503",
+        "43546169",
+        "43543748",
+        "43117529"
       ]
     },
     {
@@ -2437,18 +1605,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43117529"
-        },
-        {
-          "variation_id": "42692171"
-        },
-        {
-          "variation_id": "43541546"
-        },
-        {
-          "variation_id": "43632107"
-        }
+        "43117529",
+        "42692171",
+        "43541546",
+        "43632107"
       ]
     },
     {
@@ -2459,18 +1619,10 @@
       "styled_image_url": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "42692171"
-        },
-        {
-          "variation_id": "43117529"
-        },
-        {
-          "variation_id": "43543748"
-        },
-        {
-          "variation_id": "43155125"
-        }
+        "42692171",
+        "43117529",
+        "43543748",
+        "43155125"
       ]
     },
     {
@@ -2481,18 +1633,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43474264"
-        },
-        {
-          "variation_id": "43652549"
-        },
-        {
-          "variation_id": "43676095"
-        },
-        {
-          "variation_id": "43678532"
-        }
+        "43474264",
+        "43652549",
+        "43676095",
+        "43678532"
       ]
     },
     {
@@ -2503,15 +1647,9 @@
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43545469"
-        },
-        {
-          "variation_id": "43646968"
-        },
-        {
-          "variation_id": "43402472"
-        }
+        "43545469",
+        "43646968",
+        "43402472"
       ]
     },
     {
@@ -2522,18 +1660,10 @@
       "styled_image_url": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43632558"
-        },
-        {
-          "variation_id": "43632572"
-        },
-        {
-          "variation_id": "43541546"
-        },
-        {
-          "variation_id": "43617203"
-        }
+        "43632558",
+        "43632572",
+        "43541546",
+        "43617203"
       ]
     },
     {
@@ -2544,15 +1674,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43632312"
-        },
-        {
-          "variation_id": "43629862"
-        },
-        {
-          "variation_id": "43631322"
-        }
+        "43632312",
+        "43629862",
+        "43631322"
       ]
     },
     {
@@ -2563,18 +1687,10 @@
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43640041"
-        },
-        {
-          "variation_id": "43541485"
-        },
-        {
-          "variation_id": "43541546"
-        },
-        {
-          "variation_id": "43638420"
-        }
+        "43640041",
+        "43541485",
+        "43541546",
+        "43638420"
       ]
     },
     {
@@ -2585,18 +1701,10 @@
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43632107"
-        },
-        {
-          "variation_id": "42972235"
-        },
-        {
-          "variation_id": "43543748"
-        },
-        {
-          "variation_id": "43117529"
-        }
+        "43632107",
+        "42972235",
+        "43543748",
+        "43117529"
       ]
     },
     {
@@ -2607,15 +1715,9 @@
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43541546"
-        },
-        {
-          "variation_id": "42972235"
-        },
-        {
-          "variation_id": "43117529"
-        }
+        "43541546",
+        "42972235",
+        "43117529"
       ]
     },
     {
@@ -2626,18 +1728,10 @@
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43637591"
-        },
-        {
-          "variation_id": "43541546"
-        },
-        {
-          "variation_id": "42168591"
-        },
-        {
-          "variation_id": "43545209"
-        }
+        "43637591",
+        "43541546",
+        "42168591",
+        "43545209"
       ]
     },
     {
@@ -2648,15 +1742,9 @@
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43632367"
-        },
-        {
-          "variation_id": "43534647"
-        },
-        {
-          "variation_id": "43678518"
-        }
+        "43632367",
+        "43534647",
+        "43678518"
       ]
     },
     {
@@ -2667,15 +1755,9 @@
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43671908"
-        },
-        {
-          "variation_id": "43557646"
-        },
-        {
-          "variation_id": "43557615"
-        }
+        "43671908",
+        "43557646",
+        "43557615"
       ]
     },
     {
@@ -2686,15 +1768,9 @@
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43541546"
-        },
-        {
-          "variation_id": "42576860"
-        },
-        {
-          "variation_id": "43475964"
-        }
+        "43541546",
+        "42576860",
+        "43475964"
       ]
     },
     {
@@ -2705,15 +1781,9 @@
       "styled_image_url": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43632572"
-        },
-        {
-          "variation_id": "43632558"
-        },
-        {
-          "variation_id": "43328178"
-        }
+        "43632572",
+        "43632558",
+        "43328178"
       ]
     },
     {
@@ -2724,18 +1794,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 9,
       "products_included": [
-        {
-          "variation_id": "43545469"
-        },
-        {
-          "variation_id": "43229406"
-        },
-        {
-          "variation_id": "43016884"
-        },
-        {
-          "variation_id": "43637591"
-        }
+        "43545469",
+        "43229406",
+        "43016884",
+        "43637591"
       ]
     },
     {
@@ -2746,15 +1808,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 7,
       "products_included": [
-        {
-          "variation_id": "43491919"
-        },
-        {
-          "variation_id": "43638406"
-        },
-        {
-          "variation_id": "43328703"
-        }
+        "43491919",
+        "43638406",
+        "43328703"
       ]
     },
     {
@@ -2765,15 +1821,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 7,
       "products_included": [
-        {
-          "variation_id": "43153220"
-        },
-        {
-          "variation_id": "43481484"
-        },
-        {
-          "variation_id": "43331536"
-        }
+        "43153220",
+        "43481484",
+        "43331536"
       ]
     },
     {
@@ -2784,18 +1834,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 6,
       "products_included": [
-        {
-          "variation_id": "43573851"
-        },
-        {
-          "variation_id": "43632558"
-        },
-        {
-          "variation_id": "43065707"
-        },
-        {
-          "variation_id": "43529889"
-        }
+        "43573851",
+        "43632558",
+        "43065707",
+        "43529889"
       ]
     },
     {
@@ -2806,18 +1848,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 6,
       "products_included": [
-        {
-          "variation_id": "43387571"
-        },
-        {
-          "variation_id": "43557615"
-        },
-        {
-          "variation_id": "43392797"
-        },
-        {
-          "variation_id": "43557646"
-        }
+        "43387571",
+        "43557615",
+        "43392797",
+        "43557646"
       ]
     },
     {
@@ -2828,18 +1862,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 6,
       "products_included": [
-        {
-          "variation_id": "43636549"
-        },
-        {
-          "variation_id": "43553921"
-        },
-        {
-          "variation_id": "43635573"
-        },
-        {
-          "variation_id": "43557615"
-        }
+        "43636549",
+        "43553921",
+        "43635573",
+        "43557615"
       ]
     },
     {
@@ -2850,18 +1876,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 5,
       "products_included": [
-        {
-          "variation_id": "43636112"
-        },
-        {
-          "variation_id": "43541188"
-        },
-        {
-          "variation_id": "43553914"
-        },
-        {
-          "variation_id": "43636167"
-        }
+        "43636112",
+        "43541188",
+        "43553914",
+        "43636167"
       ]
     },
     {
@@ -2872,15 +1890,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 4,
       "products_included": [
-        {
-          "variation_id": "43229406"
-        },
-        {
-          "variation_id": "43333646"
-        },
-        {
-          "variation_id": "43329601"
-        }
+        "43229406",
+        "43333646",
+        "43329601"
       ]
     },
     {
@@ -2891,15 +1903,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43635474"
-        },
-        {
-          "variation_id": "43631674"
-        },
-        {
-          "variation_id": "43639991"
-        }
+        "43635474",
+        "43631674",
+        "43639991"
       ]
     },
     {
@@ -2910,18 +1916,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43465866"
-        },
-        {
-          "variation_id": "43636594"
-        },
-        {
-          "variation_id": "43678525"
-        },
-        {
-          "variation_id": "42942092"
-        }
+        "43465866",
+        "43636594",
+        "43678525",
+        "42942092"
       ]
     },
     {
@@ -2932,15 +1930,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43636600"
-        },
-        {
-          "variation_id": "43624591"
-        },
-        {
-          "variation_id": "43531875"
-        }
+        "43636600",
+        "43624591",
+        "43531875"
       ]
     },
     {
@@ -2951,18 +1943,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43274352"
-        },
-        {
-          "variation_id": "43274345"
-        },
-        {
-          "variation_id": "43274338"
-        },
-        {
-          "variation_id": "43678525"
-        }
+        "43274352",
+        "43274345",
+        "43274338",
+        "43678525"
       ]
     },
     {
@@ -2973,18 +1957,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43532063"
-        },
-        {
-          "variation_id": "43541546"
-        },
-        {
-          "variation_id": "43634842"
-        },
-        {
-          "variation_id": "42942061"
-        }
+        "43532063",
+        "43541546",
+        "43634842",
+        "42942061"
       ]
     },
     {
@@ -2995,15 +1971,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43634842"
-        },
-        {
-          "variation_id": "43332984"
-        },
-        {
-          "variation_id": "43628179"
-        }
+        "43634842",
+        "43332984",
+        "43628179"
       ]
     },
     {
@@ -3014,18 +1984,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43545469"
-        },
-        {
-          "variation_id": "43541485"
-        },
-        {
-          "variation_id": "43541546"
-        },
-        {
-          "variation_id": "43637591"
-        }
+        "43545469",
+        "43541485",
+        "43541546",
+        "43637591"
       ]
     },
     {
@@ -3036,18 +1998,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43545469"
-        },
-        {
-          "variation_id": "43234929"
-        },
-        {
-          "variation_id": "43065707"
-        },
-        {
-          "variation_id": "43016884"
-        }
+        "43545469",
+        "43234929",
+        "43065707",
+        "43016884"
       ]
     },
     {
@@ -3058,15 +2012,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43624478"
-        },
-        {
-          "variation_id": "43624591"
-        },
-        {
-          "variation_id": "43624447"
-        }
+        "43624478",
+        "43624591",
+        "43624447"
       ]
     },
     {
@@ -3077,15 +2025,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43557615"
-        },
-        {
-          "variation_id": "43635887"
-        },
-        {
-          "variation_id": "43636150"
-        }
+        "43557615",
+        "43635887",
+        "43636150"
       ]
     },
     {
@@ -3096,18 +2038,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43624447"
-        },
-        {
-          "variation_id": "43531950"
-        },
-        {
-          "variation_id": "43624478"
-        },
-        {
-          "variation_id": "43624775"
-        }
+        "43624447",
+        "43531950",
+        "43624478",
+        "43624775"
       ]
     },
     {
@@ -3118,18 +2052,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43541027"
-        },
-        {
-          "variation_id": "43678532"
-        },
-        {
-          "variation_id": "43634842"
-        },
-        {
-          "variation_id": "43628179"
-        }
+        "43541027",
+        "43678532",
+        "43634842",
+        "43628179"
       ]
     },
     {
@@ -3140,18 +2066,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43635092"
-        },
-        {
-          "variation_id": "43632428"
-        },
-        {
-          "variation_id": "43634507"
-        },
-        {
-          "variation_id": "73680345"
-        }
+        "43635092",
+        "43632428",
+        "43634507",
+        "73680345"
       ]
     },
     {
@@ -3162,15 +2080,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43624591"
-        },
-        {
-          "variation_id": "42375609"
-        },
-        {
-          "variation_id": "43624775"
-        }
+        "43624591",
+        "42375609",
+        "43624775"
       ]
     },
     {
@@ -3181,18 +2093,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43481774"
-        },
-        {
-          "variation_id": "43634842"
-        },
-        {
-          "variation_id": "43677337"
-        },
-        {
-          "variation_id": "43601271"
-        }
+        "43481774",
+        "43634842",
+        "43677337",
+        "43601271"
       ]
     },
     {
@@ -3203,15 +2107,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43639953"
-        },
-        {
-          "variation_id": "43635528"
-        },
-        {
-          "variation_id": "43631674"
-        }
+        "43639953",
+        "43635528",
+        "43631674"
       ]
     },
     {
@@ -3222,15 +2120,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43635702"
-        },
-        {
-          "variation_id": "43634842"
-        },
-        {
-          "variation_id": "43678532"
-        }
+        "43635702",
+        "43634842",
+        "43678532"
       ]
     },
     {
@@ -3241,18 +2133,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43677337"
-        },
-        {
-          "variation_id": "43624836"
-        },
-        {
-          "variation_id": "43634491"
-        },
-        {
-          "variation_id": "43631322"
-        }
+        "43677337",
+        "43624836",
+        "43634491",
+        "43631322"
       ]
     },
     {
@@ -3263,18 +2147,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1334605/pexels-photo-1334605.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 36,
       "products_included": [
-        {
-          "variation_id": "43637591"
-        },
-        {
-          "variation_id": "43472581"
-        },
-        {
-          "variation_id": "43647316"
-        },
-        {
-          "variation_id": "43340750"
-        }
+        "43637591",
+        "43472581",
+        "43647316",
+        "43340750"
       ]
     },
     {
@@ -3285,15 +2161,9 @@
       "styled_image_url": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 8,
       "products_included": [
-        {
-          "variation_id": "43631674"
-        },
-        {
-          "variation_id": "43632343"
-        },
-        {
-          "variation_id": "42974888"
-        }
+        "43631674",
+        "43632343",
+        "42974888"
       ]
     },
     {
@@ -3304,18 +2174,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1334605/pexels-photo-1334605.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 3,
       "products_included": [
-        {
-          "variation_id": "43624591"
-        },
-        {
-          "variation_id": "43624775"
-        },
-        {
-          "variation_id": "42635956"
-        },
-        {
-          "variation_id": "42426851"
-        }
+        "43624591",
+        "43624775",
+        "42635956",
+        "42426851"
       ]
     },
     {
@@ -3326,18 +2188,10 @@
       "styled_image_url": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43535354"
-        },
-        {
-          "variation_id": "43624478"
-        },
-        {
-          "variation_id": "43628179"
-        },
-        {
-          "variation_id": "43634842"
-        }
+        "43535354",
+        "43624478",
+        "43628179",
+        "43634842"
       ]
     },
     {
@@ -3348,18 +2202,10 @@
       "styled_image_url": "https://images.pexels.com/photos/1334605/pexels-photo-1334605.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43632558"
-        },
-        {
-          "variation_id": "43651955"
-        },
-        {
-          "variation_id": "42891055"
-        },
-        {
-          "variation_id": "43632572"
-        }
+        "43632558",
+        "43651955",
+        "42891055",
+        "43632572"
       ]
     },
     {
@@ -3370,15 +2216,9 @@
       "styled_image_url": "https://images.pexels.com/photos/1334605/pexels-photo-1334605.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 2,
       "products_included": [
-        {
-          "variation_id": "43545469"
-        },
-        {
-          "variation_id": "43391271"
-        },
-        {
-          "variation_id": "43391226"
-        }
+        "43545469",
+        "43391271",
+        "43391226"
       ]
     },
     {
@@ -3389,18 +2229,10 @@
       "styled_image_url": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "42759379"
-        },
-        {
-          "variation_id": "43678525"
-        },
-        {
-          "variation_id": "42879077"
-        },
-        {
-          "variation_id": "43628179"
-        }
+        "42759379",
+        "43678525",
+        "42879077",
+        "43628179"
       ]
     },
     {
@@ -3411,15 +2243,9 @@
       "styled_image_url": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=1600",
       "products_count": 1,
       "products_included": [
-        {
-          "variation_id": "43628179"
-        },
-        {
-          "variation_id": "43535293"
-        },
-        {
-          "variation_id": "43678532"
-        }
+        "43628179",
+        "43535293",
+        "43678532"
       ]
     }
   ]

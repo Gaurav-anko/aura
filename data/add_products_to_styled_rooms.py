@@ -86,12 +86,10 @@ def find_matching_products(
         # If no matches at all, just take random products
         selected = random.sample(products, min(count, len(products)))
     
-    # Extract required fields
+    # Extract required fields - just variation_id strings
     result = []
     for product in selected:
-        result.append({
-            "variation_id": product.get("VARIATION_ID", ""),
-        })
+        result.append(product.get("VARIATION_ID", ""))
     
     return result
 

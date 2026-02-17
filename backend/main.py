@@ -169,6 +169,29 @@ async def get_product_by_id(product_id: str):
     raise HTTPException(status_code=404, detail=f"Product {product_id} not found")
 
 
+@app.post("/products/by-ids")
+async def get_products_by_ids(variation_ids: list[str]):
+    """
+    Get multiple products by their variation IDs.
+    
+    Request Body:
+    - variation_ids: List of VARIATION_ID values to fetch
+    
+    Returns:
+    - List of product objects matching the provided IDs
+    """
+    if not variation_ids:
+        return []
+    
+    products = load_products()
+    matching_products = [
+        product for product in products 
+        if product.get("VARIATION_ID") in variation_ids
+    ]
+    
+    return matching_products
+
+
 @app.get("/categories")
 async def get_categories():
     """Get all available product categories."""
