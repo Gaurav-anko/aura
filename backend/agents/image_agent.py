@@ -1,10 +1,12 @@
 """
 Image Generation Agent
-Uses Google ADK with Gemini to generate styled images featuring multiple products.
+Uses Google Vertex AI Imagen for image editing/composition to create styled scenes
+featuring the exact products selected by the user.
 """
 
 import base64
 import os
+import re
 from typing import Optional, Literal
 from google.adk.agents import Agent
 from google import genai
@@ -23,20 +25,92 @@ def get_genai_client():
     )
 
 
+def extract_dimensions_from_text(text: str) -> dict:
+    """
+    Extract product dimensions from description text.
+    
+    Returns dict with height, width, depth if found.
+    """
+    dimensions = {}
+    
+    # Extract height/length
+    h_match = re.search(r'(\d+(?:\.\d+)?)\s*cm\s*\(H\)', text, re.IGNORECASE)
+    l_match = re.search(r'(\d+(?:\.\d+)?)\s*cm\s*\(L\)', text, re.IGNORECASE)
+    w_match = re.search(r'(\d+(?:\.\d+)?)\s*cm\s*\(W\)', text, re.IGNORECASE)
+    d_match = re.search(r'(\d+(?:\.\d+)?)\s*cm\s*\(D\)', text, re.IGNORECASE)
+    dia_match = re.search(r'(\d+(?:\.\d+)?)\s*cm\s*\(Dia\.\)', text, re.IGNORECASE)
+    
+    if h_match:
+        dimensions['height'] = float(h_match.group(1))
+    elif l_match:
+        dimensions['length'] = float(l_match.group(1))
+    if w_match:
+        dimensions['width'] = float(w_match.group(1))
+    if d_match:
+        dimensions['depth'] = float(d_match.group(1))
+    if dia_match:
+        dimensions['diameter'] = float(dia_match.group(1))
+    
+    # Also try to extract from item name like "235cm x 160cm"
+    name_pattern = r'(\d+)\s*cm\s*x\s*(\d+)\s*cm'
+    name_match = re.search(name_pattern, text, re.IGNORECASE)
+    if name_match and not dimensions:
+        dimensions['length'] = float(name_match.group(1))
+        dimensions['width'] = float(name_match.group(2))
+    
+    return dimensions
+
+
+def build_product_reference_prompt(products: list[dict]) -> str:
+    """
+    Build a detailed product reference section for the prompt,
+    including dimensions and placement instructions.
+    Uses new schema with 'dimensions' field.
+    """
+    product_refs = []
+    
+    for i, product in enumerate(products, 1):
+        name = product.get("ITEM_NAME", "Unknown product")
+        color = product.get("COLOR", "")
+        secondary_color = product.get("SECONDARYCOLOUR", "")
+        category = product.get("CLASS_DESCRIPTION", "")
+        # Use dimensions field directly from new schema
+        dimensions = product.get("dimensions", "")
+        
+        # Build color string
+        color_desc = color
+        if secondary_color and secondary_color != color:
+            color_desc = f"{color}/{secondary_color}"
+        
+        product_refs.append(
+            f"PRODUCT {i}: {name}\n"
+            f"  - Category: {category}\n"
+            f"  - Color: {color_desc}\n"
+            f"  - Dimensions: {dimensions if dimensions else 'See reference image'}\n"
+            f"  - Reference: Use the attached image #{i} as the EXACT appearance"
+        )
+    
+    return "\n\n".join(product_refs)
+
+
 def generate_styled_image(
     scene_prompt: str,
     product_images: list[bytes],
+    product_details: list[dict],
     model_quality: Literal["fast", "high"] = "fast",
     aspect_ratio: str = "16:9",
 ) -> dict:
     """
     Generate a styled image featuring all provided products using Gemini.
+    Uses image-to-image approach where product images are provided as references
+    and the model is instructed to preserve their exact appearance.
     
     Args:
         scene_prompt: Detailed prompt describing the scene composition
         product_images: List of product image bytes to include in the scene
-        model_quality: "fast" for gemini-2.0-flash-preview-image-generation or "high" for gemini-2.0-flash-exp
-        aspect_ratio: Image aspect ratio (16:9, 4:3, 1:1, 9:16)
+        product_details: List of product dictionaries with metadata
+        model_quality: "fast" or "high"
+        aspect_ratio: Image aspect ratio
         
     Returns:
         dict with generated image as base64 and metadata
@@ -44,16 +118,44 @@ def generate_styled_image(
     client = get_genai_client()
     
     # Select model based on quality preference
-    # Using available Gemini models with image generation capability
     if model_quality == "high":
         model_name = "gemini-2.0-flash-exp"
     else:
         model_name = "gemini-2.0-flash-preview-image-generation"
     
+    # Build detailed product reference prompt
+    product_ref_prompt = build_product_reference_prompt(product_details)
+    
+    # Create enhanced prompt with strong image preservation instructions
+    enhanced_prompt = f"""CRITICAL IMAGE GENERATION TASK:
+
+You are creating a photorealistic interior design photograph. You MUST use the EXACT products shown in the reference images I'm providing. DO NOT generate similar-looking products - use THESE SPECIFIC products with their exact appearance, colors, textures, and proportions.
+
+{product_ref_prompt}
+
+=== SCENE REQUIREMENTS ===
+{scene_prompt}
+
+=== CRITICAL INSTRUCTIONS ===
+1. PRESERVE EXACT PRODUCT APPEARANCE: Each product in the generated scene MUST look IDENTICAL to its reference image - same colors, patterns, textures, materials, and design details.
+2. PROPER SCALE: Use the provided dimensions to ensure products are correctly scaled relative to each other and the room.
+3. REALISTIC PLACEMENT: Position products naturally within the room setting as they would be used in real life.
+4. ALL PRODUCTS VISIBLE: Every provided product MUST be clearly visible and recognizable in the final image.
+5. PHOTOREALISTIC QUALITY: Generate a high-quality interior photography image suitable for e-commerce.
+6. NATURAL LIGHTING: Use soft, natural lighting that shows product details clearly.
+
+DO NOT:
+- Generate products that only look "similar" to the references
+- Alter the colors, patterns, or textures of the products
+- Hide or obscure any of the products
+- Change the fundamental design of any product
+
+The final image should look like a professional interior design photograph where someone has arranged THESE EXACT PRODUCTS in a styled room setting."""
+
     # Build the content parts: product images + prompt
     content_parts = []
     
-    # Add product images as input
+    # Add product images as input references
     for i, img_bytes in enumerate(product_images):
         content_parts.append(
             types.Part.from_bytes(
@@ -61,9 +163,11 @@ def generate_styled_image(
                 mime_type="image/jpeg",
             )
         )
+        # Add label for each image
+        content_parts.append(f"[Above is Reference Image #{i+1} - this is the EXACT product to include]")
     
-    # Add the scene prompt
-    content_parts.append(scene_prompt)
+    # Add the enhanced scene prompt
+    content_parts.append(enhanced_prompt)
     
     try:
         # Generate the image
@@ -91,9 +195,10 @@ def generate_styled_image(
                 "success": True,
                 "image_base64": image_base64,
                 "model_used": model_name,
-                "prompt_used": scene_prompt,
+                "prompt_used": enhanced_prompt,
                 "product_count": len(product_images),
                 "response_text": response_text,
+                "generation_mode": "image_to_image",
             }
         else:
             return {
@@ -118,14 +223,6 @@ def generate_image_text_only(
 ) -> dict:
     """
     Generate a styled image using only text descriptions (fallback when images unavailable).
-    
-    Args:
-        scene_prompt: Detailed prompt describing the scene
-        product_descriptions: List of product description strings
-        model_quality: "fast" or "high" quality model
-        
-    Returns:
-        dict with generated image as base64 and metadata
     """
     client = get_genai_client()
     
@@ -134,14 +231,14 @@ def generate_image_text_only(
     else:
         model_name = "gemini-2.0-flash-preview-image-generation"
     
-    # Enhance prompt with product descriptions
     products_text = "\n".join([f"- {desc}" for desc in product_descriptions])
     full_prompt = f"""{scene_prompt}
 
-Products to feature in the image:
+=== PRODUCTS TO FEATURE ===
 {products_text}
 
-Generate a photorealistic interior design image featuring all these products."""
+Generate a photorealistic interior design image featuring all these products arranged naturally in the scene.
+The products should be clearly visible, properly scaled, and styled according to the scene requirements."""
 
     try:
         response = client.models.generate_content(
@@ -189,23 +286,19 @@ Generate a photorealistic interior design image featuring all these products."""
 image_agent = Agent(
     name="image_agent",
     model="gemini-2.0-flash",
-    description="Agent that generates photorealistic styled images featuring multiple home products using Gemini's image generation capabilities.",
+    description="Agent that generates photorealistic styled images featuring the EXACT products provided using image-to-image generation.",
     instruction="""You are an AI image generation specialist for e-commerce product styling.
 
-Your job is to generate high-quality, photorealistic images of home products in styled settings.
+Your job is to generate high-quality, photorealistic images that feature the EXACT products provided as reference images.
 
-Use the tools to:
-- generate_styled_image: Generate an image using product reference images + scene prompt
-- generate_image_text_only: Generate an image using only text descriptions (fallback)
+CRITICAL: The products in the generated image MUST look IDENTICAL to the reference images - same colors, textures, patterns, and designs. Do NOT generate "similar" products.
 
 When generating images:
-1. Ensure all products are visible and properly scaled
-2. Create realistic interior photography quality
-3. Use appropriate lighting for the mood
-4. Compose products in a natural, styled arrangement
-5. Aim for e-commerce lifestyle photography quality
-
-The generated images should look like professional interior design photographs suitable for product marketing.
+1. PRESERVE EXACT PRODUCT APPEARANCE from reference images
+2. Ensure all products are visible and properly scaled using their dimensions
+3. Create realistic interior photography quality
+4. Use appropriate lighting for the mood
+5. Compose products in a natural, styled arrangement
 """,
     tools=[
         generate_styled_image,

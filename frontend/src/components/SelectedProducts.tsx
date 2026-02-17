@@ -33,13 +33,11 @@ export const SelectedProducts = ({ products, onRemove, onClear }: SelectedProduc
 
       <div className="flex flex-wrap gap-3">
         {products.map((product) => {
-          const imageUrl = Array.isArray(product.IMAGE_URL)
-            ? product.IMAGE_URL[0]
-            : product.IMAGE_URL;
+          const imageUrl = product.image_url;
 
           return (
             <div
-              key={product.ITEM_ID}
+              key={product.variation_id}
               className="relative group bg-white rounded-lg overflow-hidden shadow-sm border border-gray-200"
             >
               <div className="w-20 h-20">
@@ -53,7 +51,7 @@ export const SelectedProducts = ({ products, onRemove, onClear }: SelectedProduc
                 />
               </div>
               <button
-                onClick={() => onRemove(product.ITEM_ID)}
+                onClick={() => onRemove(product.variation_id)}
                 className="absolute -top-1 -right-1 bg-red-500 hover:bg-red-600 rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity shadow-md"
               >
                 <X size={12} className="text-white" />

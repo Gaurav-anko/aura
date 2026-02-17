@@ -59,7 +59,7 @@ function App() {
   // Get selected products
   const selectedProducts = useMemo(() => {
     if (!productsData?.products) return [];
-    return productsData.products.filter((p) => selectedIds.has(p.ITEM_ID));
+    return productsData.products.filter((p) => selectedIds.has(p.variation_id));
   }, [productsData?.products, selectedIds]);
 
   // Toggle product selection
