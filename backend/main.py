@@ -124,7 +124,7 @@ async def get_products(
     Get all products or filter by criteria.
     
     Query Parameters:
-    - category: Filter by PRIMARY_CATEGORY
+    - category: Filter by CLASS_DESCRIPTION
     - color: Filter by COLOR
     - min_price: Minimum price
     - max_price: Maximum price
@@ -160,10 +160,10 @@ async def filter_products_endpoint(request: FilterRequest):
 
 @app.get("/products/{product_id}")
 async def get_product_by_id(product_id: str):
-    """Get a single product by ITEM_ID."""
+    """Get a single product by variation_id."""
     products = load_products()
     for product in products:
-        if product.get("ITEM_ID") == product_id:
+        if product.get("variation_id") == product_id:
             return product
     raise HTTPException(status_code=404, detail=f"Product {product_id} not found")
 
@@ -235,9 +235,10 @@ async def get_rooms():
 async def generate_style(request: GenerateStyleRequest):
     """
     Generate a styled image featuring selected products.
+    Uses image-to-image generation to preserve exact product appearance.
     
     Request Body:
-    - product_ids: List of product ITEM_IDs (1-4 products)
+    - product_ids: List of product variation_ids (1-4 products)
     - mood: Mood for the scene (cozy, elegant, minimalist, vibrant, relaxing)
     - style: Design style (modern, scandinavian, bohemian, industrial, classic)
     - color_theme: Color palette (neutral, warm, cool, bold, monochrome)
@@ -251,7 +252,7 @@ async def generate_style(request: GenerateStyleRequest):
     selected_products = []
     for pid in request.product_ids:
         for product in all_products:
-            if product.get("ITEM_ID") == pid:
+            if product.get("variation_id") == pid:
                 selected_products.append(product)
                 break
     
@@ -260,7 +261,7 @@ async def generate_style(request: GenerateStyleRequest):
     
     logger.info(f"Generating style for {len(selected_products)} products")
     
-    # Create styling plan
+    # Create styling plan with enhanced product details
     styling_plan = create_styling_plan(
         products=selected_products,
         mood=request.mood,
@@ -269,8 +270,11 @@ async def generate_style(request: GenerateStyleRequest):
         room_type=request.room_type,
     )
     
-    # Fetch product images
-    successful_fetches, failed_fetches = await fetch_product_images(selected_products)
+    # Fetch product images (primary only)
+    successful_fetches, failed_fetches = await fetch_product_images(
+        selected_products,
+        fetch_alternates=False,
+    )
     
     skipped_products = [p.get("ITEM_NAME", "Unknown") for p in failed_fetches]
     if skipped_products:
@@ -278,19 +282,27 @@ async def generate_style(request: GenerateStyleRequest):
     
     # Generate the styled image
     if successful_fetches:
-        # Use product images for generation
-        product_images = [img_bytes for _, img_bytes in successful_fetches]
+        # Extract main image for each product and get product details
+        product_images = []
+        products_with_images = []
+        
+        for product, images in successful_fetches:
+            product_images.append(images[0])  # Main image
+            products_with_images.append(product)
+        
+        logger.info(f"Generating with {len(product_images)} product images using image-to-image")
         
         result = generate_styled_image(
             scene_prompt=styling_plan["scene_prompt"],
             product_images=product_images,
+            product_details=products_with_images,
             model_quality=request.model_quality,
         )
     else:
         # Fallback to text-only generation
         logger.warning("No product images available, using text-only generation")
         product_descriptions = [
-            f"{p.get('ITEM_NAME', '')}: {p.get('DETAILED_DESCRIPTION', '')}"
+            f"{p.get('ITEM_NAME', '')}: {p.get('CLASS_DESCRIPTION', '')} in {p.get('COLOR', '')}, dimensions: {p.get('dimensions', 'N/A')}"
             for p in selected_products
         ]
         
@@ -305,6 +317,7 @@ async def generate_style(request: GenerateStyleRequest):
         "image_base64": result.get("image_base64"),
         "styling_plan": styling_plan,
         "model_used": result.get("model_used"),
+        "generation_mode": result.get("generation_mode", "unknown"),
         "skipped_products": skipped_products,
         "error": result.get("error"),
     }
@@ -314,9 +327,10 @@ async def generate_style(request: GenerateStyleRequest):
 async def regenerate_image(request: RegenerateRequest):
     """
     Regenerate an image with user feedback.
+    Uses image-to-image generation to preserve exact product appearance.
     
     Request Body:
-    - product_ids: List of product ITEM_IDs
+    - product_ids: List of product variation_ids
     - previous_plan: The previous styling plan dict
     - feedback: User's feedback for refinement
     - model_quality: "fast" or "high" quality model
@@ -328,7 +342,7 @@ async def regenerate_image(request: RegenerateRequest):
     selected_products = []
     for pid in request.product_ids:
         for product in all_products:
-            if product.get("ITEM_ID") == pid:
+            if product.get("variation_id") == pid:
                 selected_products.append(product)
                 break
     
@@ -343,23 +357,33 @@ async def regenerate_image(request: RegenerateRequest):
         feedback=request.feedback,
     )
     
-    # Fetch product images
-    successful_fetches, failed_fetches = await fetch_product_images(selected_products)
+    # Fetch product images (primary only)
+    successful_fetches, failed_fetches = await fetch_product_images(
+        selected_products,
+        fetch_alternates=False,
+    )
     
     skipped_products = [p.get("ITEM_NAME", "Unknown") for p in failed_fetches]
     
     # Generate the refined image
     if successful_fetches:
-        product_images = [img_bytes for _, img_bytes in successful_fetches]
+        # Extract main image for each product and get product details
+        product_images = []
+        products_with_images = []
+        
+        for product, images in successful_fetches:
+            product_images.append(images[0])  # Main image
+            products_with_images.append(product)
         
         result = generate_styled_image(
             scene_prompt=refined_plan["scene_prompt"],
             product_images=product_images,
+            product_details=products_with_images,
             model_quality=request.model_quality,
         )
     else:
         product_descriptions = [
-            f"{p.get('ITEM_NAME', '')}: {p.get('DETAILED_DESCRIPTION', '')}"
+            f"{p.get('ITEM_NAME', '')}: {p.get('CLASS_DESCRIPTION', '')} in {p.get('COLOR', '')}, dimensions: {p.get('dimensions', 'N/A')}"
             for p in selected_products
         ]
         
@@ -374,6 +398,7 @@ async def regenerate_image(request: RegenerateRequest):
         "image_base64": result.get("image_base64"),
         "styling_plan": refined_plan,
         "model_used": result.get("model_used"),
+        "generation_mode": result.get("generation_mode", "unknown"),
         "skipped_products": skipped_products,
         "feedback_applied": request.feedback,
         "error": result.get("error"),

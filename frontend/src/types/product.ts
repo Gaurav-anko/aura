@@ -1,24 +1,22 @@
 /**
  * Product types matching the backend data structure
+ * Updated for new schema with dimensions, image_url, and alt_image_urls
  */
 
 export interface Product {
-  VARIATION_ID: string;
-  ITEM_ID: string;
+  variation_id: string;
   ITEM_NAME: string;
   COLOR: string;
   SECONDARYCOLOUR: string;
-  IMAGE_URL: string[];
-  CLEARANCE: boolean;
-  PRODUCT_DESCRIPTION: string;
   DEPARTMENT_DESCRIPTION: string;
   CATEGORY: string;
   CLASS_DESCRIPTION: string;
   SUB_CLASS_DESCRIPTION: string;
-  DETAILED_DESCRIPTION: string;
-  PRIMARY_CATEGORY: string;
   PRICE: number;
   generated_tags: string[];
+  image_url: string;
+  alt_image_urls: string[];
+  dimensions: string;
 }
 
 export interface FilterResponse {

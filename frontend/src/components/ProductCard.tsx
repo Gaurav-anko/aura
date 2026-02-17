@@ -13,13 +13,11 @@ interface ProductCardProps {
 }
 
 export const ProductCard = ({ product, isSelected, onToggle, disabled }: ProductCardProps) => {
-  const imageUrl = Array.isArray(product.IMAGE_URL) 
-    ? product.IMAGE_URL[0] 
-    : product.IMAGE_URL;
+  const imageUrl = product.image_url;
 
   return (
     <div
-      onClick={() => !disabled && onToggle(product.ITEM_ID)}
+      onClick={() => !disabled && onToggle(product.variation_id)}
       className={`
         relative rounded-lg overflow-hidden border-2 cursor-pointer transition-all duration-200 bg-white shadow-sm
         ${isSelected 
@@ -54,7 +52,7 @@ export const ProductCard = ({ product, isSelected, onToggle, disabled }: Product
           {product.ITEM_NAME}
         </h3>
         <div className="flex justify-between items-center mt-1">
-          <span className="text-xs text-gray-600">{product.PRIMARY_CATEGORY}</span>
+          <span className="text-xs text-gray-600">{product.CLASS_DESCRIPTION}</span>
           <span className="text-sm font-semibold text-purple-600">${product.PRICE}</span>
         </div>
         <div className="flex gap-1 mt-2">

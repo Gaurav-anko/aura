@@ -1,6 +1,7 @@
 """
 Image Fetcher Service
 Fetches product images from URLs with graceful error handling.
+Enhanced to fetch multiple images per product (main + alternates).
 """
 
 import httpx
@@ -33,35 +34,61 @@ async def fetch_image_from_url(url: str, timeout: float = 10.0) -> Optional[byte
 
 async def fetch_product_images(
     products: list[dict],
-) -> tuple[list[tuple[dict, bytes]], list[dict]]:
+    fetch_alternates: bool = True,
+    max_alternates: int = 2,
+) -> tuple[list[tuple[dict, list[bytes]]], list[dict]]:
     """
     Fetch images for multiple products.
     
+    Uses new schema:
+    - image_url: Primary product image (string)
+    - alt_image_urls: Array of alternate/360 view images
+    
     Args:
-        products: List of product dictionaries with IMAGE_URL field
+        products: List of product dictionaries
+        fetch_alternates: Whether to fetch alternate images
+        max_alternates: Maximum number of alternate images to fetch per product
         
     Returns:
         Tuple of:
-        - List of (product, image_bytes) tuples for successful fetches
+        - List of (product, [image_bytes_list]) tuples for successful fetches
         - List of products that failed to fetch
     """
     successful = []
     failed = []
     
     for product in products:
-        image_urls = product.get("IMAGE_URL", [])
+        # Get primary image URL (new schema: image_url is a string)
+        primary_url = product.get("image_url", "")
+        alt_urls = product.get("alt_image_urls", [])
         
-        # Try to fetch the first available image
-        image_bytes = None
-        if isinstance(image_urls, list) and len(image_urls) > 0:
-            image_bytes = await fetch_image_from_url(image_urls[0])
-        elif isinstance(image_urls, str):
-            image_bytes = await fetch_image_from_url(image_urls)
+        if not primary_url:
+            failed.append(product)
+            logger.warning(f"Product {product.get('variation_id', 'unknown')} has no image_url")
+            continue
         
-        if image_bytes:
-            successful.append((product, image_bytes))
+        # Fetch main image
+        product_images = []
+        main_image = await fetch_image_from_url(primary_url)
+        
+        if main_image:
+            product_images.append(main_image)
+            
+            # Fetch alternate images if requested (for 360 views)
+            if fetch_alternates and alt_urls:
+                for alt_url in alt_urls[:max_alternates]:
+                    alt_image = await fetch_image_from_url(alt_url)
+                    if alt_image:
+                        product_images.append(alt_image)
+            
+            successful.append((product, product_images))
+            logger.info(
+                f"Fetched {len(product_images)} image(s) for product {product.get('variation_id', 'unknown')}"
+            )
         else:
             failed.append(product)
-            logger.warning(f"Skipping product {product.get('ITEM_ID', 'unknown')} - image fetch failed")
+            logger.warning(
+                f"Skipping product {product.get('variation_id', 'unknown')} - main image fetch failed"
+            )
     
     return successful, failed

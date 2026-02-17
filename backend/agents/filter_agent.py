@@ -29,7 +29,7 @@ def filter_products(
     Filter products from the catalog based on criteria.
     
     Args:
-        category: Filter by PRIMARY_CATEGORY (e.g., "Rugs", "Lighting", "Furniture")
+        category: Filter by CLASS_DESCRIPTION (e.g., "RUGS & MATS", "LIGHTING", "CONTAINERS/BASKETS")
         color: Filter by COLOR field (e.g., "Beige", "Black", "White")
         min_price: Minimum price filter
         max_price: Maximum price filter
@@ -41,10 +41,12 @@ def filter_products(
     filtered = []
     
     for product in products:
-        # Category filter (case-insensitive)
+        # Category filter (case-insensitive) - check CLASS_DESCRIPTION and SUB_CLASS_DESCRIPTION
         if category:
-            product_category = product.get("PRIMARY_CATEGORY") or ""
-            if category.lower() not in product_category.lower():
+            product_class = product.get("CLASS_DESCRIPTION") or ""
+            product_subclass = product.get("SUB_CLASS_DESCRIPTION") or ""
+            combined = f"{product_class} {product_subclass}".lower()
+            if category.lower() not in combined:
                 continue
         
         # Color filter (case-insensitive)
@@ -77,7 +79,7 @@ def filter_products(
 
 def get_available_categories() -> dict:
     """
-    Get all unique PRIMARY_CATEGORY values from the catalog.
+    Get all unique CLASS_DESCRIPTION values from the catalog.
     
     Returns:
         dict with list of available categories
@@ -86,7 +88,7 @@ def get_available_categories() -> dict:
     categories = set()
     
     for product in products:
-        cat = product.get("PRIMARY_CATEGORY")
+        cat = product.get("CLASS_DESCRIPTION")
         if cat and cat.strip():  # Only add non-empty categories
             categories.add(cat)
     
