@@ -13,6 +13,7 @@ def create_styling_plan(
     style: str = "modern",
     color_theme: str = "neutral",
     room_type: str = "living room",
+    custom_prompt: Optional[str] = None,
 ) -> dict:
     """
     Create a detailed styling plan for generating a scene with the selected products.
@@ -23,6 +24,7 @@ def create_styling_plan(
         style: Design style (modern, scandinavian, bohemian, industrial, classic)
         color_theme: Color palette (neutral, warm, cool, bold, monochrome)
         room_type: Type of room for the scene (living room, bedroom, dining room, office)
+        custom_prompt: Optional user-provided custom prompt for additional styling details
         
     Returns:
         dict with styling plan including scene description and composition prompt
@@ -55,6 +57,10 @@ Technical requirements:
 - High-end lifestyle photography suitable for e-commerce
 - 4K quality, sharp focus, proper composition
 - Products arranged in a cohesive, styled scene"""
+
+    # Append custom prompt if provided
+    if custom_prompt and custom_prompt.strip():
+        scene_prompt += f"\n\nAdditional requirements:\n{custom_prompt.strip()}"
 
     # Build detailed scene description for reference
     scene_description = f"A {mood}, {style} {room_type} with {color_theme} tones featuring {len(products)} products: " + ", ".join([p.get("ITEM_NAME", "") for p in products])

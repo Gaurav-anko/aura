@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 interface StyledRoom {
+  id: string;
   room_type: string;
   category: string;
   color: string;
@@ -326,7 +327,7 @@ export const StyledRoomsGallery: React.FC = () => {
       <div className="max-w-7xl mx-auto mb-8">
         <div className="text-center mb-6">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">
-            🎨 Styled Room Gallery
+            🎨 Styled Projects
           </h1>
           <p className="text-gray-600">
             {data.total_styled_images} professionally styled room inspiration images
@@ -376,11 +377,11 @@ export const StyledRoomsGallery: React.FC = () => {
       </div>
 
       {/* Gallery Grid */}
-      <div style={{maxHeight: 600, overflowY: 'auto'}} className="max-w-7xl mx-auto">
+      <div style={{maxHeight: 800, overflowY: 'auto'}} className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredRooms.map((room, index) => (
+          {filteredRooms.map((room) => (
             <div
-              key={`${room.room_type}-${room.category}-${room.color}-${index}`}
+              key={room.id}
               className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer"
               onClick={() => openShareModal(room)}
             >

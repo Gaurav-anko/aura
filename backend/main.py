@@ -79,6 +79,7 @@ class GenerateStyleRequest(BaseModel):
     color_theme: str = "neutral"
     room_type: str = "living room"
     model_quality: Literal["fast", "high"] = "fast"
+    custom_prompt: Optional[str] = None
 
 
 class RegenerateRequest(BaseModel):
@@ -267,6 +268,7 @@ async def generate_style(request: GenerateStyleRequest):
         style=request.style,
         color_theme=request.color_theme,
         room_type=request.room_type,
+        custom_prompt=request.custom_prompt,
     )
     
     # Fetch product images
