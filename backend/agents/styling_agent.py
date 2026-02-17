@@ -139,7 +139,7 @@ def create_styling_plan(
 2. Create visual balance using the rule of thirds
 3. Ensure proper scale relationships between products based on their dimensions
 4. Use natural sight lines to draw attention to each product
-5. Leave appropriate negative space for a clean, uncluttered look
+5. Leave appropriate negative space for a clean, uncluttered look"""
 
     # Append custom prompt if provided
     if custom_prompt and custom_prompt.strip():
