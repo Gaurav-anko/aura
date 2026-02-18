@@ -3,7 +3,7 @@
  * AI-powered interior design visualization
  */
 
-import { useState, useMemo } from 'react';
+import { useState } from 'react';
 import { Sparkles, Package, Image } from 'lucide-react';
 import {
   Disclaimer,
@@ -15,7 +15,7 @@ import {
 } from './components';
 import { StyledRoomsGallery } from './components/StyledRoomsGallery';
 import { useProducts, useGenerateStyle, useRegenerate } from './hooks';
-import type { StylingPlan } from './types';
+import type { Product, StylingPlan } from './types';
 
 type TabType = 'styler' | 'gallery';
 
@@ -31,6 +31,7 @@ function App() {
 
   // Selection state
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
+  const [selectedProducts, setSelectedProducts] = useState<Product[]>([]);
 
   // Styling state
   const [mood, setMood] = useState('cozy');
@@ -57,32 +58,44 @@ function App() {
   const generateMutation = useGenerateStyle();
   const regenerateMutation = useRegenerate();
 
-  // Get selected products (from stored map, not from filtered results)
-  const selectedProducts = useMemo(() => {
-    if (!productsData?.products) return [];
-    return productsData.products.filter((p) => selectedIds.has(p.variation_id));
-  }, [productsData?.products, selectedIds]);
-
-  console.log('App rendered with selectedIds:', Array.from(selectedIds), 'selectedProducts:', selectedProducts);
   // Toggle product selection
   const handleToggleProduct = (productId: string) => {
-    const product = productsData?.products.find(p => p.variation_id === productId);
-    if (!product) return;
-
-    setSelectedIds((prev) => {
-      const next = new Set(prev);
-      if (next.has(productId)) {
+    if (selectedIds.has(productId)) {
+      // Remove product - no need to find it in current filtered data
+      setSelectedIds((prev) => {
+        const next = new Set(prev);
         next.delete(productId);
-      } else if (next.size < 4) {
-        next.add(productId);
+        return next;
+      });
+      setSelectedProducts(prevProducts => 
+        prevProducts.filter(p => p.variation_id !== productId)
+      );
+    } else {
+      // Add product - need to find it in current filtered data
+      const product = productsData?.products.find(p => p.variation_id === productId);
+      if (!product) return;
+      
+      if (selectedIds.size < 4) {
+        setSelectedIds((prev) => {
+          const next = new Set(prev);
+          next.add(productId);
+          return next;
+        });
+        setSelectedProducts(prevProducts => {
+          // Prevent duplicates
+          if (prevProducts.some(p => p.variation_id === productId)) {
+            return prevProducts;
+          }
+          return [...prevProducts, product];
+        });
       }
-      return next;
-    });
+    }
   };
 
   // Clear selection
   const handleClearSelection = () => {
     setSelectedIds(new Set());
+    setSelectedProducts([]);
   };
 
   // Clear filters
