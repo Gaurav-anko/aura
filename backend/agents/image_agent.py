@@ -7,10 +7,14 @@ featuring the exact products selected by the user.
 import base64
 import os
 import re
+import time
+import logging
 from typing import Optional, Literal
 from google.adk.agents import Agent
 from google import genai
 from google.genai import types
+
+logger = logging.getLogger(__name__)
 
 
 def get_genai_client():
@@ -117,12 +121,15 @@ def generate_styled_image(
     """
     client = get_genai_client()
     
-    # Select model based on quality preference
-    if model_quality == "high":
-        model_name = "gemini-2.0-flash-exp"
-    else:
-        model_name = "gemini-2.0-flash-preview-image-generation"
+    model_name = ''
     
+    if model_quality == "high":
+        model_name = "gemini-3-pro-image"
+    else:
+        model_name = "gemini-2.5-flash-image"
+    
+    
+    print(model_name)
     # Build detailed product reference prompt
     product_ref_prompt = build_product_reference_prompt(product_details)
     
@@ -169,51 +176,83 @@ The final image should look like a professional interior design photograph where
     # Add the enhanced scene prompt
     content_parts.append(enhanced_prompt)
     
-    try:
-        # Generate the image
-        response = client.models.generate_content(
-            model=model_name,
-            contents=content_parts,
-            config=types.GenerateContentConfig(
-                response_modalities=["IMAGE", "TEXT"],
-            ),
-        )
-        
-        # Extract the generated image
-        image_base64 = None
-        response_text = None
-        
-        if response.candidates and response.candidates[0].content.parts:
-            for part in response.candidates[0].content.parts:
-                if hasattr(part, 'inline_data') and part.inline_data:
-                    image_base64 = base64.b64encode(part.inline_data.data).decode('utf-8')
-                elif hasattr(part, 'text') and part.text:
-                    response_text = part.text
-        
-        if image_base64:
-            return {
-                "success": True,
-                "image_base64": image_base64,
-                "model_used": model_name,
-                "prompt_used": enhanced_prompt,
-                "product_count": len(product_images),
-                "response_text": response_text,
-                "generation_mode": "image_to_image",
-            }
-        else:
-            return {
-                "success": False,
-                "error": "No image generated in response",
-                "response_text": response_text,
-                "model_used": model_name,
-            }
+    # Retry logic with exponential backoff for rate limiting
+    max_retries = 3
+    base_delay = 5  # Start with 5 seconds
+    
+    for attempt in range(max_retries):
+        try:
+            # Add delay before request to avoid rate limits (except first attempt)
+            if attempt > 0:
+                delay = base_delay * (2 ** attempt)  # 5, 10, 20 seconds
+                logger.info(f"Rate limit hit, waiting {delay} seconds before retry {attempt + 1}/{max_retries}")
+                time.sleep(delay)
             
-    except Exception as e:
-        return {
-            "success": False,
-            "error": str(e),
-            "model_used": model_name,
-        }
+            # Generate the image
+            response = client.models.generate_content(
+                model=model_name,
+                contents=content_parts,
+                config=types.GenerateContentConfig(
+                    response_modalities=["IMAGE", "TEXT"],
+                ),
+            )
+            
+            # Extract the generated image
+            image_base64 = None
+            response_text = None
+            
+            if response.candidates and response.candidates[0].content.parts:
+                for part in response.candidates[0].content.parts:
+                    if hasattr(part, 'inline_data') and part.inline_data:
+                        image_base64 = base64.b64encode(part.inline_data.data).decode('utf-8')
+                    elif hasattr(part, 'text') and part.text:
+                        response_text = part.text
+            
+            if image_base64:
+                return {
+                    "success": True,
+                    "image_base64": image_base64,
+                    "model_used": model_name,
+                    "prompt_used": enhanced_prompt,
+                    "product_count": len(product_images),
+                    "response_text": response_text,
+                    "generation_mode": "image_to_image",
+                }
+            else:
+                return {
+                    "success": False,
+                    "error": "No image generated in response",
+                    "response_text": response_text,
+                    "model_used": model_name,
+                }
+                
+        except Exception as e:
+            error_str = str(e)
+            # Check if it's a rate limit error (429)
+            if "429" in error_str or "Too Many Requests" in error_str or "RESOURCE_EXHAUSTED" in error_str:
+                if attempt < max_retries - 1:
+                    logger.warning(f"Rate limit error on attempt {attempt + 1}, will retry: {error_str}")
+                    continue
+                else:
+                    logger.error(f"Rate limit error after {max_retries} attempts: {error_str}")
+                    return {
+                        "success": False,
+                        "error": f"Rate limit exceeded after {max_retries} retries. Please try again in a few minutes.",
+                        "model_used": model_name,
+                    }
+            else:
+                # Non-rate-limit error, don't retry
+                return {
+                    "success": False,
+                    "error": error_str,
+                    "model_used": model_name,
+                }
+    
+    return {
+        "success": False,
+        "error": "Max retries reached",
+        "model_used": model_name,
+    }
 
 
 def generate_image_text_only(
@@ -226,10 +265,8 @@ def generate_image_text_only(
     """
     client = get_genai_client()
     
-    if model_quality == "high":
-        model_name = "gemini-2.0-flash-exp"
-    else:
-        model_name = "gemini-2.0-flash-preview-image-generation"
+    # Use gemini-2.5-flash-image for text-to-image generation
+    model_name = "gemini-2.5-flash-image"
     
     products_text = "\n".join([f"- {desc}" for desc in product_descriptions])
     full_prompt = f"""{scene_prompt}
@@ -240,52 +277,82 @@ def generate_image_text_only(
 Generate a photorealistic interior design image featuring all these products arranged naturally in the scene.
 The products should be clearly visible, properly scaled, and styled according to the scene requirements."""
 
-    try:
-        response = client.models.generate_content(
-            model=model_name,
-            contents=[full_prompt],
-            config=types.GenerateContentConfig(
-                response_modalities=["IMAGE", "TEXT"],
-            ),
-        )
-        
-        image_base64 = None
-        response_text = None
-        
-        if response.candidates and response.candidates[0].content.parts:
-            for part in response.candidates[0].content.parts:
-                if hasattr(part, 'inline_data') and part.inline_data:
-                    image_base64 = base64.b64encode(part.inline_data.data).decode('utf-8')
-                elif hasattr(part, 'text') and part.text:
-                    response_text = part.text
-        
-        if image_base64:
-            return {
-                "success": True,
-                "image_base64": image_base64,
-                "model_used": model_name,
-                "prompt_used": full_prompt,
-                "generation_mode": "text_only",
-                "response_text": response_text,
-            }
-        else:
-            return {
-                "success": False,
-                "error": "No image generated in response",
-                "response_text": response_text,
-            }
+    # Retry logic with exponential backoff for rate limiting
+    max_retries = 3
+    base_delay = 5  # Start with 5 seconds
+    
+    for attempt in range(max_retries):
+        try:
+            # Add delay before request to avoid rate limits (except first attempt)
+            if attempt > 0:
+                delay = base_delay * (2 ** attempt)  # 5, 10, 20 seconds
+                logger.info(f"Rate limit hit, waiting {delay} seconds before retry {attempt + 1}/{max_retries}")
+                time.sleep(delay)
             
-    except Exception as e:
-        return {
-            "success": False,
-            "error": str(e),
-        }
+            response = client.models.generate_content(
+                model=model_name,
+                contents=[full_prompt],
+                config=types.GenerateContentConfig(
+                    response_modalities=["IMAGE", "TEXT"],
+                ),
+            )
+            
+            image_base64 = None
+            response_text = None
+            
+            if response.candidates and response.candidates[0].content.parts:
+                for part in response.candidates[0].content.parts:
+                    if hasattr(part, 'inline_data') and part.inline_data:
+                        image_base64 = base64.b64encode(part.inline_data.data).decode('utf-8')
+                    elif hasattr(part, 'text') and part.text:
+                        response_text = part.text
+            
+            if image_base64:
+                return {
+                    "success": True,
+                    "image_base64": image_base64,
+                    "model_used": model_name,
+                    "prompt_used": full_prompt,
+                    "generation_mode": "text_only",
+                    "response_text": response_text,
+                }
+            else:
+                return {
+                    "success": False,
+                    "error": "No image generated in response",
+                    "response_text": response_text,
+                }
+                
+        except Exception as e:
+            error_str = str(e)
+            # Check if it's a rate limit error (429)
+            if "429" in error_str or "Too Many Requests" in error_str or "RESOURCE_EXHAUSTED" in error_str:
+                if attempt < max_retries - 1:
+                    logger.warning(f"Rate limit error on attempt {attempt + 1}, will retry: {error_str}")
+                    continue
+                else:
+                    logger.error(f"Rate limit error after {max_retries} attempts: {error_str}")
+                    return {
+                        "success": False,
+                        "error": f"Rate limit exceeded after {max_retries} retries. Please try again in a few minutes.",
+                    }
+            else:
+                # Non-rate-limit error, don't retry
+                return {
+                    "success": False,
+                    "error": error_str,
+                }
+    
+    return {
+        "success": False,
+        "error": "Max retries reached",
+    }
 
 
 # Create the Image Generation Agent
 image_agent = Agent(
     name="image_agent",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash-image",
     description="Agent that generates photorealistic styled images featuring the EXACT products provided using image-to-image generation.",
     instruction="""You are an AI image generation specialist for e-commerce product styling.
 

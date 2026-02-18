@@ -82,6 +82,7 @@ async def fetch_product_images(
                         product_images.append(alt_image)
             
             successful.append((product, product_images))
+            
             logger.info(
                 f"Fetched {len(product_images)} image(s) for product {product.get('variation_id', 'unknown')}"
             )

@@ -62,7 +62,6 @@ def create_styling_plan(
     - CLASS_DESCRIPTION: Product category
     - dimensions: Product dimensions string (e.g., "235cm (L) x 160cm (W)")
     - image_url: Primary product image
-    - alt_image_urls: Alternate product images
     
     Args:
         products: List of product dictionaries with ITEM_NAME, DETAILED_DESCRIPTION, COLOR
@@ -79,6 +78,8 @@ def create_styling_plan(
     product_descriptions = []
     product_details = []
     
+    print(products)
+    
     for i, product in enumerate(products, 1):
         name = product.get("ITEM_NAME", "Unknown product")
         color = product.get("COLOR", "")
@@ -86,7 +87,6 @@ def create_styling_plan(
         dimensions = product.get("dimensions", "")
         class_desc = product.get("CLASS_DESCRIPTION", "")
         image_url = product.get("image_url", "")
-        alt_image_urls = product.get("alt_image_urls", [])
         
         # Build color description
         color_desc = color
@@ -104,8 +104,7 @@ def create_styling_plan(
             "color": color_desc,
             "dimensions": dimensions,
             "placement": placement,
-            "image_url": image_url,
-            "alt_image_count": len(alt_image_urls),
+            "image_url": image_url
         }
         product_details.append(product_detail)
         
@@ -140,6 +139,7 @@ def create_styling_plan(
 3. Ensure proper scale relationships between products based on their dimensions
 4. Use natural sight lines to draw attention to each product
 5. Leave appropriate negative space for a clean, uncluttered look
+"""
 
     # Append custom prompt if provided
     if custom_prompt and custom_prompt.strip():
@@ -158,7 +158,7 @@ def create_styling_plan(
             "room_type": room_type,
         },
         "product_count": len(products),
-        "products_included": product_names,
+        "products_included": [p.get("ITEM_NAME", "") for p in products],
         "product_details": product_details,
     }
 
@@ -264,6 +264,8 @@ def get_room_options() -> dict:
             {"value": "home office", "label": "Home Office"},
             {"value": "entryway", "label": "Entryway"},
             {"value": "reading nook", "label": "Reading Nook"},
+            {"value": "bathroom", "label": "Bathroom"},
+            {"value": "kitchen", "label": "Kitchen"},
         ]
     }
 
