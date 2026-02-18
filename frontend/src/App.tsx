@@ -15,7 +15,7 @@ import {
 } from './components';
 import { StyledRoomsGallery } from './components/StyledRoomsGallery';
 import { useProducts, useGenerateStyle, useRegenerate } from './hooks';
-import type { Product, StylingPlan } from './types';
+import type { StylingPlan } from './types';
 
 type TabType = 'styler' | 'gallery';
 
@@ -38,6 +38,7 @@ function App() {
   const [colorTheme, setColorTheme] = useState('neutral');
   const [roomType, setRoomType] = useState('living room');
   const [modelQuality, setModelQuality] = useState<'fast' | 'high'>('fast');
+  const [customPrompt, setCustomPrompt] = useState('');
 
   // Generated image state
   const [generatedImage, setGeneratedImage] = useState<string | undefined>();
@@ -56,14 +57,18 @@ function App() {
   const generateMutation = useGenerateStyle();
   const regenerateMutation = useRegenerate();
 
-  // Get selected products
+  // Get selected products (from stored map, not from filtered results)
   const selectedProducts = useMemo(() => {
     if (!productsData?.products) return [];
     return productsData.products.filter((p) => selectedIds.has(p.variation_id));
   }, [productsData?.products, selectedIds]);
 
+  console.log('App rendered with selectedIds:', Array.from(selectedIds), 'selectedProducts:', selectedProducts);
   // Toggle product selection
   const handleToggleProduct = (productId: string) => {
+    const product = productsData?.products.find(p => p.variation_id === productId);
+    if (!product) return;
+
     setSelectedIds((prev) => {
       const next = new Set(prev);
       if (next.has(productId)) {
@@ -102,6 +107,7 @@ function App() {
         style,
         color_theme: colorTheme,
         room_type: roomType,
+        custom_prompt: customPrompt,
         model_quality: modelQuality,
       });
 
@@ -204,7 +210,7 @@ function App() {
               <div className={`relative ${activeTab === 'gallery' ? 'animate-pulse' : 'group-hover:scale-110 transition-transform'}`}>
                 <Image size={20} className={activeTab === 'gallery' ? 'text-purple-600' : 'text-gray-500 group-hover:text-purple-500'} />
               </div>
-              <span className="relative tracking-wide">Styled Room Gallery</span>
+              <span className="relative tracking-wide">Styled Projects</span>
               {activeTab === 'gallery' && (
                 <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-t-full"></div>
               )}
@@ -240,6 +246,15 @@ function App() {
           />
         </section>
 
+        {/* Selected Products - Always Visible */}
+        <section>
+          <SelectedProducts
+            products={selectedProducts}
+            onRemove={handleToggleProduct}
+            onClear={handleClearSelection}
+          />
+        </section>
+
         {/* Section 2: Product Selection */}
         <section style={{height: '600px', overflowY: 'auto'}}>
           <div className="flex items-center justify-between mb-4">
@@ -271,15 +286,6 @@ function App() {
             )}
           </div>
           
-          {/* Selected products panel */}
-          <div className="mb-4">
-            <SelectedProducts
-              products={selectedProducts}
-              onRemove={handleToggleProduct}
-              onClear={handleClearSelection}
-            />
-          </div>
-
           {/* Product grid */}
           <ProductGrid
             products={productsData?.products || []}
@@ -302,6 +308,8 @@ function App() {
             colorTheme={colorTheme}
             roomType={roomType}
             modelQuality={modelQuality}
+            customPrompt={customPrompt}
+            onCustomPromptChange={setCustomPrompt}
             onMoodChange={setMood}
             onStyleChange={setStyle}
             onColorThemeChange={setColorTheme}

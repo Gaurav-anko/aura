@@ -12,20 +12,21 @@ interface SelectedProductsProps {
 }
 
 export const SelectedProducts = ({ products, onRemove, onClear }: SelectedProductsProps) => {
+  console.log('SelectedProducts rendered with products:', products);
   if (products.length === 0) {
     return null;
   }
 
   return (
-    <div className="bg-purple-50 border border-purple-200 rounded-lg p-4">
+    <div className="bg-gradient-to-r from-purple-100 via-purple-50 to-purple-100 border-2 border-purple-300 rounded-xl p-4 shadow-lg">
       <div className="flex justify-between items-center mb-3">
-        <h3 className="text-lg font-semibold text-gray-900 flex items-center gap-2">
-          <Sparkles size={20} className="text-purple-600" />
+        <h3 className="text-lg font-bold text-gray-900 flex items-center gap-2">
+          <Sparkles size={20} className="text-purple-600 animate-pulse" />
           Selected Products ({products.length}/4)
         </h3>
         <button
           onClick={onClear}
-          className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+          className="text-sm font-semibold text-red-600 hover:text-red-700 hover:bg-red-50 px-3 py-1 rounded-lg transition-all"
         >
           Clear All
         </button>

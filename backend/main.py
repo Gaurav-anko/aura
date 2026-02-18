@@ -79,6 +79,7 @@ class GenerateStyleRequest(BaseModel):
     color_theme: str = "neutral"
     room_type: str = "living room"
     model_quality: Literal["fast", "high"] = "fast"
+    custom_prompt: Optional[str] = None
 
 
 class RegenerateRequest(BaseModel):
@@ -166,6 +167,29 @@ async def get_product_by_id(product_id: str):
         if product.get("variation_id") == product_id:
             return product
     raise HTTPException(status_code=404, detail=f"Product {product_id} not found")
+
+
+@app.post("/products/by-ids")
+async def get_products_by_ids(variation_ids: list[str]):
+    """
+    Get multiple products by their variation IDs.
+    
+    Request Body:
+    - variation_ids: List of VARIATION_ID values to fetch
+    
+    Returns:
+    - List of product objects matching the provided IDs
+    """
+    if not variation_ids:
+        return []
+    
+    products = load_products()
+    matching_products = [
+        product for product in products 
+        if product.get("variation_id") in variation_ids
+    ]
+    
+    return matching_products
 
 
 @app.get("/categories")
@@ -268,6 +292,7 @@ async def generate_style(request: GenerateStyleRequest):
         style=request.style,
         color_theme=request.color_theme,
         room_type=request.room_type,
+        custom_prompt=request.custom_prompt,
     )
     
     # Fetch product images (primary only)

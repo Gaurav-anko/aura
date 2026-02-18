@@ -89,6 +89,7 @@ export interface GenerateStyleRequest {
   color_theme: string;
   room_type: string;
   model_quality: 'fast' | 'high';
+  custom_prompt?: string;
 }
 
 export interface GenerateStyleResponse {

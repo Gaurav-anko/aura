@@ -51,6 +51,7 @@ def create_styling_plan(
     style: str = "modern",
     color_theme: str = "neutral",
     room_type: str = "living room",
+    custom_prompt: Optional[str] = None,
 ) -> dict:
     """
     Create a detailed styling plan for generating a scene with the selected products.
@@ -64,11 +65,12 @@ def create_styling_plan(
     - alt_image_urls: Alternate product images
     
     Args:
-        products: List of product dictionaries
-        mood: Desired mood
-        style: Design style
-        color_theme: Color palette
-        room_type: Type of room for the scene
+        products: List of product dictionaries with ITEM_NAME, DETAILED_DESCRIPTION, COLOR
+        mood: Desired mood (cozy, elegant, minimalist, vibrant, relaxing)
+        style: Design style (modern, scandinavian, bohemian, industrial, classic)
+        color_theme: Color palette (neutral, warm, cool, bold, monochrome)
+        room_type: Type of room for the scene (living room, bedroom, dining room, office)
+        custom_prompt: Optional user-provided custom prompt for additional styling details
         
     Returns:
         dict with styling plan including scene description and composition prompt
@@ -139,28 +141,12 @@ def create_styling_plan(
 4. Use natural sight lines to draw attention to each product
 5. Leave appropriate negative space for a clean, uncluttered look
 
-=== TECHNICAL REQUIREMENTS ===
-- Professional interior photography quality (4K resolution feel)
-- Soft, natural lighting (daylight from windows or warm ambient)
-- Camera angle: slightly elevated, capturing the full scene
-- Sharp focus on all products
-- Rich colors and textures
-- No visible watermarks, logos, or text
-- Photorealistic style suitable for e-commerce
+    # Append custom prompt if provided
+    if custom_prompt and custom_prompt.strip():
+        scene_prompt += f"\n\nAdditional requirements:\n{custom_prompt.strip()}"
 
-=== CRITICAL: PRODUCT FIDELITY ===
-Each product MUST appear EXACTLY as shown in its reference image:
-- Same colors, patterns, and textures
-- Same proportions and design details
-- Proper scale based on specified dimensions
-- All products clearly visible and identifiable"""
-
-    # Build detailed scene description
-    product_names = [p.get("ITEM_NAME", "") for p in products]
-    scene_description = (
-        f"A {mood}, {style} {room_type} with {color_theme} tones featuring {len(products)} products: "
-        + ", ".join(product_names)
-    )
+    # Build detailed scene description for reference
+    scene_description = f"A {mood}, {style} {room_type} with {color_theme} tones featuring {len(products)} products: " + ", ".join([p.get("ITEM_NAME", "") for p in products])
 
     return {
         "scene_prompt": scene_prompt,
@@ -181,16 +167,7 @@ def refine_styling_plan(
     previous_plan: dict,
     feedback: str,
 ) -> dict:
-    """
-    Refine a styling plan based on user feedback.
-    
-    Args:
-        previous_plan: The previous styling plan dict
-        feedback: User's feedback for refinement (e.g., "make it brighter", "add more plants")
-        
-    Returns:
-        dict with updated styling plan incorporating feedback
-    """
+    """Refine a styling plan based on user feedback."""
     # Get the original prompt and append feedback modifications
     original_prompt = previous_plan.get("scene_prompt", "")
     

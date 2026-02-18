@@ -1,1370 +1,2252 @@
 {
-  "total_styled_images": 195,
+  "total_styled_images": 166,
   "styled_rooms": [
     {
+      "id": "bathroom-bathroom-storage-clear-0001",
       "room_type": "Bathroom",
       "category": "Bathroom Storage",
       "color": "Clear",
-      "styled_image_url": "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 19
+      "styled_image_url": "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 19,
+      "products_included": [
+        "43227389",
+        "43329625",
+        "43024162"
+      ]
     },
     {
+      "id": "bathroom-bathroom-storage-white-0002",
       "room_type": "Bathroom",
       "category": "Bathroom Storage",
       "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 8
+      "styled_image_url": "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 8,
+      "products_included": [
+        "43543533",
+        "43639946",
+        "43482467"
+      ]
     },
     {
+      "id": "bathroom-bathroom-cabinets-and-shelves-white-0003",
       "room_type": "Bathroom",
       "category": "Bathroom Cabinets and Shelves",
       "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 6
+      "styled_image_url": "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "products_count": 6,
+      "products_included": [
+        "43639991",
+        "43639953",
+        "43482863"
+      ]
     },
     {
+      "id": "bathroom-bath-mats-grey-0004",
       "room_type": "Bathroom",
       "category": "Bath Mats",
       "color": "Grey",
-      "styled_image_url": "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 6
+      "styled_image_url": "https://images.pexels.com/photos/19916729/pexels-photo-19916729.jpeg?_gl=1*1h2ahq7*_ga*Mzg2MTQyODguMTc3MTIyMTA5Mg..*_ga_8JE65Q40S6*czE3NzEyMjEwOTIkbzEkZzEkdDE3NzEyMjExMDQkajQ4JGwwJGgw",
+      "products_count": 6,
+      "products_included": [
+        "42458142",
+        "43632572",
+        "43631315"
+      ]
     },
     {
+      "id": "bathroom-bathroom-cabinets-and-shelves-brown-0005",
       "room_type": "Bathroom",
       "category": "Bathroom Cabinets and Shelves",
       "color": "Brown",
-      "styled_image_url": "https://images.pexels.com/photos/1358912/pexels-photo-1358912.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 5
+      "styled_image_url": "https://images.pexels.com/photos/6296924/pexels-photo-6296924.jpeg?_gl=1*pav27g*_ga*Mzg2MTQyODguMTc3MTIyMTA5Mg..*_ga_8JE65Q40S6*czE3NzEyMjEwOTIkbzEkZzEkdDE3NzEyMjM0NjEkajU5JGwwJGgw",
+      "products_count": 5,
+      "products_included": [
+        "43546527",
+        "43546503",
+        "43544035"
+      ]
     },
     {
+      "id": "bathroom-bath-towels-blue-0006",
       "room_type": "Bathroom",
       "category": "Bath Towels",
       "color": "Blue",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 4
+      "styled_image_url": "https://images.pexels.com/photos/12932367/pexels-photo-12932367.jpeg?_gl=1*18e51sg*_ga*Mzg2MTQyODguMTc3MTIyMTA5Mg..*_ga_8JE65Q40S6*czE3NzEyMjEwOTIkbzEkZzEkdDE3NzEyMjQwNzYkajYwJGwwJGgw",
+      "products_count": 4,
+      "products_included": [
+        "43493074",
+        "43652549",
+        "43676095"
+      ]
     },
     {
+      "id": "bathroom-bath-mats-green-0007",
       "room_type": "Bathroom",
       "category": "Bath Mats",
       "color": "Green",
-      "styled_image_url": "https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 4
+      "styled_image_url": "https://images.pexels.com/photos/19916729/pexels-photo-19916729.jpeg?_gl=1*1h2ahq7*_ga*Mzg2MTQyODguMTc3MTIyMTA5Mg..*_ga_8JE65Q40S6*czE3NzEyMjEwOTIkbzEkZzEkdDE3NzEyMjExMDQkajQ4JGwwJGgw",
+      "products_count": 4,
+      "products_included": [
+        "43634842",
+        "43603893",
+        "43629862"
+      ]
     },
     {
+      "id": "bathroom-bath-sheets-purple-0008",
       "room_type": "Bathroom",
       "category": "Bath Sheets",
-      "color": "Blue",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 4
+      "color": "Purple",
+      "styled_image_url": "https://images.unsplash.com/photo-1714058973555-a255930b9a39?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIyfHxiYXRocm9vbSUyMHRvd2VsfGVufDB8fDB8fHww",
+      "products_count": 4,
+      "products_included": [
+        "43630271",
+        "43632367",
+        "43634842",
+        "43541546"
+      ]
     },
     {
+      "id": "bathroom-bath-mats-white-0009",
       "room_type": "Bathroom",
       "category": "Bath Mats",
       "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "styled_image_url": "https://images.pexels.com/photos/6734409/pexels-photo-6734409.jpeg?_gl=1*1nty4s7*_ga*Mzg2MTQyODguMTc3MTIyMTA5Mg..*_ga_8JE65Q40S6*czE3NzEyMzIzODQkbzIkZzEkdDE3NzEyMzIzOTgkajQ2JGwwJGgw",
+      "products_count": 3,
+      "products_included": [
+        "43257263",
+        "43639953",
+        "42077459",
+        "43632343"
+      ]
     },
     {
+      "id": "bathroom-bathroom-trolleys-white-0010",
       "room_type": "Bathroom",
       "category": "Bathroom Trolleys",
       "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "styled_image_url": "https://5.imimg.com/data5/SELLER/Default/2022/4/BG/CM/LK/145811915/trolley-cart-rolling-utility-cart-for-bathroom-kitchen-laundry-room-bathroom-multifunction-500x500.jpg",
+      "products_count": 3,
+      "products_included": [
+        "43630271",
+        "43631681",
+        "43274369",
+        "43632343"
+      ]
     },
     {
+      "id": "bathroom-bathroom-accessories-white-0011",
       "room_type": "Bathroom",
       "category": "Bathroom Accessories",
       "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "styled_image_url": "https://images.pexels.com/photos/4239013/pexels-photo-4239013.jpeg?_gl=1*9rv183*_ga*Mzg2MTQyODguMTc3MTIyMTA5Mg..*_ga_8JE65Q40S6*czE3NzEyMjEwOTIkbzEkZzEkdDE3NzEyMjMwNTgkajU5JGwwJGgw",
+      "products_count": 3,
+      "products_included": [
+        "43631674",
+        "43632343",
+        "43639991",
+        "43639953"
+      ]
     },
     {
+      "id": "bathroom-bath-mats-blue-0012",
       "room_type": "Bathroom",
       "category": "Bath Mats",
       "color": "Blue",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "styled_image_url": "https://www.pexels.com/photo/rustic-bathroom-with-freestanding-tub-and-brick-wall-29887326/",
+      "products_count": 3,
+      "products_included": [
+        "43652549",
+        "43074662",
+        "43678532"
+      ]
     },
     {
+      "id": "bathroom-bath-towels-grey-0013",
       "room_type": "Bathroom",
       "category": "Bath Towels",
       "color": "Grey",
-      "styled_image_url": "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "styled_image_url": "https://images.pexels.com/photos/29614917/pexels-photo-29614917.jpeg?_gl=1*annhea*_ga*Mzg2MTQyODguMTc3MTIyMTA5Mg..*_ga_8JE65Q40S6*czE3NzEyMjEwOTIkbzEkZzEkdDE3NzEyMjI1MDQkajU5JGwwJGgw",
+      "products_count": 3,
+      "products_included": [
+        "43632558",
+        "43555345",
+        "43489640",
+        "43554775"
+      ]
     },
     {
+      "id": "bathroom-bath-towels-green-0014",
       "room_type": "Bathroom",
       "category": "Bath Towels",
       "color": "Green",
-      "styled_image_url": "https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "styled_image_url": "https://www.lummi.ai/photo/inviting-bathroom-counter-design-evp4",
+      "products_count": 3,
+      "products_included": [
+        "43556151",
+        "43635313",
+        "43631322"
+      ]
     },
     {
+      "id": "bathroom-bath-towels-white-0015",
       "room_type": "Bathroom",
       "category": "Bath Towels",
       "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "styled_image_url": "https://images.pexels.com/photos/29614917/pexels-photo-29614917.jpeg?_gl=1*annhea*_ga*Mzg2MTQyODguMTc3MTIyMTA5Mg..*_ga_8JE65Q40S6*czE3NzEyMjEwOTIkbzEkZzEkdDE3NzEyMjI1MDQkajU5JGwwJGgw",
+      "products_count": 2,
+      "products_included": [
+        "43639946",
+        "43639991",
+        "43631681"
+      ]
     },
     {
+      "id": "bathroom-bathroom-mirrors-white-0016",
       "room_type": "Bathroom",
       "category": "Bathroom Mirrors",
       "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "styled_image_url": "https://www.lummi.ai/api/pro/image/307535ab-3614-4a69-b9ea-57e7b2cec7ee?asset=original&cb=gg9Qqu&auto=format&w=1500",
+      "products_count": 2,
+      "products_included": [
+        "43662432",
+        "43631681",
+        "43153992",
+        "43544011"
+      ]
     },
     {
+      "id": "bathroom-bathroom-storage-black-0017",
       "room_type": "Bathroom",
       "category": "Bathroom Storage",
       "color": "Black",
-      "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "styled_image_url": "https://www.lummi.ai/api/render/image/776427a9-24e6-4907-af9b-73cc26933f1c?token=eyJhbGciOiJIUzI1NiJ9.eyJpZHMiOlsiNzc2NDI3YTktMjRlNi00OTA3LWFmOWItNzNjYzI2OTMzZjFjIl0sInJlc29sdXRpb24iOiJtZWRpdW0iLCJyZW5kZXJTcGVjcyI6eyJlZmZlY3RzIjp7InJlZnJhbWUiOnt9fX0sInNob3VsZEF1dG9Eb3dubG9hZCI6ZmFsc2UsImp0aSI6IkxBaG11RnViTU53OXBHcEZJelhtLSIsImlhdCI6MTc3MTIzNDg3MiwiZXhwIjoxNzcxMjM0OTMyfQ.rvziRLtpRtrUSn4f7tZOz8siT-e56vHzll3etL4Vsw8",
+      "products_count": 2,
+      "products_included": [
+        "43624447",
+        "43624591",
+        "43627448",
+        "43488360"
+      ]
     },
     {
+      "id": "bathroom-bath-sheets-green-0018",
       "room_type": "Bathroom",
       "category": "Bath Sheets",
       "color": "Green",
-      "styled_image_url": "https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "styled_image_url": "https://www.lummi.ai/photo/serene-bathroom-corner-7dfc3",
+      "products_count": 2,
+      "products_included": [
+        "43631322",
+        "43629862",
+        "43635313"
+      ]
     },
     {
+      "id": "bathroom-bath-sheets-white-0019",
       "room_type": "Bathroom",
       "category": "Bath Sheets",
       "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "styled_image_url": "https://www.lummi.ai/photo/modern-bathroom-with-freestanding-bathtub-j96k4",
+      "products_count": 2,
+      "products_included": [
+        "43631674",
+        "43632343",
+        "43630271"
+      ]
     },
     {
+      "id": "bathroom-bath-sheets-grey-0020",
       "room_type": "Bathroom",
       "category": "Bath Sheets",
       "color": "Grey",
-      "styled_image_url": "https://images.pexels.com/photos/1454804/pexels-photo-1454804.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "styled_image_url": "https://www.lummi.ai/photo/hygene-kleine-toilette-kleine-toilette-in-the-style-of-39db0d70-1e79-403b-8b01-4e2df4daa1cf-gicv7",
+      "products_count": 2,
+      "products_included": [
+        "43632558",
+        "43490219",
+        "43554836",
+        "43632572"
+      ]
     },
     {
+      "id": "bathroom-bath-towels-black-0021",
       "room_type": "Bathroom",
       "category": "Bath Towels",
       "color": "Black",
-      "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://www.lummi.ai/photo/minimalist-bathroom-setting-ux0ae",
+      "products_count": 1,
+      "products_included": [
+        "43624478",
+        "43624447",
+        "43486922",
+        "43624591"
+      ]
     },
     {
-      "room_type": "Bathroom",
-      "category": "Bath Towels",
-      "color": "Brown",
-      "styled_image_url": "https://images.pexels.com/photos/1358912/pexels-photo-1358912.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
+      "id": "bathroom-bathroom-trolleys-black-0022",
       "room_type": "Bathroom",
       "category": "Bathroom Trolleys",
       "color": "Black",
-      "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://assets.lummi.ai/assets/QmbDLVDAgbhX4NyuJzzr55wSR5pJTLmVg8SnqqZBjwtTa6?auto=format&w=1500",
+      "products_count": 1,
+      "products_included": [
+        "43624478",
+        "43624591",
+        "43624775"
+      ]
     },
     {
+      "id": "bathroom-bath-towels-pink-0023",
       "room_type": "Bathroom",
       "category": "Bath Towels",
       "color": "Pink",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://assets.lummi.ai/assets/QmUMZEuHf6b9T6NGG17mMyCXP1Jvifffsx4Af4trBZgC5G?auto=format&w=1500",
+      "products_count": 1,
+      "products_included": [
+        "43489282",
+        "43678518",
+        "43632367"
+      ]
     },
     {
+      "id": "bathroom-bath-mats-black-0024",
       "room_type": "Bathroom",
       "category": "Bath Mats",
       "color": "Black",
-      "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://assets.lummi.ai/assets/QmQVxmpwP6yK5MjqsqQgtjLdAjmg1qrCXz2FEwn5NVonSY?auto=format&w=1500",
+      "products_count": 1,
+      "products_included": [
+        "43624447",
+        "43624775",
+        "43624591"
+      ]
     },
     {
-      "room_type": "Bathroom",
-      "category": "Bath Towels",
-      "color": "Silver",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
-      "room_type": "Bathroom",
-      "category": "Bath Sheets",
-      "color": "Black",
-      "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
+      "id": "bathroom-bath-mats-brown-0025",
       "room_type": "Bathroom",
       "category": "Bath Mats",
       "color": "Brown",
-      "styled_image_url": "https://images.pexels.com/photos/1358912/pexels-photo-1358912.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://www.lummi.ai/api/render/image/2081f444-ab7e-46ae-8b31-8df3795edcaa?token=eyJhbGciOiJIUzI1NiJ9.eyJpZHMiOlsiMjA4MWY0NDQtYWI3ZS00NmFlLThiMzEtOGRmMzc5NWVkY2FhIl0sInJlc29sdXRpb24iOiJtZWRpdW0iLCJyZW5kZXJTcGVjcyI6eyJlZmZlY3RzIjp7InJlZnJhbWUiOnt9fX0sInNob3VsZEF1dG9Eb3dubG9hZCI6ZmFsc2UsImp0aSI6IlRWSjFXUDNtSWtCT3VycWtCNjlsZCIsImlhdCI6MTc3MTIzNjkxNSwiZXhwIjoxNzcxMjM2OTc1fQ.R0fVqScKMGrGelG5XQArWwr-xKJnSsVez1M5ZizVBbc",
+      "products_count": 1,
+      "products_included": [
+        "42881162",
+        "43634842",
+        "43628179"
+      ]
     },
     {
+      "id": "bathroom-bath-sheets-purple-1-0026",
       "room_type": "Bathroom",
       "category": "Bath Sheets",
       "color": "Purple",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://assets.lummi.ai/assets/QmVNycPUP85DcyWH5fqWKARdWEL5tkqY9MVZVwbT6HkRVD?auto=format&w=1500",
+      "products_count": 1,
+      "products_included": [
+        "43628179",
+        "43624478",
+        "43556083"
+      ]
     },
     {
+      "id": "bathroom-bath-sheets-pink-0027",
       "room_type": "Bathroom",
       "category": "Bath Sheets",
       "color": "Pink",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://assets.lummi.ai/assets/QmUMZEuHf6b9T6NGG17mMyCXP1Jvifffsx4Af4trBZgC5G?auto=format&w=1500",
+      "products_count": 1,
+      "products_included": [
+        "43678532",
+        "43628179",
+        "43678518",
+        "43490240"
+      ]
     },
     {
-      "room_type": "Bathroom",
-      "category": "Bath Sheets",
-      "color": "Silver",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
+      "id": "bathroom-bathroom-accessories-n-a-0028",
       "room_type": "Bathroom",
       "category": "Bathroom Accessories",
       "color": "N/A",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://www.lummi.ai/api/pro/image/415a924f-0dec-4acb-9ea8-777cac654f51?asset=original&cb=2u3A68&auto=format&w=1500",
+      "products_count": 1,
+      "products_included": [
+        "43541546",
+        "43557646",
+        "43557615",
+        "43628179"
+      ]
     },
     {
+      "id": "bathroom-bath-mats-multi-0029",
       "room_type": "Bathroom",
       "category": "Bath Mats",
       "color": "MULTI",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://assets.lummi.ai/assets/QmQZyQfwzLeVu2yxPLETRuwAKn8ZqoDuAeFjJgNf51nKdo?auto=format&w=1500",
+      "products_count": 1,
+      "products_included": [
+        "43638420",
+        "43616497",
+        "43541546"
+      ]
     },
     {
+      "id": "bathroom-bathroom-storage-green-0030",
       "room_type": "Bathroom",
       "category": "Bathroom Storage",
       "color": "Green",
-      "styled_image_url": "https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://assets.lummi.ai/assets/QmV3d6k7AD36grZ7XE5M2eqeMz6phJJodXFEwUt1vEPu5x?auto=format&w=1500",
+      "products_count": 1,
+      "products_included": [
+        "43635313",
+        "43624836",
+        "43543472"
+      ]
     },
     {
-      "room_type": "Bathroom",
-      "category": "Bath Towels",
-      "color": "MULTI",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
+      "id": "bathroom-bathroom-storage-blue-0031",
       "room_type": "Bathroom",
       "category": "Bathroom Storage",
       "color": "Blue",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://www.lummi.ai/photo/elegant-contemporary-bathroom-tpqa9",
+      "products_count": 1,
+      "products_included": [
+        "43678532",
+        "43665709",
+        "43652549"
+      ]
     },
     {
-      "room_type": "Bathroom",
-      "category": "Bath Sheets",
-      "color": "Beige",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
-      "room_type": "Bathroom",
-      "category": "Bath Towels",
-      "color": "Purple",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
+      "id": "bathroom-bathroom-cabinets-and-shelves-clear-0032",
       "room_type": "Bathroom",
       "category": "Bathroom Cabinets and Shelves",
       "color": "Clear",
-      "styled_image_url": "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://www.lummi.ai/api/pro/image/307535ab-3614-4a69-b9ea-57e7b2cec7ee?asset=original&cb=gg9Qqu&auto=format&w=1500",
+      "products_count": 1,
+      "products_included": [
+        "43541546",
+        "43631568",
+        "43631865"
+      ]
     },
     {
+      "id": "bathroom-bathroom-cabinets-and-shelves-green-0033",
       "room_type": "Bathroom",
       "category": "Bathroom Cabinets and Shelves",
       "color": "Green",
-      "styled_image_url": "https://images.pexels.com/photos/2251247/pexels-photo-2251247.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://assets.lummi.ai/assets/QmV3d6k7AD36grZ7XE5M2eqeMz6phJJodXFEwUt1vEPu5x?auto=format&w=1500",
+      "products_count": 1,
+      "products_included": [
+        "43624836",
+        "43629862",
+        "43545148"
+      ]
     },
     {
-      "room_type": "Bathroom",
-      "category": "Bath Sheets",
-      "color": "Brown",
-      "styled_image_url": "https://images.pexels.com/photos/1358912/pexels-photo-1358912.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
-      "room_type": "Bathroom",
-      "category": "Bath Mats",
-      "color": "Beige",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
-      "room_type": "Bathroom",
-      "category": "Bath Towels",
-      "color": "Beige",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
+      "id": "bedroom-mattress-protectors-white-0034",
       "room_type": "Bedroom",
       "category": "Mattress Protectors",
       "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 26
+      "styled_image_url": "https://assets.lummi.ai/assets/QmfYqrD3NS2ndqcKDxkvTHc1QdbfB86P6HAc4yipuBBG7H?auto=format&w=1500",
+      "products_count": 26,
+      "products_included": [
+        "43639991",
+        "42127222",
+        "43639946",
+        "42127314"
+      ]
     },
     {
+      "id": "bedroom-quilt-cover-sets-green-0035",
       "room_type": "Bedroom",
       "category": "Quilt Cover Sets",
       "color": "Green",
-      "styled_image_url": "https://images.pexels.com/photos/6969837/pexels-photo-6969837.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 25
+      "styled_image_url": "https://www.lummi.ai/api/render/image/8d8e4bbb-637c-409d-9bec-c24fdafd655c?token=eyJhbGciOiJIUzI1NiJ9.eyJpZHMiOlsiOGQ4ZTRiYmItNjM3Yy00MDlkLTliZWMtYzI0ZmRhZmQ2NTVjIl0sInJlc29sdXRpb24iOiJtZWRpdW0iLCJyZW5kZXJTcGVjcyI6eyJlZmZlY3RzIjp7InJlZnJhbWUiOnt9fX0sInNob3VsZEF1dG9Eb3dubG9hZCI6ZmFsc2UsImp0aSI6IkNGbXBOdkpWZmUyVUNINmZvSnU0OCIsImlhdCI6MTc3MTI2MzE0MCwiZXhwIjoxNzcxMjYzMjAwfQ.HNGmtaGLvaeQO5FCbHL-tX-H9Rc_2S1QCtNGqDgAvEs",
+      "products_count": 25,
+      "products_included": [
+        "73632238",
+        "73481553",
+        "73290636"
+      ]
     },
     {
+      "id": "bedroom-sheet-sets-green-0036",
       "room_type": "Bedroom",
       "category": "Sheet Sets",
       "color": "Green",
-      "styled_image_url": "https://images.pexels.com/photos/6969837/pexels-photo-6969837.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 20
+      "styled_image_url": "https://assets.lummi.ai/assets/QmPZ8osVZ2RnStDGNG9YWiL1aS7JbaoFXY74Sr7GCuSRcB?auto=format&w=640",
+      "products_count": 20,
+      "products_included": [
+        "43677337",
+        "73633778",
+        "43353859"
+      ]
     },
     {
+      "id": "bedroom-quilt-cover-sets-blue-0037",
       "room_type": "Bedroom",
       "category": "Quilt Cover Sets",
       "color": "Blue",
-      "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 19
+      "styled_image_url": "https://www.lummi.ai/api/pro/image/7ceb6435-a780-49c7-aee7-f408f0674990?asset=original&cb=hMBvG8&auto=format&w=640",
+      "products_count": 19,
+      "products_included": [
+        "73288602",
+        "73290629",
+        "43652549",
+        "73288572"
+      ]
     },
     {
-      "room_type": "Bedroom",
-      "category": "Quilt Cover Sets",
-      "color": "Multi",
-      "styled_image_url": "https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 18
-    },
-    {
+      "id": "bedroom-pillows-white-0038",
       "room_type": "Bedroom",
       "category": "Pillows",
       "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 17
+      "styled_image_url": "https://www.lummi.ai/api/pro/image/b6c54197-b889-44ce-8a47-0671af582f7c?asset=original&cb=7BFJ2i&auto=format&w=640",
+      "products_count": 17,
+      "products_included": [
+        "43399192",
+        "43559220",
+        "43639991",
+        "42847397"
+      ]
     },
     {
+      "id": "bedroom-quilt-cover-sets-white-0039",
       "room_type": "Bedroom",
       "category": "Quilt Cover Sets",
       "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 15
+      "styled_image_url": "https://www.lummi.ai/api/pro/image/b6c54197-b889-44ce-8a47-0671af582f7c?asset=original&cb=7BFJ2i&auto=format&w=640",
+      "products_count": 15,
+      "products_included": [
+        "73633372",
+        "43469345",
+        "43631674",
+        "73632184"
+      ]
     },
     {
+      "id": "bedroom-sheet-sets-blue-0040",
       "room_type": "Bedroom",
       "category": "Sheet Sets",
       "color": "Blue",
-      "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 14
+      "styled_image_url": "https://assets.lummi.ai/assets/QmSU9WP2erLz4VPR6xZ8eHtXrAa2fhhUVsjoFJDJzvBPJn?auto=format&w=640",
+      "products_count": 14,
+      "products_included": [
+        "43468201",
+        "43220618",
+        "43220595",
+        "43220656"
+      ]
     },
     {
+      "id": "bedroom-sheet-sets-white-0041",
       "room_type": "Bedroom",
       "category": "Sheet Sets",
       "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 13
+      "styled_image_url": "https://assets.lummi.ai/assets/QmRwbGNehbti3EhgxJ4R4srxv2bE4pgpj3FNYB6quTqYYD?auto=format&w=640",
+      "products_count": 13,
+      "products_included": [
+        "73300144",
+        "40064482",
+        "43354191",
+        "43354214"
+      ]
     },
     {
+      "id": "bedroom-quilt-cover-sets-brown-0042",
       "room_type": "Bedroom",
       "category": "Quilt Cover Sets",
       "color": "Brown",
-      "styled_image_url": "https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 11
+      "styled_image_url": "https://assets.lummi.ai/assets/QmQGhwJwrFz1SYBE5kKHv1gEcuxgvN5pjG6M8fJUdJAbp1?auto=format&w=640",
+      "products_count": 11,
+      "products_included": [
+        "73922919",
+        "73632146",
+        "73301103"
+      ]
     },
     {
+      "id": "bedroom-bed-mattresses-white-0043",
       "room_type": "Bedroom",
       "category": "Bed Mattresses",
       "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 11
+      "styled_image_url": "https://assets.lummi.ai/assets/QmRwbGNehbti3EhgxJ4R4srxv2bE4pgpj3FNYB6quTqYYD?auto=format&w=640",
+      "products_count": 11,
+      "products_included": [
+        "42932239",
+        "42871774",
+        "42932123",
+        "43630271"
+      ]
     },
     {
+      "id": "bedroom-bedside-tables-n-a-0044",
       "room_type": "Bedroom",
       "category": "Bedside Tables",
       "color": "N/A",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 11
+      "styled_image_url": "https://assets.lummi.ai/assets/QmRsyZa5Ff7TJTbrDgxHKBBA5oDcbS2zGnC6pmQv4nCJtp?auto=format&w=640",
+      "products_count": 11,
+      "products_included": [
+        "43520916",
+        "43394296",
+        "43105380"
+      ]
     },
     {
+      "id": "bedroom-sheet-sets-beige-0045",
       "room_type": "Bedroom",
       "category": "Sheet Sets",
       "color": "Beige",
-      "styled_image_url": "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 9
+      "styled_image_url": "https://assets.lummi.ai/assets/QmRbL1ww5CMNZM9CMaywc29Td5tJo8nwTNqdtRZ5E5vxAc?auto=format&w=640",
+      "products_count": 9,
+      "products_included": [
+        "43635092",
+        "43353835",
+        "43353804",
+        "73294726"
+      ]
     },
     {
+      "id": "bedroom-coverlets-comforters-green-0046",
       "room_type": "Bedroom",
       "category": "Coverlets & Comforters",
       "color": "Green",
-      "styled_image_url": "https://images.pexels.com/photos/6969837/pexels-photo-6969837.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 8
+      "styled_image_url": "https://assets.lummi.ai/assets/QmbstAkHsg7C3RNVVmF47H7XW4oi2CASQZGetRXywLRcxq?auto=format&w=640",
+      "products_count": 8,
+      "products_included": [
+        "73294382",
+        "43624836",
+        "43677337"
+      ]
     },
     {
+      "id": "bedroom-sheet-sets-pink-0047",
       "room_type": "Bedroom",
       "category": "Sheet Sets",
       "color": "Pink",
-      "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 8
+      "styled_image_url": "https://assets.lummi.ai/assets/QmW4ktMVCbkDc7uuxr8voEHcdffazBXcxoBHLexsJQeCZ2?auto=format&w=640",
+      "products_count": 8,
+      "products_included": [
+        "73733195",
+        "43228089",
+        "43228119"
+      ]
     },
     {
+      "id": "bedroom-bedside-table-lamps-white-0048",
       "room_type": "Bedroom",
       "category": "Bedside Table Lamps",
       "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 7
+      "styled_image_url": "https://assets.lummi.ai/assets/Qme1oz46q4psWVyawNGDhPQZMgAartdF54Do1Yn4QMt8rW?auto=format&w=640",
+      "products_count": 7,
+      "products_included": [
+        "43632343",
+        "43381807",
+        "43533473",
+        "43151264"
+      ]
     },
     {
+      "id": "bedroom-sheet-sets-black-0049",
       "room_type": "Bedroom",
       "category": "Sheet Sets",
       "color": "Black",
-      "styled_image_url": "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 7
+      "styled_image_url": "https://assets.lummi.ai/assets/QmZwjaeyDNK5dWhWovV51u5JbJdEmEDDwtKf761XZbBRQQ?auto=format&w=640",
+      "products_count": 7,
+      "products_included": [
+        "43624447",
+        "43354146",
+        "43354139",
+        "43220502"
+      ]
     },
     {
+      "id": "bedroom-sheet-sets-brown-0050",
       "room_type": "Bedroom",
       "category": "Sheet Sets",
       "color": "Brown",
-      "styled_image_url": "https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 6
+      "styled_image_url": "https://assets.lummi.ai/assets/QmShRCQwmv4gPX7VaLBuVhiXFBp6j42ymXeCoahkx7cy1h?auto=format&w=640",
+      "products_count": 6,
+      "products_included": [
+        "43678525",
+        "43349357",
+        "73753711",
+        "73753704"
+      ]
     },
     {
+      "id": "bedroom-quilt-cover-sets-red-0051",
       "room_type": "Bedroom",
       "category": "Quilt Cover Sets",
       "color": "Red",
-      "styled_image_url": "https://images.pexels.com/photos/1743231/pexels-photo-1743231.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 6
+      "styled_image_url": "https://www.lummi.ai/api/pro/image/596bf58f-2bce-46a9-be3f-a89610c8aeb6?asset=original&cb=tYRYDf&auto=format&w=640",
+      "products_count": 6,
+      "products_included": [
+        "73462576",
+        "43678549",
+        "73775294",
+        "73462569"
+      ]
     },
     {
+      "id": "bedroom-quilt-cover-sets-grey-0052",
       "room_type": "Bedroom",
       "category": "Quilt Cover Sets",
       "color": "Grey",
-      "styled_image_url": "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 6
+      "styled_image_url": "https://assets.lummi.ai/assets/QmZaRopyDFiyAhSrnWejCQxvzNHMzKzBAhhwnAnjJEi97p?auto=format&w=640",
+      "products_count": 6,
+      "products_included": [
+        "43469383",
+        "73289999",
+        "43632558",
+        "43632572"
+      ]
     },
     {
+      "id": "bedroom-bedroom-furniture-n-a-0053",
       "room_type": "Bedroom",
       "category": "Bedroom Furniture",
       "color": "N/A",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 5
+      "styled_image_url": "https://assets.lummi.ai/assets/QmfPdr8cr45avPzJuHR9ZcDZPZvj4dnghzYyzGwrpBDZbG?auto=format&w=640",
+      "products_count": 5,
+      "products_included": [
+        "43283095",
+        "43139125",
+        "43139101",
+        "43557646"
+      ]
     },
     {
+      "id": "bedroom-blankets-throws-grey-0054",
       "room_type": "Bedroom",
       "category": "Blankets & Throws",
       "color": "Grey",
-      "styled_image_url": "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 5
+      "styled_image_url": "https://assets.lummi.ai/assets/QmSBUSyHFzejtERqgcsSMD2H7347UvKPGzyPiapMkFodhm?auto=format&w=640",
+      "products_count": 5,
+      "products_included": [
+        "73632740",
+        "43632558",
+        "73632733"
+      ]
     },
     {
+      "id": "bedroom-sheet-sets-grey-0055",
       "room_type": "Bedroom",
       "category": "Sheet Sets",
       "color": "Grey",
-      "styled_image_url": "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 5
+      "styled_image_url": "https://assets.lummi.ai/assets/QmcoixVsAU6wm1hgKEDZRgc9tpn7Q8U9h7uAgpcQ9Pparh?auto=format&w=640",
+      "products_count": 5,
+      "products_included": [
+        "43354269",
+        "43354252",
+        "43632572",
+        "43354276"
+      ]
     },
     {
+      "id": "bedroom-bedside-tables-white-0056",
       "room_type": "Bedroom",
       "category": "Bedside Tables",
       "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 5
+      "styled_image_url": "https://assets.lummi.ai/assets/QmRwbGNehbti3EhgxJ4R4srxv2bE4pgpj3FNYB6quTqYYD?auto=format&w=640",
+      "products_count": 5,
+      "products_included": [
+        "43515028",
+        "43633975",
+        "43636273",
+        "43639991"
+      ]
     },
     {
+      "id": "bedroom-bed-frames-bedheads-n-a-0057",
       "room_type": "Bedroom",
       "category": "Bed Frames & Bedheads",
       "color": "N/A",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 5
+      "styled_image_url": "https://assets.lummi.ai/assets/QmZdmnmjRR8gpk5oubg8ZEvyRANtkNeFZQHrrXaDmn9yt1?auto=format&w=640",
+      "products_count": 5,
+      "products_included": [
+        "43348831",
+        "43228393",
+        "43534395"
+      ]
     },
     {
+      "id": "bedroom-bedside-table-lamps-gold-0058",
       "room_type": "Bedroom",
       "category": "Bedside Table Lamps",
       "color": "Gold",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 4
+      "styled_image_url": "https://assets.lummi.ai/assets/QmQbfdBD1kTT2pX9pYhkQK3fdxsdeCBPH666GECDEnhves?auto=format&w=640",
+      "products_count": 4,
+      "products_included": [
+        "43544431",
+        "43544325",
+        "43556335",
+        "43455706"
+      ]
     },
     {
+      "id": "bedroom-quilt-cover-sets-purple-0059",
       "room_type": "Bedroom",
       "category": "Quilt Cover Sets",
       "color": "Purple",
-      "styled_image_url": "https://images.pexels.com/photos/2082090/pexels-photo-2082090.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 4
+      "styled_image_url": "https://assets.lummi.ai/assets/QmYGbx6fqMTzZh6q4S9ozRC7dVfJGcfYgV8yBvtrfMZdU8?auto=format&w=640",
+      "products_count": 4,
+      "products_included": [
+        "73786313",
+        "73786306",
+        "73786320",
+        "73786290"
+      ]
     },
     {
+      "id": "bedroom-sheet-sets-purple-0060",
       "room_type": "Bedroom",
       "category": "Sheet Sets",
       "color": "Purple",
-      "styled_image_url": "https://images.pexels.com/photos/2082090/pexels-photo-2082090.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 4
+      "styled_image_url": "https://assets.lummi.ai/assets/QmYGbx6fqMTzZh6q4S9ozRC7dVfJGcfYgV8yBvtrfMZdU8?auto=format&w=640",
+      "products_count": 4,
+      "products_included": [
+        "73150374",
+        "73150381",
+        "73150404"
+      ]
     },
     {
+      "id": "bedroom-bedside-table-lamps-blue-0061",
       "room_type": "Bedroom",
       "category": "Bedside Table Lamps",
       "color": "Blue",
-      "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "styled_image_url": "https://www.lummi.ai/api/pro/image/513ca8a1-e780-4208-abdc-b4e470ee65b8?asset=original&cb=yYzaEq&auto=format&w=640",
+      "products_count": 3,
+      "products_included": [
+        "43628179",
+        "43589005",
+        "43676095"
+      ]
     },
     {
+      "id": "bedroom-bed-frames-bedheads-white-0062",
       "room_type": "Bedroom",
       "category": "Bed Frames & Bedheads",
       "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "styled_image_url": "https://assets.lummi.ai/assets/QmRkdQ33XUQkyUhhMHjLLMbRzSdtag1BEvzDNH3gJcyk9L?auto=format&w=640",
+      "products_count": 3,
+      "products_included": [
+        "43633692",
+        "43071296",
+        "43632343"
+      ]
     },
     {
+      "id": "bedroom-sheet-sets-silver-0063",
       "room_type": "Bedroom",
       "category": "Sheet Sets",
       "color": "Silver",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "styled_image_url": "https://assets.lummi.ai/assets/QmefHDwaQUuEFWAZVLospKJMabeUwS2wQSpeeLbAg3QZzQ?auto=format&w=640",
+      "products_count": 3,
+      "products_included": [
+        "43468133",
+        "43220700",
+        "43354221",
+        "43541546"
+      ]
     },
     {
+      "id": "bedroom-bedside-table-lamps-black-0064",
       "room_type": "Bedroom",
       "category": "Bedside Table Lamps",
       "color": "Black",
-      "styled_image_url": "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "styled_image_url": "https://assets.lummi.ai/assets/QmfKqCFEgxrP1Rd3Gn9JkrpMTEmTs9GbjfwYwxTkxzoBUq?auto=format&w=640",
+      "products_count": 3,
+      "products_included": [
+        "43547647",
+        "43633470",
+        "43624591",
+        "43573387"
+      ]
     },
     {
+      "id": "bedroom-quilts-white-0065",
       "room_type": "Bedroom",
       "category": "Quilts",
       "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "styled_image_url": "https://assets.lummi.ai/assets/QmaeB3xKjsoVg4K3CZijccaxzrHF1iyqmBv4cmn6GjqCMV?auto=format&w=640",
+      "products_count": 3,
+      "products_included": [
+        "43487813",
+        "42127475",
+        "42108665",
+        "43487806"
+      ]
     },
     {
+      "id": "bedroom-bedroom-furniture-black-0066",
       "room_type": "Bedroom",
       "category": "Bedroom Furniture",
       "color": "Black",
-      "styled_image_url": "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "styled_image_url": "https://assets.lummi.ai/assets/QmRbhSGzQVmzpaWrLBpZJJX1RZnwU8A4pqsFeUYzuZwYdg?auto=format&w=640",
+      "products_count": 2,
+      "products_included": [
+        "43624447",
+        "43624775",
+        "43624591"
+      ]
     },
     {
+      "id": "bedroom-quilt-cover-sets-yellow-0067",
       "room_type": "Bedroom",
       "category": "Quilt Cover Sets",
       "color": "Yellow",
-      "styled_image_url": "https://images.pexels.com/photos/1034584/pexels-photo-1034584.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "styled_image_url": "https://assets.lummi.ai/assets/QmZnyT5ZuQymTum8gm2UMz7MDzDharNynTjmgkHRKNSB4S?auto=format&w=640",
+      "products_count": 2,
+      "products_included": [
+        "43541546",
+        "73534051",
+        "73290667",
+        "43440955"
+      ]
     },
     {
-      "room_type": "Bedroom",
-      "category": "Bedroom Storage",
-      "color": "Clear",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
-    },
-    {
+      "id": "bedroom-blankets-throws-green-0068",
       "room_type": "Bedroom",
       "category": "Blankets & Throws",
       "color": "Green",
-      "styled_image_url": "https://images.pexels.com/photos/6969837/pexels-photo-6969837.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "styled_image_url": "https://assets.lummi.ai/assets/QmbstAkHsg7C3RNVVmF47H7XW4oi2CASQZGetRXywLRcxq?auto=format&w=640",
+      "products_count": 2,
+      "products_included": [
+        "43634842",
+        "43631322",
+        "43635313"
+      ]
     },
     {
-      "room_type": "Bedroom",
-      "category": "Bedside Tables",
-      "color": "Green",
-      "styled_image_url": "https://images.pexels.com/photos/6969837/pexels-photo-6969837.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
-    },
-    {
-      "room_type": "Bedroom",
-      "category": "Bedside Tables",
-      "color": "Black",
-      "styled_image_url": "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
-    },
-    {
-      "room_type": "Bedroom",
-      "category": "Bed Mattresses",
-      "color": "N/A",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
+      "id": "bedroom-bedside-table-lamps-beige-0069",
       "room_type": "Bedroom",
       "category": "Bedside Table Lamps",
       "color": "Beige",
-      "styled_image_url": "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://assets.lummi.ai/assets/QmQbfdBD1kTT2pX9pYhkQK3fdxsdeCBPH666GECDEnhves?auto=format&w=640",
+      "products_count": 1,
+      "products_included": [
+        "43476091",
+        "43632428",
+        "43635092",
+        "73680345"
+      ]
     },
     {
+      "id": "bedroom-bedside-table-lamps-brown-0070",
       "room_type": "Bedroom",
       "category": "Bedside Table Lamps",
       "color": "Brown",
-      "styled_image_url": "https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://assets.lummi.ai/assets/QmdhZiepSLydh4rCfh24HkX1xuVDyoK8cBuG528ditef6g?auto=format&w=640",
+      "products_count": 1,
+      "products_included": [
+        "43265657",
+        "43678525",
+        "43633388",
+        "43633371"
+      ]
     },
     {
+      "id": "bedroom-bedside-table-lamps-silver-0071",
       "room_type": "Bedroom",
       "category": "Bedside Table Lamps",
       "color": "Silver",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://assets.lummi.ai/assets/QmVUe6u9JHiCkPQXs8PYEqXa3K4y3fnuYeEuuByK8ULokJ?auto=format&w=640",
+      "products_count": 1,
+      "products_included": [
+        "43633470",
+        "43151264",
+        "43573394",
+        "43455706"
+      ]
     },
     {
+      "id": "bedroom-bedroom-furniture-brown-0072",
       "room_type": "Bedroom",
       "category": "Bedroom Furniture",
       "color": "Brown",
-      "styled_image_url": "https://images.pexels.com/photos/1329711/pexels-photo-1329711.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://assets.lummi.ai/assets/QmWN3FHF11ZCev2aedVYtXueDhAnq9SwbWYCLGRFQQXhXE?auto=format&w=640",
+      "products_count": 1,
+      "products_included": [
+        "43624478",
+        "43634842",
+        "43628179",
+        "42932352"
+      ]
     },
     {
+      "id": "bedroom-bedroom-storage-beige-0073",
       "room_type": "Bedroom",
       "category": "Bedroom Storage",
       "color": "Beige",
-      "styled_image_url": "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://assets.lummi.ai/assets/Qma2DPGasNSGR8HnWDu7MoKY7qwmcDr3u1F4r4XSCQ7pqx?auto=format&w=640",
+      "products_count": 1,
+      "products_included": [
+        "43635092",
+        "73680345",
+        "43632428",
+        "43385539"
+      ]
     },
     {
-      "room_type": "Bedroom",
-      "category": "Blankets & Throws",
-      "color": "Black",
-      "styled_image_url": "https://images.pexels.com/photos/262048/pexels-photo-262048.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
-      "room_type": "Bedroom",
-      "category": "Bedroom Furniture",
-      "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
-      "room_type": "Bedroom",
-      "category": "Quilt Cover Sets",
-      "color": "Print",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
-      "room_type": "Bedroom",
-      "category": "Bedside Table Lamps",
-      "color": "Green",
-      "styled_image_url": "https://images.pexels.com/photos/6969837/pexels-photo-6969837.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
-      "room_type": "Bedroom",
-      "category": "Bedside Tables",
-      "color": "Beige",
-      "styled_image_url": "https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
-      "room_type": "Bedroom",
-      "category": "Bed Frames & Bedheads",
-      "color": "Green",
-      "styled_image_url": "https://images.pexels.com/photos/6969837/pexels-photo-6969837.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
-      "room_type": "Bedroom",
-      "category": "Blankets & Throws",
-      "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
+      "id": "decor-artificial-plants-flowers-multi-0074",
       "room_type": "Decor",
       "category": "Artificial Plants & Flowers",
       "color": "Multi",
       "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 39
+      "products_count": 39,
+      "products_included": [
+        "43478583",
+        "43545230",
+        "43541515",
+        "43541591"
+      ]
     },
     {
+      "id": "decor-home-decor-accessories-multi-0075",
       "room_type": "Decor",
       "category": "Home Decor Accessories",
       "color": "Multi",
       "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 24
+      "products_count": 24,
+      "products_included": [
+        "43331727",
+        "42962847",
+        "42962854"
+      ]
     },
     {
+      "id": "decor-vases-multi-0076",
       "room_type": "Decor",
       "category": "Vases",
       "color": "Multi",
-      "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 11
+      "styled_image_url": "https://assets.lummi.ai/assets/Qma5NSVpD3ZKPfe14D62ReGsELzpp2hzMbNQxYgjSCMNRL?auto=format&w=640",
+      "products_count": 11,
+      "products_included": [
+        "43637591",
+        "42963349",
+        "43642960",
+        "43545469"
+      ]
     },
     {
+      "id": "decor-clocks-white-0077",
       "room_type": "Decor",
       "category": "Clocks",
       "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "styled_image_url": "https://assets.lummi.ai/assets/QmU6Eh1eBexLWCFAHcAzQ5MPbf2cua25tMQPJMApRe6QEr?auto=format&w=640",
+      "products_count": 2,
+      "products_included": [
+        "43235902",
+        "43253494",
+        "43630271",
+        "43639946"
+      ]
     },
     {
+      "id": "decor-artificial-plants-flowers-green-0078",
       "room_type": "Decor",
       "category": "Artificial Plants & Flowers",
       "color": "Green",
-      "styled_image_url": "https://images.pexels.com/photos/1648771/pexels-photo-1 648771.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "styled_image_url": "https://assets.lummi.ai/assets/QmRjyAeHSH7zAk9xMcRinjpaLRFdPWmGGzqEBLGPSwPHhV?auto=format&w=640",
+      "products_count": 2,
+      "products_included": [
+        "43631322",
+        "43677337",
+        "43634842"
+      ]
     },
     {
+      "id": "decor-home-decor-accessories-n-a-0079",
       "room_type": "Decor",
       "category": "Home Decor Accessories",
       "color": "N/A",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "styled_image_url": "https://assets.lummi.ai/assets/QmRjRNaLEiDqJX5VCgRqzZYtN47QZZvDZWEDu4RyF3epm3?auto=format&w=640",
+      "products_count": 2,
+      "products_included": [
+        "42476511",
+        "42258964",
+        "43557646"
+      ]
     },
     {
+      "id": "decor-home-decor-accessories-silver-0080",
       "room_type": "Decor",
       "category": "Home Decor Accessories",
       "color": "Silver",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://assets.lummi.ai/assets/QmdQg7BHcbRepX9CRRH9b4AVYRao4xVB8T8BebzG79W3sU?auto=format&w=640",
+      "products_count": 1,
+      "products_included": [
+        "43628179",
+        "42633587",
+        "43624478"
+      ]
     },
     {
+      "id": "decor-home-decor-accessories-orange-0081",
       "room_type": "Decor",
       "category": "Home Decor Accessories",
       "color": "Orange",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://assets.lummi.ai/assets/QmULqkk7Xdos5K9wLesjpfwDAUskMco3r7FcqTuySLNGBh?auto=format&w=640",
+      "products_count": 1,
+      "products_included": [
+        "43331727",
+        "43634842",
+        "43541546",
+        "43624478"
+      ]
     },
     {
-      "room_type": "Decor",
-      "category": "Clocks",
-      "color": "Green",
-      "styled_image_url": "https://images.pexels.com/photos/1648771/pexels-photo-1 648771.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
-      "room_type": "Decor",
-      "category": "Artificial Plants & Flowers",
-      "color": "Beige",
-      "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
+      "id": "dining-room-glassware-clear-0082",
       "room_type": "Dining Room",
       "category": "Glassware",
       "color": "Clear",
-      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 10
+      "styled_image_url": "https://assets.lummi.ai/assets/QmSPEZ1boHfMPJcYNgfPHP9mg1Y1tsTNdLqFG147fQuaiD?auto=format&w=640",
+      "products_count": 10,
+      "products_included": [
+        "42998983",
+        "42875123",
+        "42184393"
+      ]
     },
     {
+      "id": "dining-room-placemats-coasters-black-0083",
       "room_type": "Dining Room",
       "category": "Placemats & Coasters",
       "color": "Black",
-      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 5
+      "styled_image_url": "https://www.next.ae/en/style/st179283/am3213",
+      "products_count": 5,
+      "products_included": [
+        "43624775",
+        "43624478",
+        "43393121",
+        "43131754"
+      ]
     },
     {
+      "id": "dining-room-placemats-coasters-brown-0084",
       "room_type": "Dining Room",
       "category": "Placemats & Coasters",
       "color": "Brown",
-      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 4
+      "styled_image_url": "https://assets.lummi.ai/assets/QmVUDsUMPpuaXsepijNa24YttMT5r9mLiyGGC99QtUfSjs?auto=format&w=640",
+      "products_count": 4,
+      "products_included": [
+        "43678525",
+        "42570158",
+        "41963456",
+        "42535331"
+      ]
     },
     {
+      "id": "dining-room-dining-chairs-n-a-0085",
       "room_type": "Dining Room",
       "category": "Dining Chairs",
       "color": "N/A",
       "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 4
+      "products_count": 4,
+      "products_included": [
+        "43641383",
+        "43638635",
+        "43281329",
+        "43393763"
+      ]
     },
     {
-      "room_type": "Dining Room",
-      "category": "Placemats & Coasters",
-      "color": "Green",
-      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 4
-    },
-    {
-      "room_type": "Dining Room",
-      "category": "Placemats & Coasters",
-      "color": "Blue",
-      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
-    },
-    {
-      "room_type": "Dining Room",
-      "category": "Placemats & Coasters",
-      "color": "Beige",
-      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
-    },
-    {
+      "id": "dining-room-dining-tables-n-a-0086",
       "room_type": "Dining Room",
       "category": "Dining Tables",
       "color": "N/A",
       "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "products_count": 2,
+      "products_included": [
+        "43538768",
+        "43557646",
+        "43107582"
+      ]
     },
     {
+      "id": "dining-room-dining-chairs-black-0087",
       "room_type": "Dining Room",
       "category": "Dining Chairs",
       "color": "Black",
-      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "styled_image_url": "https://assets.lummi.ai/assets/QmYvkXDWJRKxkWK3PrD241MFSsBfmEb12uE66Uf3BTrb6e?auto=format&w=640",
+      "products_count": 2,
+      "products_included": [
+        "43637676",
+        "43624775",
+        "43624447"
+      ]
     },
     {
-      "room_type": "Dining Room",
-      "category": "Placemats & Coasters",
-      "color": "White",
-      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
-    },
-    {
-      "room_type": "Dining Room",
-      "category": "Placemats & Coasters",
-      "color": "Multi",
-      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
-    },
-    {
+      "id": "dining-room-dining-chairs-pink-0088",
       "room_type": "Dining Room",
       "category": "Dining Chairs",
-      "color": "Grey",
-      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "color": "Pink",
+      "styled_image_url": "https://assets.lummi.ai/assets/QmXG7AUDA6EcksTawwykZeDi7yn9AHPb3tRKvZhni1nPSg?auto=format&w=640",
+      "products_count": 1,
+      "products_included": [
+        "43541546",
+        "43634842",
+        "43624478",
+        "43678518"
+      ]
     },
     {
+      "id": "dining-room-dining-chairs-brown-0089",
       "room_type": "Dining Room",
       "category": "Dining Chairs",
       "color": "Brown",
-      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://assets.lummi.ai/assets/QmazxjXWT7UvZeYsyk8WBBXKGxCWwbgptYG1jav7UjfZ2V?auto=format&w=640",
+      "products_count": 1,
+      "products_included": [
+        "43678525",
+        "43678532",
+        "43541546"
+      ]
     },
     {
+      "id": "dining-room-glassware-pink-0090",
       "room_type": "Dining Room",
       "category": "Glassware",
       "color": "Pink",
-      "styled_image_url": "https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "styled_image_url": "https://assets.lummi.ai/assets/Qmcy2xcHwt9wEAeMsqp5EAkpjB3rmWC6B8zzd5sD4XNErU?auto=format&w=640",
+      "products_count": 1,
+      "products_included": [
+        "43670116",
+        "43632367",
+        "43628179",
+        "43678518"
+      ]
     },
     {
+      "id": "kids-room-kids-storage-n-a-0091",
       "room_type": "Kids Room",
       "category": "Kids Storage",
       "color": "N/A",
       "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "products_count": 3,
+      "products_included": [
+        "43517947",
+        "43517923",
+        "43517992",
+        "43557646"
+      ]
     },
     {
+      "id": "kids-room-kids-storage-brown-0092",
       "room_type": "Kids Room",
       "category": "Kids Storage",
       "color": "Brown",
       "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43628179",
+        "43630271",
+        "43678525",
+        "43331031"
+      ]
     },
     {
+      "id": "kitchen-food-storage-containers-clear-0093",
       "room_type": "Kitchen",
       "category": "Food Storage Containers",
       "color": "Clear",
       "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 58
+      "products_count": 58,
+      "products_included": [
+        "42915034",
+        "42888123",
+        "43521234",
+        "42567141"
+      ]
     },
     {
+      "id": "kitchen-kitchen-gadgets-multi-0094",
       "room_type": "Kitchen",
       "category": "Kitchen Gadgets",
       "color": "Multi",
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 32
+      "products_count": 32,
+      "products_included": [
+        "42898450",
+        "41966402",
+        "43632053"
+      ]
     },
     {
+      "id": "kitchen-pantry-storage-clear-0095",
       "room_type": "Kitchen",
       "category": "Pantry Storage",
       "color": "Clear",
       "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 26
+      "products_count": 26,
+      "products_included": [
+        "42691815",
+        "43475155",
+        "42436171",
+        "43121168"
+      ]
     },
     {
+      "id": "kitchen-pantry-storage-white-0096",
       "room_type": "Kitchen",
       "category": "Pantry Storage",
       "color": "White",
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 26
+      "products_count": 26,
+      "products_included": [
+        "43474929",
+        "43474981",
+        "43103782"
+      ]
     },
     {
+      "id": "kitchen-pantry-storage-black-0097",
       "room_type": "Kitchen",
       "category": "Pantry Storage",
       "color": "Black",
       "styled_image_url": "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 16
+      "products_count": 16,
+      "products_included": [
+        "43624591",
+        "43473090",
+        "43557271",
+        "43532773"
+      ]
     },
     {
+      "id": "kitchen-kitchen-gadgets-black-0098",
       "room_type": "Kitchen",
       "category": "Kitchen Gadgets",
       "color": "Black",
       "styled_image_url": "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 12
+      "products_count": 12,
+      "products_included": [
+        "43624775",
+        "43543724",
+        "43624478",
+        "43117529"
+      ]
     },
     {
+      "id": "kitchen-kitchen-gadgets-silver-0099",
       "room_type": "Kitchen",
       "category": "Kitchen Gadgets",
       "color": "Silver",
       "styled_image_url": "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 10
+      "products_count": 10,
+      "products_included": [
+        "42712213",
+        "42205401",
+        "41527481"
+      ]
     },
     {
+      "id": "kitchen-pantry-storage-brown-0100",
       "room_type": "Kitchen",
       "category": "Pantry Storage",
       "color": "Brown",
       "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 9
+      "products_count": 9,
+      "products_included": [
+        "42232209",
+        "42689041",
+        "42232193",
+        "43678525"
+      ]
     },
     {
+      "id": "kitchen-toasters-white-0101",
       "room_type": "Kitchen",
       "category": "Toasters",
       "color": "White",
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 5
+      "products_count": 5,
+      "products_included": [
+        "43631681",
+        "43639953",
+        "43639991",
+        "43464548"
+      ]
     },
     {
+      "id": "kitchen-air-fryers-black-0102",
       "room_type": "Kitchen",
       "category": "Air Fryers",
       "color": "Black",
       "styled_image_url": "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 5
+      "products_count": 5,
+      "products_included": [
+        "43624591",
+        "43549665",
+        "43624447"
+      ]
     },
     {
+      "id": "kitchen-food-storage-containers-n-a-0103",
       "room_type": "Kitchen",
       "category": "Food Storage Containers",
       "color": "N/A",
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 4
+      "products_count": 4,
+      "products_included": [
+        "43557646",
+        "43668427",
+        "43668335"
+      ]
     },
     {
+      "id": "kitchen-toasters-black-0104",
       "room_type": "Kitchen",
       "category": "Toasters",
       "color": "Black",
       "styled_image_url": "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 4
+      "products_count": 4,
+      "products_included": [
+        "43465897",
+        "42570943",
+        "43624775"
+      ]
     },
     {
+      "id": "kitchen-pantry-storage-silver-0105",
       "room_type": "Kitchen",
       "category": "Pantry Storage",
       "color": "Silver",
       "styled_image_url": "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 4
+      "products_count": 4,
+      "products_included": [
+        "41323069",
+        "43018864",
+        "42565987"
+      ]
     },
     {
+      "id": "kitchen-air-fryers-silver-0106",
       "room_type": "Kitchen",
       "category": "Air Fryers",
       "color": "Silver",
       "styled_image_url": "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 4
+      "products_count": 4,
+      "products_included": [
+        "43536429",
+        "42336426",
+        "43545636"
+      ]
     },
     {
+      "id": "kitchen-food-storage-containers-black-0107",
       "room_type": "Kitchen",
       "category": "Food Storage Containers",
       "color": "Black",
       "styled_image_url": "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 4
+      "products_count": 4,
+      "products_included": [
+        "43624447",
+        "43624591",
+        "42823766"
+      ]
     },
     {
+      "id": "kitchen-food-storage-containers-white-0108",
       "room_type": "Kitchen",
       "category": "Food Storage Containers",
       "color": "White",
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 4
+      "products_count": 4,
+      "products_included": [
+        "43639991",
+        "43631681",
+        "43475759"
+      ]
     },
     {
+      "id": "kitchen-toasters-green-0109",
       "room_type": "Kitchen",
       "category": "Toasters",
       "color": "Green",
       "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "products_count": 3,
+      "products_included": [
+        "43629862",
+        "43677337",
+        "43624836",
+        "43631322"
+      ]
     },
     {
+      "id": "kitchen-pantry-storage-grey-0110",
       "room_type": "Kitchen",
       "category": "Pantry Storage",
       "color": "Grey",
       "styled_image_url": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "products_count": 3,
+      "products_included": [
+        "43632558",
+        "43475940",
+        "43378760"
+      ]
     },
     {
+      "id": "kitchen-food-storage-containers-blue-0111",
       "room_type": "Kitchen",
       "category": "Food Storage Containers",
       "color": "Blue",
       "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "products_count": 3,
+      "products_included": [
+        "43473380",
+        "43473359",
+        "43652549",
+        "43628179"
+      ]
     },
     {
+      "id": "kitchen-toasters-silver-0112",
       "room_type": "Kitchen",
       "category": "Toasters",
       "color": "Silver",
       "styled_image_url": "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "products_count": 2,
+      "products_included": [
+        "42676102",
+        "43634842",
+        "43541546",
+        "43628179"
+      ]
     },
     {
+      "id": "kitchen-kitchen-gadgets-green-0113",
       "room_type": "Kitchen",
       "category": "Kitchen Gadgets",
       "color": "Green",
       "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "products_count": 2,
+      "products_included": [
+        "43629862",
+        "43677337",
+        "43537235",
+        "43377145"
+      ]
     },
     {
+      "id": "kitchen-food-storage-containers-green-0114",
       "room_type": "Kitchen",
       "category": "Food Storage Containers",
       "color": "Green",
       "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "products_count": 2,
+      "products_included": [
+        "43634842",
+        "43624836",
+        "43312092",
+        "43631322"
+      ]
     },
     {
+      "id": "kitchen-kitchen-gadgets-brown-0115",
       "room_type": "Kitchen",
       "category": "Kitchen Gadgets",
       "color": "Brown",
       "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "products_count": 2,
+      "products_included": [
+        "43678525",
+        "42685012",
+        "41531457"
+      ]
     },
     {
+      "id": "kitchen-toasters-blue-0116",
       "room_type": "Kitchen",
       "category": "Toasters",
       "color": "Blue",
       "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "products_count": 2,
+      "products_included": [
+        "43628179",
+        "43625864",
+        "43652549"
+      ]
     },
     {
+      "id": "kitchen-kitchen-gadgets-white-0117",
       "room_type": "Kitchen",
       "category": "Kitchen Gadgets",
       "color": "White",
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "products_count": 2,
+      "products_included": [
+        "43227488",
+        "43530687",
+        "43631674",
+        "43631681"
+      ]
     },
     {
+      "id": "kitchen-kitchen-gadgets-yellow-0118",
       "room_type": "Kitchen",
       "category": "Kitchen Gadgets",
       "color": "Yellow",
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "products_count": 2,
+      "products_included": [
+        "43476503",
+        "43546169",
+        "43543748",
+        "43117529"
+      ]
     },
     {
+      "id": "kitchen-kitchen-gadgets-clear-0119",
       "room_type": "Kitchen",
       "category": "Kitchen Gadgets",
       "color": "Clear",
       "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43117529",
+        "42692171",
+        "43541546",
+        "43632107"
+      ]
     },
     {
+      "id": "kitchen-kitchen-gadgets-grey-0120",
       "room_type": "Kitchen",
       "category": "Kitchen Gadgets",
       "color": "Grey",
       "styled_image_url": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "42692171",
+        "43117529",
+        "43543748",
+        "43155125"
+      ]
     },
     {
+      "id": "kitchen-kitchen-gadgets-blue-0121",
       "room_type": "Kitchen",
       "category": "Kitchen Gadgets",
       "color": "Blue",
       "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43474264",
+        "43652549",
+        "43676095",
+        "43678532"
+      ]
     },
     {
+      "id": "kitchen-kitchen-gadgets-multi-1-0122",
       "room_type": "Kitchen",
       "category": "Kitchen Gadgets",
       "color": "MULTI",
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43545469",
+        "43646968",
+        "43402472"
+      ]
     },
     {
+      "id": "kitchen-toasters-grey-0123",
       "room_type": "Kitchen",
       "category": "Toasters",
       "color": "Grey",
       "styled_image_url": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43632558",
+        "43632572",
+        "43541546",
+        "43617203"
+      ]
     },
     {
+      "id": "kitchen-pantry-storage-green-0124",
       "room_type": "Kitchen",
       "category": "Pantry Storage",
       "color": "Green",
       "styled_image_url": "https://images.pexels.com/photos/1599791/pexels-photo-1599791.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43632312",
+        "43629862",
+        "43631322"
+      ]
     },
     {
+      "id": "kitchen-food-storage-containers-multi-0125",
       "room_type": "Kitchen",
       "category": "Food Storage Containers",
       "color": "MULTI",
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43640041",
+        "43541485",
+        "43541546",
+        "43638420"
+      ]
     },
     {
+      "id": "kitchen-kitchen-gadgets-print-0126",
       "room_type": "Kitchen",
       "category": "Kitchen Gadgets",
       "color": "Print",
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43632107",
+        "42972235",
+        "43543748",
+        "43117529"
+      ]
     },
     {
+      "id": "kitchen-kitchen-gadgets-red-0127",
       "room_type": "Kitchen",
       "category": "Kitchen Gadgets",
       "color": "Red",
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43541546",
+        "42972235",
+        "43117529"
+      ]
     },
     {
+      "id": "kitchen-pantry-storage-multi-0128",
       "room_type": "Kitchen",
       "category": "Pantry Storage",
       "color": "Multi",
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43637591",
+        "43541546",
+        "42168591",
+        "43545209"
+      ]
     },
     {
+      "id": "kitchen-kitchen-gadgets-pink-0129",
       "room_type": "Kitchen",
       "category": "Kitchen Gadgets",
       "color": "Pink",
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43632367",
+        "43534647",
+        "43678518"
+      ]
     },
     {
+      "id": "kitchen-kitchen-gadgets-n-a-0130",
       "room_type": "Kitchen",
       "category": "Kitchen Gadgets",
       "color": "N/A",
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43671908",
+        "43557646",
+        "43557615"
+      ]
     },
     {
+      "id": "kitchen-pantry-storage-print-0131",
       "room_type": "Kitchen",
       "category": "Pantry Storage",
       "color": "Print",
       "styled_image_url": "https://images.pexels.com/photos/2029667/pexels-photo-2029667.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43541546",
+        "42576860",
+        "43475964"
+      ]
     },
     {
+      "id": "kitchen-air-fryers-grey-0132",
       "room_type": "Kitchen",
       "category": "Air Fryers",
       "color": "Grey",
       "styled_image_url": "https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43632572",
+        "43632558",
+        "43328178"
+      ]
     },
     {
+      "id": "living-room-rugs-multi-0133",
       "room_type": "Living Room",
       "category": "Rugs",
       "color": "Multi",
       "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 9
+      "products_count": 9,
+      "products_included": [
+        "43545469",
+        "43229406",
+        "43016884",
+        "43637591"
+      ]
     },
     {
+      "id": "living-room-rugs-beige-0134",
       "room_type": "Living Room",
       "category": "Rugs",
       "color": "Beige",
       "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 7
+      "products_count": 7,
+      "products_included": [
+        "43491919",
+        "43638406",
+        "43328703"
+      ]
     },
     {
+      "id": "living-room-rugs-white-0135",
       "room_type": "Living Room",
       "category": "Rugs",
       "color": "White",
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 7
+      "products_count": 7,
+      "products_included": [
+        "43153220",
+        "43481484",
+        "43331536"
+      ]
     },
     {
+      "id": "living-room-rugs-grey-0136",
       "room_type": "Living Room",
       "category": "Rugs",
       "color": "Grey",
       "styled_image_url": "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 6
+      "products_count": 6,
+      "products_included": [
+        "43573851",
+        "43632558",
+        "43065707",
+        "43529889"
+      ]
     },
     {
+      "id": "living-room-rugs-n-a-0137",
       "room_type": "Living Room",
       "category": "Rugs",
       "color": "N/A",
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 6
+      "products_count": 6,
+      "products_included": [
+        "43387571",
+        "43557615",
+        "43392797",
+        "43557646"
+      ]
     },
     {
+      "id": "living-room-coffee-tables-n-a-0138",
       "room_type": "Living Room",
       "category": "Coffee Tables",
       "color": "N/A",
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 6
+      "products_count": 6,
+      "products_included": [
+        "43636549",
+        "43553921",
+        "43635573",
+        "43557615"
+      ]
     },
     {
+      "id": "living-room-entertainment-units-n-a-0139",
       "room_type": "Living Room",
       "category": "Entertainment Units",
       "color": "N/A",
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 5
+      "products_count": 5,
+      "products_included": [
+        "43636112",
+        "43541188",
+        "43553914",
+        "43636167"
+      ]
     },
     {
+      "id": "living-room-rugs-print-0140",
       "room_type": "Living Room",
       "category": "Rugs",
       "color": "Print",
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 4
+      "products_count": 4,
+      "products_included": [
+        "43229406",
+        "43333646",
+        "43329601"
+      ]
     },
     {
+      "id": "living-room-entertainment-units-white-0141",
       "room_type": "Living Room",
       "category": "Entertainment Units",
       "color": "White",
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "products_count": 3,
+      "products_included": [
+        "43635474",
+        "43631674",
+        "43639991"
+      ]
     },
     {
+      "id": "living-room-coffee-tables-brown-0142",
       "room_type": "Living Room",
       "category": "Coffee Tables",
       "color": "Brown",
       "styled_image_url": "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "products_count": 3,
+      "products_included": [
+        "43465866",
+        "43636594",
+        "43678525",
+        "42942092"
+      ]
     },
     {
+      "id": "living-room-coffee-tables-black-0143",
       "room_type": "Living Room",
       "category": "Coffee Tables",
       "color": "Black",
       "styled_image_url": "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "products_count": 3,
+      "products_included": [
+        "43636600",
+        "43624591",
+        "43531875"
+      ]
     },
     {
+      "id": "living-room-rugs-brown-0144",
       "room_type": "Living Room",
       "category": "Rugs",
       "color": "Brown",
       "styled_image_url": "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "products_count": 3,
+      "products_included": [
+        "43274352",
+        "43274345",
+        "43274338",
+        "43678525"
+      ]
     },
     {
+      "id": "living-room-entertainment-units-brown-0145",
       "room_type": "Living Room",
       "category": "Entertainment Units",
       "color": "Brown",
       "styled_image_url": "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "products_count": 2,
+      "products_included": [
+        "43532063",
+        "43541546",
+        "43634842",
+        "42942061"
+      ]
     },
     {
+      "id": "living-room-floor-lamps-gold-0146",
       "room_type": "Living Room",
       "category": "Floor Lamps",
       "color": "Gold",
       "styled_image_url": "https://images.pexels.com/photos/1579253/pexels-photo-1579253.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "products_count": 2,
+      "products_included": [
+        "43634842",
+        "43332984",
+        "43628179"
+      ]
     },
     {
+      "id": "living-room-floor-lamps-multi-0147",
       "room_type": "Living Room",
       "category": "Floor Lamps",
       "color": "Multi",
       "styled_image_url": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "products_count": 2,
+      "products_included": [
+        "43545469",
+        "43541485",
+        "43541546",
+        "43637591"
+      ]
     },
     {
+      "id": "living-room-rugs-multi-1-0148",
       "room_type": "Living Room",
       "category": "Rugs",
       "color": "MULTI",
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "products_count": 2,
+      "products_included": [
+        "43545469",
+        "43234929",
+        "43065707",
+        "43016884"
+      ]
     },
     {
+      "id": "living-room-floor-lamps-black-0149",
       "room_type": "Living Room",
       "category": "Floor Lamps",
       "color": "Black",
       "styled_image_url": "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "products_count": 2,
+      "products_included": [
+        "43624478",
+        "43624591",
+        "43624447"
+      ]
     },
     {
+      "id": "living-room-living-room-furniture-n-a-0150",
       "room_type": "Living Room",
       "category": "Living Room Furniture",
       "color": "N/A",
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "products_count": 2,
+      "products_included": [
+        "43557615",
+        "43635887",
+        "43636150"
+      ]
     },
     {
+      "id": "living-room-entertainment-units-black-0151",
       "room_type": "Living Room",
       "category": "Entertainment Units",
       "color": "Black",
       "styled_image_url": "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "products_count": 2,
+      "products_included": [
+        "43624447",
+        "43531950",
+        "43624478",
+        "43624775"
+      ]
     },
     {
+      "id": "living-room-floor-lamps-brown-0152",
       "room_type": "Living Room",
       "category": "Floor Lamps",
       "color": "Brown",
       "styled_image_url": "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43541027",
+        "43678532",
+        "43634842",
+        "43628179"
+      ]
     },
     {
+      "id": "living-room-floor-lamps-beige-0153",
       "room_type": "Living Room",
       "category": "Floor Lamps",
       "color": "Beige",
       "styled_image_url": "https://images.pexels.com/photos/1648776/pexels-photo-1648776.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43635092",
+        "43632428",
+        "43634507",
+        "73680345"
+      ]
     },
     {
+      "id": "living-room-rugs-black-0154",
       "room_type": "Living Room",
       "category": "Rugs",
       "color": "Black",
       "styled_image_url": "https://images.pexels.com/photos/1743229/pexels-photo-1743229.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43624591",
+        "42375609",
+        "43624775"
+      ]
     },
     {
+      "id": "living-room-rugs-green-0155",
       "room_type": "Living Room",
       "category": "Rugs",
       "color": "Green",
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43481774",
+        "43634842",
+        "43677337",
+        "43601271"
+      ]
     },
     {
+      "id": "living-room-living-room-furniture-white-0156",
       "room_type": "Living Room",
       "category": "Living Room Furniture",
       "color": "White",
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43639953",
+        "43635528",
+        "43631674"
+      ]
     },
     {
+      "id": "living-room-living-room-furniture-brown-0157",
       "room_type": "Living Room",
       "category": "Living Room Furniture",
       "color": "Brown",
       "styled_image_url": "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43635702",
+        "43634842",
+        "43678532"
+      ]
     },
     {
+      "id": "living-room-floor-lamps-green-0158",
       "room_type": "Living Room",
       "category": "Floor Lamps",
       "color": "Green",
       "styled_image_url": "https://images.pexels.com/photos/1350789/pexels-photo-1350789.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43677337",
+        "43624836",
+        "43634491",
+        "43631322"
+      ]
     },
     {
+      "id": "outdoor-pots-planters-multi-0159",
       "room_type": "Outdoor",
       "category": "Pots & Planters",
       "color": "Multi",
       "styled_image_url": "https://images.pexels.com/photos/1334605/pexels-photo-1334605.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 36
+      "products_count": 36,
+      "products_included": [
+        "43637591",
+        "43472581",
+        "43647316",
+        "43340750"
+      ]
     },
     {
+      "id": "outdoor-pots-planters-white-0160",
       "room_type": "Outdoor",
       "category": "Pots & Planters",
       "color": "White",
       "styled_image_url": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 8
+      "products_count": 8,
+      "products_included": [
+        "43631674",
+        "43632343",
+        "42974888"
+      ]
     },
     {
+      "id": "outdoor-pots-planters-black-0161",
       "room_type": "Outdoor",
       "category": "Pots & Planters",
       "color": "Black",
       "styled_image_url": "https://images.pexels.com/photos/1334605/pexels-photo-1334605.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 3
+      "products_count": 3,
+      "products_included": [
+        "43624591",
+        "43624775",
+        "42635956",
+        "42426851"
+      ]
     },
     {
+      "id": "outdoor-outdoor-dining-pattern-0162",
       "room_type": "Outdoor",
       "category": "Outdoor Dining",
       "color": "Pattern",
       "styled_image_url": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "products_count": 2,
+      "products_included": [
+        "43535354",
+        "43624478",
+        "43628179",
+        "43634842"
+      ]
     },
     {
+      "id": "outdoor-pots-planters-grey-0163",
       "room_type": "Outdoor",
       "category": "Pots & Planters",
       "color": "Grey",
       "styled_image_url": "https://images.pexels.com/photos/1334605/pexels-photo-1334605.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "products_count": 2,
+      "products_included": [
+        "43632558",
+        "43651955",
+        "42891055",
+        "43632572"
+      ]
     },
     {
+      "id": "outdoor-outdoor-dining-multi-0164",
       "room_type": "Outdoor",
       "category": "Outdoor Dining",
       "color": "Multi",
       "styled_image_url": "https://images.pexels.com/photos/1334605/pexels-photo-1334605.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 2
+      "products_count": 2,
+      "products_included": [
+        "43545469",
+        "43391271",
+        "43391226"
+      ]
     },
     {
+      "id": "outdoor-pots-planters-brown-0165",
       "room_type": "Outdoor",
       "category": "Pots & Planters",
       "color": "Brown",
       "styled_image_url": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "42759379",
+        "43678525",
+        "42879077",
+        "43628179"
+      ]
     },
     {
+      "id": "outdoor-outdoor-dining-clear-0166",
       "room_type": "Outdoor",
       "category": "Outdoor Dining",
       "color": "Clear",
       "styled_image_url": "https://images.pexels.com/photos/2102587/pexels-photo-2102587.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "products_count": 1
+      "products_count": 1,
+      "products_included": [
+        "43628179",
+        "43535293",
+        "43678532"
+      ]
     }
   ]
 }

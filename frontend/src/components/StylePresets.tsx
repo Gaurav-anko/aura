@@ -12,11 +12,13 @@ interface StylePresetsProps {
   colorTheme: string;
   roomType: string;
   modelQuality: 'fast' | 'high';
+  customPrompt: string;
   onMoodChange: (mood: string) => void;
   onStyleChange: (style: string) => void;
   onColorThemeChange: (theme: string) => void;
   onRoomTypeChange: (room: string) => void;
   onModelQualityChange: (quality: 'fast' | 'high') => void;
+  onCustomPromptChange: (prompt: string) => void;
 }
 
 export const StylePresets = ({
@@ -25,11 +27,13 @@ export const StylePresets = ({
   colorTheme,
   roomType,
   modelQuality,
+  customPrompt,
   onMoodChange,
   onStyleChange,
   onColorThemeChange,
   onRoomTypeChange,
   onModelQualityChange,
+  onCustomPromptChange,
 }: StylePresetsProps) => {
   const { data: moodsData } = useMoods();
   const { data: stylesData } = useStyles();
@@ -162,6 +166,30 @@ export const StylePresets = ({
             }
           </p>
         </div>
+      </div>
+
+      {/* Custom Prompt Section */}
+      <div className="pt-4 border-t border-gray-200">
+        <label className="flex items-center gap-2 text-sm font-medium text-gray-700 mb-2">
+          <Sparkles size={16} className="text-purple-600" />
+          Custom Prompt (Optional)
+        </label>
+        <textarea
+          value={customPrompt}
+          onChange={(e) => onCustomPromptChange(e.target.value)}
+          placeholder="Describe additional details you'd like in the styled image... e.g., 'Add warm lighting', 'Include natural sunlight', 'Make it feel cozy and inviting'"
+          rows={4}
+          className="w-full bg-white border-2 border-gray-300 rounded-lg px-4 py-3 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent resize-none transition-all"
+        />
+        <p className="text-xs text-gray-500 mt-2">
+          💡 Provide specific details about lighting, atmosphere, arrangement, or any other preferences to enhance your styled image
+        </p>
+        {customPrompt && (
+          <div className="mt-2 flex items-center gap-2 text-xs text-purple-600">
+            <Sparkles size={14} />
+            <span>{customPrompt.length} characters</span>
+          </div>
+        )}
       </div>
     </div>
   );
