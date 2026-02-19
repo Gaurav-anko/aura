@@ -4,7 +4,7 @@
  */
 
 import { useState, useMemo } from 'react';
-import { Sparkles, Package, Image } from 'lucide-react';
+import { Sparkles, Package, Image, Search, Filter } from 'lucide-react';
 import {
   Disclaimer,
   CategoryFilter,
@@ -14,8 +14,8 @@ import {
   GeneratedImage,
 } from './components';
 import { StyledRoomsGallery } from './components/StyledRoomsGallery';
-import { useProducts, useGenerateStyle, useRegenerate } from './hooks';
-import type { StylingPlan } from './types';
+import { useProducts, useSearchProducts, useGenerateStyle, useRegenerate } from './hooks';
+import type { StylingPlan, Product } from './types';
 
 type TabType = 'styler' | 'gallery';
 
@@ -23,7 +23,12 @@ function App() {
   // Tab state
   const [activeTab, setActiveTab] = useState<TabType>('styler');
   
-  // Filter state
+  // Filter mode state: 'dropdown' or 'search'
+  const [filterMode, setFilterMode] = useState<'dropdown' | 'search'>('dropdown');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [searchResults, setSearchResults] = useState<Product[]>([]);
+  
+  // Filter state (dropdown mode)
   const [category, setCategory] = useState('');
   const [color, setColor] = useState('');
   const [minPrice, setMinPrice] = useState(0);
@@ -42,6 +47,7 @@ function App() {
 
   // Generated image state
   const [generatedImage, setGeneratedImage] = useState<string | undefined>();
+  const [generatedImages, setGeneratedImages] = useState<Array<{ image_base64: string; viewpoint: string; response_text?: string }>>([]);
   const [stylingPlan, setStylingPlan] = useState<StylingPlan | undefined>();
   const [skippedProducts, setSkippedProducts] = useState<string[]>([]);
   const [generationError, setGenerationError] = useState<string | undefined>();
@@ -54,19 +60,44 @@ function App() {
     max_price: maxPrice < 500 ? maxPrice : undefined,
   });
 
+  const searchMutation = useSearchProducts();
   const generateMutation = useGenerateStyle();
   const regenerateMutation = useRegenerate();
 
-  // Get selected products (from stored map, not from filtered results)
+  // Display products based on filter mode
+  const displayProducts = useMemo(() => {
+    if (filterMode === 'search' && searchResults.length > 0) {
+      return searchResults;
+    }
+    return productsData?.products || [];
+  }, [filterMode, searchResults, productsData?.products]);
+
+  // Get selected products (check both dropdown and search results)
   const selectedProducts = useMemo(() => {
-    if (!productsData?.products) return [];
-    return productsData.products.filter((p) => selectedIds.has(p.variation_id));
-  }, [productsData?.products, selectedIds]);
+    const allProducts = [...(productsData?.products || []), ...searchResults];
+    const uniqueProducts = allProducts.filter((p, index, self) => 
+      index === self.findIndex(t => t.variation_id === p.variation_id)
+    );
+    return uniqueProducts.filter((p) => selectedIds.has(p.variation_id));
+  }, [productsData?.products, searchResults, selectedIds]);
+
+  // Handle search
+  const handleSearch = async () => {
+    if (!searchQuery.trim()) return;
+    
+    try {
+      const result = await searchMutation.mutateAsync(searchQuery);
+      setSearchResults(result.products || []);
+    } catch (error) {
+      console.error('Search failed:', error);
+      setSearchResults([]);
+    }
+  };
 
   console.log('App rendered with selectedIds:', Array.from(selectedIds), 'selectedProducts:', selectedProducts);
   // Toggle product selection
   const handleToggleProduct = (productId: string) => {
-    const product = productsData?.products.find(p => p.variation_id === productId);
+    const product = displayProducts.find(p => p.variation_id === productId);
     if (!product) return;
 
     setSelectedIds((prev) => {
@@ -93,12 +124,25 @@ function App() {
     setMaxPrice(500);
   };
 
+  // Clear search
+  const handleClearSearch = () => {
+    setSearchQuery('');
+    setSearchResults([]);
+  };
+
+  // Switch filter mode
+  const handleSwitchMode = (mode: 'dropdown' | 'search') => {
+    setFilterMode(mode);
+    // Don't clear results when switching - let user keep selections
+  };
+
   // Generate styled image
   const handleGenerate = async () => {
     if (selectedIds.size === 0) return;
 
     setGenerationError(undefined);
     setGeneratedImage(undefined);
+    setGeneratedImages([]);
 
     try {
       const result = await generateMutation.mutateAsync({
@@ -111,8 +155,9 @@ function App() {
         model_quality: modelQuality,
       });
 
-      if (result.success && result.image_base64) {
+      if (result.success && (result.image_base64 || result.images)) {
         setGeneratedImage(result.image_base64);
+        setGeneratedImages(result.images || []);
         setStylingPlan(result.styling_plan);
         setSkippedProducts(result.skipped_products || []);
       } else {
@@ -137,8 +182,9 @@ function App() {
         model_quality: modelQuality,
       });
 
-      if (result.success && result.image_base64) {
+      if (result.success && (result.image_base64 || result.images)) {
         setGeneratedImage(result.image_base64);
+        setGeneratedImages(result.images || []);
         setStylingPlan(result.styling_plan);
         setSkippedProducts(result.skipped_products || []);
       } else {
@@ -229,21 +275,119 @@ function App() {
 
         {/* Section 1: Filters */}
         <section>
-          <h2 className="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-900">
-            <span className="bg-purple-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm">1</span>
-            Filter Products
-          </h2>
-          <CategoryFilter
-            selectedCategory={category}
-            selectedColor={color}
-            minPrice={minPrice}
-            maxPrice={maxPrice}
-            onCategoryChange={setCategory}
-            onColorChange={setColor}
-            onMinPriceChange={setMinPrice}
-            onMaxPriceChange={setMaxPrice}
-            onClear={handleClearFilters}
-          />
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-xl font-semibold flex items-center gap-2 text-gray-900">
+              <span className="bg-purple-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm">1</span>
+              Filter Products
+            </h2>
+            
+            {/* Filter Mode Toggle */}
+            <div className="flex bg-gray-100 rounded-lg p-1">
+              <button
+                onClick={() => handleSwitchMode('dropdown')}
+                className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                  filterMode === 'dropdown'
+                    ? 'bg-white text-purple-600 shadow-sm'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`}
+              >
+                <Filter size={16} />
+                Filters
+              </button>
+              <button
+                onClick={() => handleSwitchMode('search')}
+                className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                  filterMode === 'search'
+                    ? 'bg-white text-purple-600 shadow-sm'
+                    : 'text-gray-600 hover:text-gray-900'
+                }`}
+              >
+                <Search size={16} />
+                Search
+              </button>
+            </div>
+          </div>
+
+          {/* Dropdown Filters Mode */}
+          {filterMode === 'dropdown' && (
+            <CategoryFilter
+              selectedCategory={category}
+              selectedColor={color}
+              minPrice={minPrice}
+              maxPrice={maxPrice}
+              onCategoryChange={setCategory}
+              onColorChange={setColor}
+              onMinPriceChange={setMinPrice}
+              onMaxPriceChange={setMaxPrice}
+              onClear={handleClearFilters}
+            />
+          )}
+
+          {/* Natural Language Search Mode */}
+          {filterMode === 'search' && (
+            <div className="bg-white rounded-lg border border-gray-200 p-4 shadow-sm">
+              <div className="flex gap-3">
+                <div className="flex-1 relative">
+                  <Search size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
+                    placeholder="Try: 'blue rugs under $50', 'cozy throws in cream', 'modern lighting'"
+                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent text-gray-900 placeholder-gray-500"
+                  />
+                </div>
+                <button
+                  onClick={handleSearch}
+                  disabled={!searchQuery.trim() || searchMutation.isPending}
+                  className="px-6 py-3 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white font-medium rounded-lg transition-colors flex items-center gap-2"
+                >
+                  {searchMutation.isPending ? (
+                    <>
+                      <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                      Searching...
+                    </>
+                  ) : (
+                    <>
+                      <Search size={18} />
+                      Search
+                    </>
+                  )}
+                </button>
+                {searchResults.length > 0 && (
+                  <button
+                    onClick={handleClearSearch}
+                    className="px-4 py-3 text-gray-600 hover:text-gray-900 font-medium rounded-lg transition-colors border border-gray-300 hover:border-gray-400"
+                  >
+                    Clear
+                  </button>
+                )}
+              </div>
+              
+              {/* Search results info */}
+              {searchResults.length > 0 && (
+                <div className="mt-3 flex items-center gap-2 text-sm text-gray-600">
+                  <span className="bg-purple-100 text-purple-700 px-2 py-1 rounded-md font-medium">
+                    {searchResults.length} results
+                  </span>
+                  <span>for "{searchQuery}"</span>
+                </div>
+              )}
+              
+              {/* Search tips */}
+              {searchResults.length === 0 && !searchMutation.isPending && (
+                <div className="mt-3 text-sm text-gray-500">
+                  <p className="font-medium mb-1">💡 Search Tips:</p>
+                  <ul className="list-disc list-inside space-y-0.5 text-gray-400">
+                    <li>Describe what you're looking for naturally</li>
+                    <li>Include colors, categories, or price ranges</li>
+                    <li>Example: "warm toned rugs for living room"</li>
+                  </ul>
+                </div>
+              )}
+            </div>
+          )}
         </section>
 
         {/* Selected Products - Always Visible */}
@@ -263,8 +407,8 @@ function App() {
               Select Products (max 4)
             </h2>
             
-            {/* Active filters display */}
-            {(category || color || minPrice > 0 || maxPrice < 500) && (
+            {/* Active filters/search display */}
+            {filterMode === 'dropdown' && (category || color || minPrice > 0 || maxPrice < 500) && (
               <div className="flex items-center gap-2 text-sm">
                 <span className="text-gray-600">Active filters:</span>
                 {category && (
@@ -284,14 +428,22 @@ function App() {
                 )}
               </div>
             )}
+            {filterMode === 'search' && searchResults.length > 0 && (
+              <div className="flex items-center gap-2 text-sm">
+                <Search size={14} className="text-purple-600" />
+                <span className="px-2 py-1 bg-purple-100 text-purple-700 rounded-md text-xs">
+                  {searchResults.length} results for "{searchQuery}"
+                </span>
+              </div>
+            )}
           </div>
           
           {/* Product grid */}
           <ProductGrid
-            products={productsData?.products || []}
+            products={displayProducts}
             selectedIds={selectedIds}
             onToggleProduct={handleToggleProduct}
-            isLoading={isLoadingProducts}
+            isLoading={filterMode === 'dropdown' ? isLoadingProducts : searchMutation.isPending}
             maxSelection={4}
           />
         </section>
@@ -337,10 +489,11 @@ function App() {
         <section>
           <h2 className="text-xl font-semibold mb-4 flex items-center gap-2 text-gray-900">
             <span className="bg-purple-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm">4</span>
-            Generated Image
+            Generated Images
           </h2>
           <GeneratedImage
             imageBase64={generatedImage}
+            images={generatedImages}
             stylingPlan={stylingPlan}
             isLoading={generateMutation.isPending}
             error={generationError}

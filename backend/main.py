@@ -19,7 +19,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Import agents and services
-from agents.filter_agent import filter_products, get_available_categories, get_available_colors, get_price_range, load_products
+from agents.filter_agent import filter_products, get_available_categories, get_available_colors, get_price_range, load_products, run_filter_search
 from agents.styling_agent import create_styling_plan, refine_styling_plan, get_mood_options, get_style_options, get_color_theme_options, get_room_options
 from agents.image_agent import generate_styled_image, generate_image_text_only
 from services.image_fetcher import fetch_product_images
@@ -88,6 +88,11 @@ class RegenerateRequest(BaseModel):
     previous_plan: dict
     feedback: str
     model_quality: Literal["fast", "high"] = "fast"
+
+
+class SearchRequest(BaseModel):
+    """Request model for natural language product search."""
+    query: str = Field(..., min_length=1, max_length=500, description="Natural language search query")
 
 
 # ============== Health Check ==============
@@ -167,6 +172,57 @@ async def get_product_by_id(product_id: str):
         if product.get("variation_id") == product_id:
             return product
     raise HTTPException(status_code=404, detail=f"Product {product_id} not found")
+
+
+@app.post("/search")
+async def search_products(request: SearchRequest):
+    """
+    Search products using natural language query.
+    Uses the filter_agent to interpret the query and filter products.
+    
+    Request Body:
+    - query: Natural language search (e.g., "blue rugs under $50", "cozy throws in cream")
+    
+    Returns:
+    - products: List of matching products
+    - count: Number of results
+    - query: Original query
+    - filters_applied: Filters extracted by the agent
+    """
+    logger.info(f"Natural language search: {request.query}")
+    
+    try:
+        result = await run_filter_search(query=request.query)
+        
+        if result.get("success"):
+            return {
+                "products": result.get("products", []),
+                "count": result.get("count", 0),
+                "query": request.query,
+                "filters_applied": result.get("filters_applied", {}),
+                "agent_response": result.get("agent_response"),
+            }
+        else:
+            # Fallback: if agent fails, return all products
+            logger.warning(f"Search agent failed: {result.get('error')}")
+            all_products = filter_products()
+            return {
+                "products": all_products.get("products", []),
+                "count": all_products.get("count", 0),
+                "query": request.query,
+                "filters_applied": {},
+                "error": result.get("error"),
+            }
+    except Exception as e:
+        logger.error(f"Search error: {e}")
+        # Fallback to all products on error
+        all_products = filter_products()
+        return {
+            "products": all_products.get("products", []),
+            "count": all_products.get("count", 0),
+            "query": request.query,
+            "error": str(e),
+        }
 
 
 @app.post("/products/by-ids")
@@ -321,7 +377,7 @@ async def generate_style(request: GenerateStyleRequest):
             scene_prompt=styling_plan["scene_prompt"],
             product_images=product_images,
             product_details=products_with_images,
-            model_quality=request.model_quality,
+            model_quality=request.model_quality
         )
     else:
         # Fallback to text-only generation
@@ -340,6 +396,7 @@ async def generate_style(request: GenerateStyleRequest):
     return {
         "success": result.get("success", False),
         "image_base64": result.get("image_base64"),
+        "images": result.get("images"),
         "styling_plan": styling_plan,
         "model_used": result.get("model_used"),
         "generation_mode": result.get("generation_mode", "unknown"),
@@ -405,6 +462,7 @@ async def regenerate_image(request: RegenerateRequest):
             product_images=product_images,
             product_details=products_with_images,
             model_quality=request.model_quality,
+            num_images=1,
         )
     else:
         product_descriptions = [
@@ -421,6 +479,7 @@ async def regenerate_image(request: RegenerateRequest):
     return {
         "success": result.get("success", False),
         "image_base64": result.get("image_base64"),
+        "images": result.get("images"),
         "styling_plan": refined_plan,
         "model_used": result.get("model_used"),
         "generation_mode": result.get("generation_mode", "unknown"),
