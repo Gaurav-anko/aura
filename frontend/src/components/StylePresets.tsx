@@ -11,7 +11,7 @@ interface StylePresetsProps {
   style: string;
   colorTheme: string;
   roomType: string;
-  modelQuality: 'fast' | 'high';
+  modelQuality: 'fast';
   customPrompt: string;
   onMoodChange: (mood: string) => void;
   onStyleChange: (style: string) => void;
@@ -130,7 +130,7 @@ export const StylePresets = ({
         </div>
 
         {/* Model Quality Toggle */}
-        <div className="md:col-span-2 lg:col-span-2">
+        {/* <div className="md:col-span-2 lg:col-span-2">
           <label className="flex items-center gap-2 text-sm font-medium text-gray-700 mb-2">
             <Cpu size={16} />
             Image Quality
@@ -165,7 +165,7 @@ export const StylePresets = ({
               : 'Best quality, takes longer to generate'
             }
           </p>
-        </div>
+        </div> */}
       </div>
 
       {/* Custom Prompt Section */}

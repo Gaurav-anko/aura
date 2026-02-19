@@ -30,6 +30,20 @@ export interface FilterResponse {
   };
 }
 
+export interface SearchResponse {
+  products: Product[];
+  count: number;
+  query: string;
+  filters_applied?: {
+    category: string | null;
+    color: string | null;
+    min_price: number | null;
+    max_price: number | null;
+  };
+  agent_response?: string;
+  error?: string;
+}
+
 export interface CategoriesResponse {
   categories: string[];
   count: number;
@@ -92,9 +106,16 @@ export interface GenerateStyleRequest {
   custom_prompt?: string;
 }
 
+export interface GeneratedImageData {
+  image_base64: string;
+  viewpoint: string;
+  response_text?: string;
+}
+
 export interface GenerateStyleResponse {
   success: boolean;
   image_base64?: string;
+  images?: GeneratedImageData[];
   styling_plan: StylingPlan;
   model_used?: string;
   skipped_products: string[];

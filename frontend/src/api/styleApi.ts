@@ -15,6 +15,7 @@ import type {
   GenerateStyleRequest,
   GenerateStyleResponse,
   RegenerateRequest,
+  SearchResponse,
 } from '../types';
 
 // API base URL - uses Vite proxy in development
@@ -65,6 +66,14 @@ export const productApi = {
    */
   getPriceRange: async (): Promise<PriceRangeResponse> => {
     const response = await apiClient.get('/price-range');
+    return response.data;
+  },
+
+  /**
+   * Search products using natural language
+   */
+  searchProducts: async (query: string): Promise<SearchResponse> => {
+    const response = await apiClient.post('/search', { query });
     return response.data;
   },
 };

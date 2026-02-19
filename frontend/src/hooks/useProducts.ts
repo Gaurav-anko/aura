@@ -2,7 +2,7 @@
  * React Query hooks for product data
  */
 
-import { useQuery } from '@tanstack/react-query';
+import { useQuery, useMutation } from '@tanstack/react-query';
 import { productApi } from '../api';
 
 export const useProducts = (params?: {
@@ -14,6 +14,12 @@ export const useProducts = (params?: {
   return useQuery({
     queryKey: ['products', params],
     queryFn: () => productApi.getProducts(params),
+  });
+};
+
+export const useSearchProducts = () => {
+  return useMutation({
+    mutationFn: (query: string) => productApi.searchProducts(query),
   });
 };
 

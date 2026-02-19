@@ -5,10 +5,11 @@
 import { useState } from 'react';
 import { Download, RefreshCw, AlertCircle, CheckCircle, Plus } from 'lucide-react';
 import { LoadingSpinner } from './LoadingSpinner';
-import type { StylingPlan } from '../types';
+import type { StylingPlan, GeneratedImageData } from '../types';
 
 interface GeneratedImageProps {
   imageBase64?: string;
+  images?: GeneratedImageData[];
   stylingPlan?: StylingPlan;
   isLoading: boolean;
   error?: string;
@@ -19,6 +20,7 @@ interface GeneratedImageProps {
 
 export const GeneratedImage = ({
   imageBase64,
+  images,
   stylingPlan,
   isLoading,
   error,
@@ -28,9 +30,18 @@ export const GeneratedImage = ({
 }: GeneratedImageProps) => {
   const [feedback, setFeedback] = useState('');
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
-  const handleDownload = () => {
-    if (!imageBase64) return;
+  // Use images array if available, otherwise fall back to single imageBase64
+  const displayImages = images && images.length > 0 
+    ? images 
+    : imageBase64 
+      ? [{ image_base64: imageBase64, viewpoint: 'Generated', response_text: undefined }]
+      : [];
+
+  const handleDownload = (index: number = selectedImageIndex) => {
+    const img = displayImages[index];
+    if (!img) return;
     
     try {
       // Convert base64 to blob for better browser compatibility
@@ -57,6 +68,16 @@ export const GeneratedImage = ({
       console.error('Download failed:', error);
       alert('Failed to download image. Please try again.');
     }
+    const link = document.createElement('a');
+    link.href = `data:image/png;base64,${img.image_base64}`;
+    link.download = `styled-room-${index + 1}.png`;
+    link.click();
+  };
+
+  const handleDownloadAll = () => {
+    displayImages.forEach((_, index) => {
+      setTimeout(() => handleDownload(index), index * 500);
+    });
   };
 
   const handleRegenerate = () => {
@@ -94,12 +115,12 @@ export const GeneratedImage = ({
     );
   }
 
-  if (!imageBase64) {
+  if (!imageBase64 && displayImages.length === 0) {
     return (
       <div className="bg-white rounded-lg p-8 text-center min-h-[400px] flex flex-col items-center justify-center border border-gray-200 shadow-sm">
         <div className="text-gray-500">
           <p className="text-lg mb-2">No image generated yet</p>
-          <p className="text-sm">Select products and click "Generate Style" to create a styled image</p>
+          <p className="text-sm">Select products and click "Generate Style" to create styled images</p>
         </div>
       </div>
     );
@@ -127,10 +148,49 @@ export const GeneratedImage = ({
         </div>
       )}
 
-      {/* Generated image */}
+      {/* Image count badge */}
+      {displayImages.length > 1 && (
+        <div className="bg-purple-50 border-b border-purple-200 p-3 flex items-center justify-between">
+          <span className="text-sm text-purple-700 font-medium">
+            {displayImages.length} images generated
+          </span>
+          <button
+            onClick={handleDownloadAll}
+            className="text-sm text-purple-600 hover:text-purple-800 flex items-center gap-1"
+          >
+            <Download size={14} />
+            Download All
+          </button>
+        </div>
+      )}
+
+      {/* Image thumbnails for selection */}
+      {displayImages.length > 1 && (
+        <div className="p-3 border-b border-gray-200 flex gap-2 overflow-x-auto">
+          {displayImages.map((img, index) => (
+            <button
+              key={index}
+              onClick={() => setSelectedImageIndex(index)}
+              className={`flex-shrink-0 w-20 h-20 rounded-lg overflow-hidden border-2 transition-all ${
+                selectedImageIndex === index 
+                  ? 'border-purple-500 ring-2 ring-purple-200' 
+                  : 'border-gray-200 hover:border-gray-300'
+              }`}
+            >
+              <img
+                src={`data:image/png;base64,${img.image_base64}`}
+                alt={`View ${index + 1}`}
+                className="w-full h-full object-cover"
+              />
+            </button>
+          ))}
+        </div>
+      )}
+
+      {/* Main generated image */}
       <div className="relative">
         <img
-          src={`data:image/png;base64,${imageBase64}`}
+          src={`data:image/png;base64,${displayImages[selectedImageIndex]?.image_base64}`}
           alt="Generated styled room"
           className="w-full h-auto"
         />
@@ -153,6 +213,21 @@ export const GeneratedImage = ({
             <Download size={20} />
           </button>
         </div>
+        {/* Download button overlay */}
+        <button
+          onClick={() => handleDownload(selectedImageIndex)}
+          className="absolute top-4 right-4 bg-black/50 hover:bg-black/70 text-white p-2 rounded-lg transition-colors"
+          title="Download image"
+        >
+          <Download size={20} />
+        </button>
+
+        {/* Image index indicator */}
+        {displayImages.length > 1 && (
+          <div className="absolute bottom-4 left-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
+            {selectedImageIndex + 1} / {displayImages.length}
+          </div>
+        )}
       </div>
 
       {/* Styling info */}
